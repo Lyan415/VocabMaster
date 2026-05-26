@@ -413,20 +413,22 @@
     document.getElementById('fc-pos').textContent = word.pos;
     document.getElementById('fc-meaning').textContent = word.meaning;
     document.getElementById('fc-example').textContent = word.example;
-
-    document.querySelectorAll('.flashcard-actions .btn').forEach(b => b.disabled = true);
   }
 
   function flipCard() {
     const card = document.getElementById('flashcard');
     card.classList.toggle('flipped');
     if (card.classList.contains('flipped')) {
-      document.querySelectorAll('.flashcard-actions .btn').forEach(b => b.disabled = false);
       speak(sessionWords[currentWordIndex].word);
     }
   }
 
   function rateFlashcard(quality) {
+    const card = document.getElementById('flashcard');
+    if (!card.classList.contains('flipped')) {
+      flipCard();
+      return;
+    }
     const word = sessionWords[currentWordIndex];
     updateWordProgress(word.id, quality);
     if (quality >= 2) sessionResults.correct++;
@@ -866,8 +868,10 @@
       document.getElementById('mode-modal').classList.add('hidden');
     });
 
-    // Flashcard
+    // Flashcard - attach to container, front, and back for reliable touch/click
     document.getElementById('flashcard').addEventListener('click', flipCard);
+    document.querySelector('.flashcard-front').addEventListener('click', flipCard);
+    document.querySelector('.flashcard-back').addEventListener('click', flipCard);
     document.getElementById('fc-speak').addEventListener('click', (e) => {
       e.stopPropagation();
       speak(sessionWords[currentWordIndex]?.word);
