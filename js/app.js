@@ -80,7 +80,7 @@
     if (!settings.dailyNew) settings.dailyNew = CONFIG.DAILY_NEW_WORDS;
     if (!settings.speechSpeed) settings.speechSpeed = 0.9;
     if (!settings.passwordHash) settings.passwordHash = null;
-    if (!settings.gasUrl) settings.gasUrl = '';
+    if (!settings.gasUrl) settings.gasUrl = 'https://script.google.com/macros/s/AKfycbyJ6GNAMzNc71OHAx7qymFq6iR6PGFSmXgFV9SU-8gMPKBg4mp7SY0NXY6rndBFV2-0/exec';
   }
 
   function saveSettings() {
