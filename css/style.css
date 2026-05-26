@@ -34,8 +34,12 @@ body {
 
 .hidden { display: none !important; }
 
-.screen { min-height: 100vh; }
-.screen.active { display: flex; }
+.screen { min-height: 100vh; display: none; }
+.screen.active { display: block; }
+
+#login-screen.active {
+  display: flex;
+}
 
 /* ===== LOGIN ===== */
 .login-container {
@@ -88,7 +92,8 @@ body {
   color: var(--text);
 }
 
-.form-group input {
+.form-group input,
+.form-group select {
   width: 100%;
   padding: 12px 16px;
   border: 2px solid var(--border);
@@ -96,9 +101,21 @@ body {
   font-size: 16px;
   transition: border-color 0.2s;
   background: var(--bg-card);
+  color: var(--text);
+  appearance: none;
+  -webkit-appearance: none;
 }
 
-.form-group input:focus {
+.form-group select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2364748b' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  padding-right: 40px;
+  cursor: pointer;
+}
+
+.form-group input:focus,
+.form-group select:focus {
   outline: none;
   border-color: var(--primary);
   box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
@@ -993,4 +1010,21 @@ body {
   .setting-item label { min-width: auto; }
   .flashcard-actions { flex-wrap: wrap; }
   .flashcard-actions .btn { flex: 1 1 45%; }
+
+  /* Word list: hide less important columns on mobile */
+  .wordlist-table th:nth-child(3),
+  .wordlist-table td:nth-child(3),
+  .wordlist-table th:nth-child(4),
+  .wordlist-table td:nth-child(4),
+  .wordlist-table th:nth-child(7),
+  .wordlist-table td:nth-child(7),
+  .wordlist-table th:nth-child(8),
+  .wordlist-table td:nth-child(8) {
+    display: none;
+  }
+
+  .wordlist-table td, .wordlist-table th {
+    padding: 10px 8px;
+    font-size: 13px;
+  }
 }
