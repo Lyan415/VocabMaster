@@ -229,6 +229,7 @@
       newWordsToday.length
     );
 
+    shuffleArray(newWordsToday);
     return {
       due: dueWords,
       new: newWordsToday.slice(0, Math.max(0, newCount)),
