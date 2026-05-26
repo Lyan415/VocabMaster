@@ -194,7 +194,8 @@
   }
 
   function formatDate(d) {
-    return d.toISOString().split('T')[0];
+    // Always use Taiwan timezone (UTC+8): midnight in Taipei = new day
+    return new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Taipei' }).format(d);
   }
 
   function isDueForReview(wordId) {
@@ -324,7 +325,7 @@
     document.getElementById('today-due-count').textContent = dueCount;
 
     document.getElementById('dashboard-date').textContent =
-      new Date().toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+      new Date().toLocaleDateString('en-US', { timeZone: 'Asia/Taipei', weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
 
     const streak = getStreak();
     document.getElementById('streak-count').textContent = streak;
