@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VocabMaster - Spaced Repetition Vocabulary Learning</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+</head>
+<body>
+  <div id="app">
+    <!-- Login Screen -->
+    <div id="login-screen" class="screen active">
+      <div class="login-container">
+        <div class="login-logo">
+          <div class="logo-icon">V</div>
+          <h1>VocabMaster</h1>
+          <p class="login-subtitle">Spaced Repetition Vocabulary Learning</p>
+        </div>
+        <form id="login-form" autocomplete="off">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter username" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <div class="password-wrapper">
+              <input type="password" id="password" placeholder="Enter password" required>
+              <button type="button" id="toggle-password" class="btn-icon" aria-label="Toggle password visibility">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              </button>
+            </div>
+          </div>
+          <div id="login-error" class="error-msg hidden"></div>
+          <button type="submit" class="btn btn-primary btn-full">Sign In</button>
+        </form>
+        <p class="login-footer">850 Basic English Words</p>
+      </div>
+    </div>
+
+    <!-- Main App -->
+    <div id="main-app" class="screen hidden">
+      <!-- Navigation -->
+      <nav id="navbar">
+        <div class="nav-brand" id="nav-home-btn">
+          <span class="nav-logo">V</span>
+          <span class="nav-title">VocabMaster</span>
+        </div>
+        <div class="nav-actions">
+          <button id="sync-btn" class="btn-icon" title="Sync with Google Sheet">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 4v6h-6"/><path d="M1 20v-6h6"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg>
+          </button>
+          <button id="settings-btn" class="btn-icon" title="Settings">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+          </button>
+          <button id="logout-btn" class="btn-icon" title="Sign Out">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Content Area -->
+      <main id="content">
+        <!-- Dashboard -->
+        <div id="page-dashboard" class="page active">
+          <div class="dashboard-header">
+            <h2>Welcome back!</h2>
+            <p id="dashboard-date"></p>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-number" id="stat-total">0</div>
+              <div class="stat-label">Total Words</div>
+            </div>
+            <div class="stat-card stat-learned">
+              <div class="stat-number" id="stat-learned">0</div>
+              <div class="stat-label">Learned</div>
+            </div>
+            <div class="stat-card stat-review">
+              <div class="stat-number" id="stat-review">0</div>
+              <div class="stat-label">Due for Review</div>
+            </div>
+            <div class="stat-card stat-mastered">
+              <div class="stat-number" id="stat-mastered">0</div>
+              <div class="stat-label">Mastered</div>
+            </div>
+          </div>
+
+          <div class="progress-section">
+            <h3>Overall Progress</h3>
+            <div class="progress-bar-container">
+              <div class="progress-bar" id="overall-progress-bar"></div>
+              <span class="progress-text" id="overall-progress-text">0%</span>
+            </div>
+          </div>
+
+          <div class="today-section">
+            <h3>Today's Plan</h3>
+            <div class="today-cards">
+              <div class="today-card" id="today-new">
+                <div class="today-icon">🆕</div>
+                <div class="today-info">
+                  <div class="today-number" id="today-new-count">0</div>
+                  <div class="today-label">New Words</div>
+                </div>
+              </div>
+              <div class="today-card" id="today-due">
+                <div class="today-icon">🔄</div>
+                <div class="today-info">
+                  <div class="today-number" id="today-due-count">0</div>
+                  <div class="today-label">Reviews Due</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="practice-section">
+            <h3>Choose Practice Mode</h3>
+            <div class="mode-grid">
+              <button class="mode-card" data-mode="flashcard">
+                <div class="mode-icon">🃏</div>
+                <div class="mode-name">Flashcard</div>
+                <div class="mode-desc">Flip to reveal meaning</div>
+              </button>
+              <button class="mode-card" data-mode="choice">
+                <div class="mode-icon">✅</div>
+                <div class="mode-name">Multiple Choice</div>
+                <div class="mode-desc">Pick the correct meaning</div>
+              </button>
+              <button class="mode-card" data-mode="spelling">
+                <div class="mode-icon">⌨️</div>
+                <div class="mode-name">Spelling Test</div>
+                <div class="mode-desc">Type the English word</div>
+              </button>
+              <button class="mode-card" data-mode="listening">
+                <div class="mode-icon">🎧</div>
+                <div class="mode-name">Listening Test</div>
+                <div class="mode-desc">Identify by pronunciation</div>
+              </button>
+            </div>
+          </div>
+
+          <div class="streak-section">
+            <h3>Study Streak</h3>
+            <div class="streak-display">
+              <div class="streak-fire" id="streak-icon">🔥</div>
+              <div class="streak-count" id="streak-count">0</div>
+              <div class="streak-label">days</div>
+            </div>
+            <div class="heatmap" id="heatmap"></div>
+          </div>
+        </div>
+
+        <!-- Practice Screen -->
+        <div id="page-practice" class="page hidden">
+          <div class="practice-header">
+            <button id="practice-back" class="btn-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <div class="practice-progress">
+              <span id="practice-current">0</span> / <span id="practice-total">0</span>
+            </div>
+            <div class="practice-progress-bar">
+              <div class="practice-progress-fill" id="practice-progress-fill"></div>
+            </div>
+          </div>
+
+          <!-- Flashcard Mode -->
+          <div id="mode-flashcard" class="practice-mode hidden">
+            <div class="flashcard-container">
+              <div class="flashcard" id="flashcard">
+                <div class="flashcard-front">
+                  <div class="flashcard-word" id="fc-word"></div>
+                  <button class="btn-speak" id="fc-speak">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 010 14.14M15.54 8.46a5 5 0 010 7.07"/></svg>
+                  </button>
+                  <p class="flashcard-hint">Tap to reveal</p>
+                </div>
+                <div class="flashcard-back">
+                  <div class="flashcard-word" id="fc-word-back"></div>
+                  <div class="flashcard-phonetic" id="fc-phonetic"></div>
+                  <div class="flashcard-pos" id="fc-pos"></div>
+                  <div class="flashcard-meaning" id="fc-meaning"></div>
+                  <div class="flashcard-example" id="fc-example"></div>
+                  <button class="btn-speak" id="fc-speak-back">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 010 14.14M15.54 8.46a5 5 0 010 7.07"/></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="flashcard-actions">
+              <button class="btn btn-danger" id="fc-forgot">
+                <span>Forgot</span>
+                <span class="btn-key">1</span>
+              </button>
+              <button class="btn btn-warning" id="fc-hard">
+                <span>Hard</span>
+                <span class="btn-key">2</span>
+              </button>
+              <button class="btn btn-success" id="fc-good">
+                <span>Good</span>
+                <span class="btn-key">3</span>
+              </button>
+              <button class="btn btn-primary" id="fc-easy">
+                <span>Easy</span>
+                <span class="btn-key">4</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Multiple Choice Mode -->
+          <div id="mode-choice" class="practice-mode hidden">
+            <div class="choice-container">
+              <div class="choice-word" id="mc-word"></div>
+              <button class="btn-speak" id="mc-speak">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 010 14.14M15.54 8.46a5 5 0 010 7.07"/></svg>
+              </button>
+              <div class="choice-phonetic" id="mc-phonetic"></div>
+              <div class="choices" id="mc-choices"></div>
+              <div class="choice-feedback hidden" id="mc-feedback">
+                <div class="feedback-text" id="mc-feedback-text"></div>
+                <div class="feedback-example" id="mc-feedback-example"></div>
+              </div>
+              <button class="btn btn-primary btn-full hidden" id="mc-next">Next</button>
+            </div>
+          </div>
+
+          <!-- Spelling Mode -->
+          <div id="mode-spelling" class="practice-mode hidden">
+            <div class="spelling-container">
+              <div class="spelling-meaning" id="sp-meaning"></div>
+              <div class="spelling-pos" id="sp-pos"></div>
+              <button class="btn-speak" id="sp-speak">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 010 14.14M15.54 8.46a5 5 0 010 7.07"/></svg>
+              </button>
+              <div class="spelling-hint" id="sp-hint"></div>
+              <input type="text" id="sp-input" class="spelling-input" placeholder="Type the English word..." autocomplete="off" autocapitalize="off" spellcheck="false">
+              <div class="spelling-feedback hidden" id="sp-feedback"></div>
+              <div class="spelling-actions">
+                <button class="btn btn-secondary" id="sp-hint-btn">Show Hint</button>
+                <button class="btn btn-primary" id="sp-check">Check</button>
+              </div>
+              <button class="btn btn-primary btn-full hidden" id="sp-next">Next</button>
+            </div>
+          </div>
+
+          <!-- Listening Mode -->
+          <div id="mode-listening" class="practice-mode hidden">
+            <div class="listening-container">
+              <div class="listening-prompt">Listen and choose the correct word</div>
+              <button class="btn-speak-large" id="ls-speak">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 010 14.14M15.54 8.46a5 5 0 010 7.07"/></svg>
+              </button>
+              <div class="listening-repeat">Click to play again</div>
+              <div class="choices" id="ls-choices"></div>
+              <div class="choice-feedback hidden" id="ls-feedback">
+                <div class="feedback-text" id="ls-feedback-text"></div>
+              </div>
+              <button class="btn btn-primary btn-full hidden" id="ls-next">Next</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Session Complete -->
+        <div id="page-complete" class="page hidden">
+          <div class="complete-container">
+            <div class="complete-icon">🎉</div>
+            <h2>Session Complete!</h2>
+            <div class="complete-stats">
+              <div class="complete-stat">
+                <div class="complete-stat-number" id="complete-total">0</div>
+                <div class="complete-stat-label">Words Practiced</div>
+              </div>
+              <div class="complete-stat">
+                <div class="complete-stat-number" id="complete-correct">0</div>
+                <div class="complete-stat-label">Correct</div>
+              </div>
+              <div class="complete-stat">
+                <div class="complete-stat-number" id="complete-accuracy">0%</div>
+                <div class="complete-stat-label">Accuracy</div>
+              </div>
+            </div>
+            <div class="complete-actions">
+              <button class="btn btn-primary" id="complete-home">Back to Dashboard</button>
+              <button class="btn btn-secondary" id="complete-continue">Continue Practice</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Word List -->
+        <div id="page-wordlist" class="page hidden">
+          <div class="wordlist-header">
+            <h2>Word List</h2>
+            <div class="wordlist-filters">
+              <select id="wl-filter">
+                <option value="all">All Words</option>
+                <option value="new">New</option>
+                <option value="learning">Learning</option>
+                <option value="mastered">Mastered</option>
+                <option value="due">Due for Review</option>
+              </select>
+              <input type="text" id="wl-search" placeholder="Search words..." class="search-input">
+            </div>
+          </div>
+          <div class="wordlist-table-wrapper">
+            <table class="wordlist-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Word</th>
+                  <th>Phonetic</th>
+                  <th>POS</th>
+                  <th>Meaning</th>
+                  <th>Level</th>
+                  <th>Next Review</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody id="wl-body"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Settings Page -->
+        <div id="page-settings" class="page hidden">
+          <div class="settings-container">
+            <h2>Settings</h2>
+
+            <div class="settings-section">
+              <h3>Study Settings</h3>
+              <div class="setting-item">
+                <label for="setting-daily">New words per day</label>
+                <input type="number" id="setting-daily" min="5" max="100" value="30">
+              </div>
+              <div class="setting-item">
+                <label for="setting-voice">TTS Voice</label>
+                <select id="setting-voice"></select>
+              </div>
+              <div class="setting-item">
+                <label for="setting-speed">Speech Speed</label>
+                <input type="range" id="setting-speed" min="0.5" max="1.5" step="0.1" value="0.9">
+                <span id="setting-speed-value">0.9x</span>
+              </div>
+            </div>
+
+            <div class="settings-section">
+              <h3>Google Sheet Sync</h3>
+              <div class="setting-item">
+                <label for="setting-gas-url">Apps Script Web App URL</label>
+                <input type="url" id="setting-gas-url" placeholder="https://script.google.com/macros/s/...">
+              </div>
+              <div class="setting-item">
+                <button class="btn btn-secondary" id="btn-test-sync">Test Connection</button>
+                <span id="sync-status" class="sync-status"></span>
+              </div>
+            </div>
+
+            <div class="settings-section">
+              <h3>Account</h3>
+              <div class="setting-item">
+                <label for="setting-new-password">Change Password</label>
+                <input type="password" id="setting-new-password" placeholder="New password">
+              </div>
+              <button class="btn btn-secondary" id="btn-change-password">Update Password</button>
+            </div>
+
+            <div class="settings-section">
+              <h3>Data Management</h3>
+              <div class="setting-actions">
+                <button class="btn btn-secondary" id="btn-export">Export Progress</button>
+                <button class="btn btn-secondary" id="btn-import">Import Progress</button>
+                <input type="file" id="import-file" accept=".json" class="hidden">
+                <button class="btn btn-danger" id="btn-reset">Reset All Progress</button>
+              </div>
+            </div>
+
+            <div class="settings-section">
+              <h3>About</h3>
+              <p class="settings-about">VocabMaster v1.0 - 850 Basic English Words<br>Spaced repetition algorithm based on the Ebbinghaus forgetting curve.</p>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Bottom Navigation (Mobile) -->
+      <nav id="bottom-nav">
+        <button class="bottom-nav-item active" data-page="dashboard">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <span>Home</span>
+        </button>
+        <button class="bottom-nav-item" data-page="wordlist">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+          <span>Words</span>
+        </button>
+        <button class="bottom-nav-item start-btn" id="quick-start">
+          <div class="start-btn-circle">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          </div>
+          <span>Start</span>
+        </button>
+        <button class="bottom-nav-item" data-page="stats" id="nav-stats">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          <span>Stats</span>
+        </button>
+        <button class="bottom-nav-item" data-page="settings">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9c.26.604.852.997 1.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+          <span>Settings</span>
+        </button>
+      </nav>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast hidden"></div>
+
+    <!-- Mode Selection Modal -->
+    <div id="mode-modal" class="modal hidden">
+      <div class="modal-content">
+        <h3>Select Practice Mode</h3>
+        <div class="modal-modes">
+          <button class="modal-mode-btn" data-mode="flashcard">🃏 Flashcard</button>
+          <button class="modal-mode-btn" data-mode="choice">✅ Multiple Choice</button>
+          <button class="modal-mode-btn" data-mode="spelling">⌨️ Spelling Test</button>
+          <button class="modal-mode-btn" data-mode="listening">🎧 Listening Test</button>
+        </div>
+        <button class="btn btn-secondary btn-full" id="modal-cancel">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

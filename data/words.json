@@ -1,0 +1,6802 @@
+[
+  {
+    "id": 1,
+    "word": "a",
+    "phonetic": "[ə]",
+    "pos": "冠詞",
+    "meaning": "一個",
+    "example": "She has a book in her hand.（她手裡有一本書。用於單數可數名詞前。）"
+  },
+  {
+    "id": 2,
+    "word": "able",
+    "phonetic": "[ˈebl]",
+    "pos": "形容詞",
+    "meaning": "有能力的",
+    "example": "He is able to swim across the river.（他有能力游過這條河。常與 to 連用。）"
+  },
+  {
+    "id": 3,
+    "word": "about",
+    "phonetic": "[əˈbaʊt]",
+    "pos": "介系詞",
+    "meaning": "關於 / 大約",
+    "example": "Tell me about your new plan. / It is about five o'clock.（告訴我關於你的新計劃。/ 現在大約五點。）"
+  },
+  {
+    "id": 4,
+    "word": "account",
+    "phonetic": "[əˈkaʊnt]",
+    "pos": "名詞",
+    "meaning": "帳戶 / 報告",
+    "example": "I need to open a bank account.（我需要開立一個銀行帳戶。）"
+  },
+  {
+    "id": 5,
+    "word": "acid",
+    "phonetic": "[ˈæsɪd]",
+    "pos": "名詞 / 形容詞",
+    "meaning": "酸 / 酸性的",
+    "example": "Lemon juice contains acid. / This fruit has an acid taste.（檸檬汁含有酸。/ 這水果有酸味。）"
+  },
+  {
+    "id": 6,
+    "word": "across",
+    "phonetic": "[əˈkrɔs]",
+    "pos": "介系詞",
+    "meaning": "橫過 / 在...對面",
+    "example": "We walked across the street.（我們穿過馬路。）"
+  },
+  {
+    "id": 7,
+    "word": "act",
+    "phonetic": "[ækt]",
+    "pos": "名詞",
+    "meaning": "行為 / 法令",
+    "example": "It is a noble act to help people in need.（幫助有需要的人是高尚的行為。）"
+  },
+  {
+    "id": 8,
+    "word": "addition",
+    "phonetic": "[əˈdɪʃən]",
+    "pos": "名詞",
+    "meaning": "增加 / 加法",
+    "example": "In addition to rice, we need some vegetables.（除了米飯之外，我們還需要一些蔬菜。）"
+  },
+  {
+    "id": 9,
+    "word": "adjustment",
+    "phonetic": "[əˈdʒʌstmənt]",
+    "pos": "名詞",
+    "meaning": "調整 / 調節",
+    "example": "The machine needs a slight adjustment.（這台機器需要稍微調整一下。）"
+  },
+  {
+    "id": 10,
+    "word": "advertisement",
+    "phonetic": "[ˌædvɚˈtaɪzmənt]",
+    "pos": "名詞",
+    "meaning": "廣告",
+    "example": "I saw an advertisement for a new car on TV.（我在電視上看到一個新車的廣告。）"
+  },
+  {
+    "id": 11,
+    "word": "after",
+    "phonetic": "[ˈæftɚ]",
+    "pos": "介系詞",
+    "meaning": "在...之後",
+    "example": "We will go for a walk after dinner.（我們晚飯後去散步。）"
+  },
+  {
+    "id": 12,
+    "word": "again",
+    "phonetic": "[əˈɡɛn]",
+    "pos": "副詞",
+    "meaning": "再一次",
+    "example": "Please read this book again.（請把這本書再讀一遍。）"
+  },
+  {
+    "id": 13,
+    "word": "against",
+    "phonetic": "[əˈɡɛnst]",
+    "pos": "介系詞",
+    "meaning": "反對 / 靠著",
+    "example": "Are you for or against the idea?（你是贊成還是反對這個想法？）"
+  },
+  {
+    "id": 14,
+    "word": "agreement",
+    "phonetic": "[əˈɡrimənt]",
+    "pos": "名詞",
+    "meaning": "同意 / 協議",
+    "example": "They signed an agreement to work together.（他們簽署了一項合作協議。）"
+  },
+  {
+    "id": 15,
+    "word": "air",
+    "phonetic": "[ɛr]",
+    "pos": "名詞",
+    "meaning": "空氣 / 天空",
+    "example": "We need fresh air to breathe.（我們需要新鮮的空氣來呼吸。）"
+  },
+  {
+    "id": 16,
+    "word": "all",
+    "phonetic": "[ɔl]",
+    "pos": "形容詞 / 代名詞",
+    "meaning": "全部的 / 一切",
+    "example": "All the students passed the test.（所有的學生都通過了考試。）"
+  },
+  {
+    "id": 17,
+    "word": "almost",
+    "phonetic": "[ˈɔlˌmost]",
+    "pos": "副詞",
+    "meaning": "幾乎",
+    "example": "I am almost ready to go.（我幾乎準備好可以出發了。）"
+  },
+  {
+    "id": 18,
+    "word": "among",
+    "phonetic": "[əˈmʌŋ]",
+    "pos": "介系詞",
+    "meaning": "在...之中（三者以上）",
+    "example": "Divide the sweets among the children.（把糖果分給孩子們。）"
+  },
+  {
+    "id": 19,
+    "word": "amount",
+    "phonetic": "[əˈmaʊnt]",
+    "pos": "名詞",
+    "meaning": "數量 / 金額",
+    "example": "A large amount of money was spent on the project.（這項專案花費了大量的資金。）"
+  },
+  {
+    "id": 20,
+    "word": "amusement",
+    "phonetic": "[əˈmjuzmənt]",
+    "pos": "名詞",
+    "meaning": "娛樂 / 樂趣",
+    "example": "To our amusement, the clown fell down.（令我們感到好笑的是，小丑摔倒了。）"
+  },
+  {
+    "id": 21,
+    "word": "and",
+    "phonetic": "[ænd]",
+    "pos": "連接詞",
+    "meaning": "和 / 而且",
+    "example": "I like apples and oranges.（我喜歡蘋果和柳橙。）"
+  },
+  {
+    "id": 22,
+    "word": "angle",
+    "phonetic": "[ˈæŋɡl]",
+    "pos": "名詞",
+    "meaning": "角度 / 角",
+    "example": "Look at the problem from a different angle.（從不同的角度來看這個問題。）"
+  },
+  {
+    "id": 23,
+    "word": "angry",
+    "phonetic": "[ˈæŋɡri]",
+    "pos": "形容詞",
+    "meaning": "生氣的",
+    "example": "He was angry with his brother.（他對他的兄弟感到生氣。）"
+  },
+  {
+    "id": 24,
+    "word": "animal",
+    "phonetic": "[ˈænəməl]",
+    "pos": "名詞",
+    "meaning": "動物",
+    "example": "A dog is a friendly animal.（狗是一種友善的動物。）"
+  },
+  {
+    "id": 25,
+    "word": "answer",
+    "phonetic": "[ˈænsɚ]",
+    "pos": "名詞",
+    "meaning": "回答 / 答案",
+    "example": "Please give me an answer today.（請今天給我一個答覆。）"
+  },
+  {
+    "id": 26,
+    "word": "ant",
+    "phonetic": "[ænt]",
+    "pos": "名詞",
+    "meaning": "螞蟻",
+    "example": "I saw an ant carrying a piece of bread.（我看到一隻螞蟻搬著一片麵包。）"
+  },
+  {
+    "id": 27,
+    "word": "any",
+    "phonetic": "[ˈɛni]",
+    "pos": "形容詞 / 代名詞",
+    "meaning": "任何的 / 一些",
+    "example": "Do you have any questions?（你有任何問題嗎？）"
+  },
+  {
+    "id": 28,
+    "word": "apparatus",
+    "phonetic": "[ˌæpəˈretəs]",
+    "pos": "名詞",
+    "meaning": "儀器 / 設備",
+    "example": "The laboratory has modern apparatus.（這間實驗室擁有現代化的儀器設備。）"
+  },
+  {
+    "id": 29,
+    "word": "apple",
+    "phonetic": "[ˈæpl]",
+    "pos": "名詞",
+    "meaning": "蘋果",
+    "example": "She ate a sweet red apple.（她吃了一個甜甜的紅蘋果。）"
+  },
+  {
+    "id": 30,
+    "word": "approval",
+    "phonetic": "[əˈpruvəl]",
+    "pos": "名詞",
+    "meaning": "贊成 / 批准",
+    "example": "The plan has the manager's approval.（這個計劃得到了經理的批准。）"
+  },
+  {
+    "id": 31,
+    "word": "arch",
+    "phonetic": "[ɑrtʃ]",
+    "pos": "名詞",
+    "meaning": "拱門 / 弓形",
+    "example": "They walked through the stone arch.（他們走過那座石拱門。）"
+  },
+  {
+    "id": 32,
+    "word": "argument",
+    "phonetic": "[ˈɑrɡjəmənt]",
+    "pos": "名詞",
+    "meaning": "爭論 / 論點",
+    "example": "They had a long argument about money.（他們為了錢發生了長期的爭論。）"
+  },
+  {
+    "id": 33,
+    "word": "arm",
+    "phonetic": "[ɑrm]",
+    "pos": "名詞",
+    "meaning": "手臂",
+    "example": "He broke his left arm during the game.（他在比賽中弄斷了左臂。）"
+  },
+  {
+    "id": 34,
+    "word": "army",
+    "phonetic": "[ˈɑrmi]",
+    "pos": "名詞",
+    "meaning": "軍隊",
+    "example": "He joined the army after finishing school.（他畢業後加入了軍隊。）"
+  },
+  {
+    "id": 35,
+    "word": "art",
+    "phonetic": "[ɑrt]",
+    "pos": "名詞",
+    "meaning": "藝術",
+    "example": "Painting is a beautiful form of art.（繪畫是一種美麗的藝術形式。）"
+  },
+  {
+    "id": 36,
+    "word": "as",
+    "phonetic": "[æz]",
+    "pos": "介系詞 / 連接詞",
+    "meaning": "作為 / 當...時",
+    "example": "He works as a teacher. / She sang as she walked.（他擔任教師工作。/ 她一邊走一邊唱歌。）"
+  },
+  {
+    "id": 37,
+    "word": "at",
+    "phonetic": "[æt]",
+    "pos": "介系詞",
+    "meaning": "在（某處或某時）",
+    "example": "Meet me at the station at noon.（中午在車站與我見面。）"
+  },
+  {
+    "id": 38,
+    "word": "attack",
+    "phonetic": "[əˈtæk]",
+    "pos": "名詞",
+    "meaning": "攻擊",
+    "example": "The enemy launched an attack at night.（敵人在夜間發動了攻擊。）"
+  },
+  {
+    "id": 39,
+    "word": "attempt",
+    "phonetic": "[əˈtɛmpt]",
+    "pos": "名詞",
+    "meaning": "嘗試",
+    "example": "This is my first attempt to cook.（這是我第一次嘗試做飯。）"
+  },
+  {
+    "id": 40,
+    "word": "attention",
+    "phonetic": "[əˈtɛnʃən]",
+    "pos": "名詞",
+    "meaning": "注意力",
+    "example": "Please pay attention to what I am saying.（請注意聽我說的話。）"
+  },
+  {
+    "id": 41,
+    "word": "attraction",
+    "phonetic": "[əˈtrækʃən]",
+    "pos": "名詞",
+    "meaning": "吸引力 / 景點",
+    "example": "The old castle is a great tourist attraction.（這座古堡是個著名的旅遊景點。）"
+  },
+  {
+    "id": 42,
+    "word": "authority",
+    "phonetic": "[əˈθɔrətɪ]",
+    "pos": "名詞",
+    "meaning": "權力 / 權威人士",
+    "example": "He has no authority to change the rules.（他沒有權力修改規則。）"
+  },
+  {
+    "id": 43,
+    "word": "automatic",
+    "phonetic": "[ˌɔtəˈmætɪk]",
+    "pos": "形容詞",
+    "meaning": "自動的",
+    "example": "This camera has an automatic focus.（這台相機有自動對焦功能。）"
+  },
+  {
+    "id": 44,
+    "word": "awake",
+    "phonetic": "[əˈwek]",
+    "pos": "形容詞",
+    "meaning": "醒著的",
+    "example": "The baby is still awake.（寶寶還醒著。）"
+  },
+  {
+    "id": 45,
+    "word": "baby",
+    "phonetic": "[ˈbebi]",
+    "pos": "名詞",
+    "meaning": "嬰兒",
+    "example": "The baby is sleeping peacefully in the bed.（嬰兒正在床上安詳地睡著。）"
+  },
+  {
+    "id": 46,
+    "word": "back",
+    "phonetic": "[bæk]",
+    "pos": "名詞 / 副詞",
+    "meaning": "背部 / 向後",
+    "example": "He hurt his back while lifting the box. / Go back to your seat.（他搬箱子時弄傷了背。/ 回到你的座位上。）"
+  },
+  {
+    "id": 47,
+    "word": "bad",
+    "phonetic": "[bæk]",
+    "pos": "形容詞",
+    "meaning": "壞的 / 不好的",
+    "example": "Eating too much sugar is bad for your teeth.（吃太多糖對你的牙齒不好。）"
+  },
+  {
+    "id": 48,
+    "word": "bag",
+    "phonetic": "[bæɡ]",
+    "pos": "名詞",
+    "meaning": "袋子 / 包包",
+    "example": "She put her books into her school bag.（她把書放進書包裡。）"
+  },
+  {
+    "id": 49,
+    "word": "balance",
+    "phonetic": "[ˈbæləns]",
+    "pos": "名詞",
+    "meaning": "平衡",
+    "example": "He lost his balance and fell off the bicycle.（他失去平衡，從腳踏車上摔了下來。）"
+  },
+  {
+    "id": 50,
+    "word": "ball",
+    "phonetic": "[bɔl]",
+    "pos": "名詞",
+    "meaning": "球",
+    "example": "The children are playing with a red ball in the garden.（孩子們正在花園裡玩一個紅色的球。）"
+  },
+  {
+    "id": 51,
+    "word": "band",
+    "phonetic": "[bænd]",
+    "pos": "名詞",
+    "meaning": "帶子 / 樂團",
+    "example": "She tied her hair with a rubber band. / The band played good music.（她用橡皮筋綁頭髮。/ 樂團演奏了美妙的音樂。）"
+  },
+  {
+    "id": 52,
+    "word": "base",
+    "phonetic": "[bes]",
+    "pos": "名詞",
+    "meaning": "底部 / 基礎",
+    "example": "The lamp has a heavy metal base.（這盞燈有一個沉重的金屬底座。）"
+  },
+  {
+    "id": 53,
+    "word": "basin",
+    "phonetic": "[ˈbesn]",
+    "pos": "名詞",
+    "meaning": "水盆 / 洗臉盆",
+    "example": "Please wash your hands in the basin.（請在水盆裡洗手。）"
+  },
+  {
+    "id": 54,
+    "word": "basket",
+    "phonetic": "[ˈbæskɪt]",
+    "pos": "名詞",
+    "meaning": "籃子",
+    "example": "We put the fresh fruit into a basket.（我們把新鮮水果放進籃子裡。）"
+  },
+  {
+    "id": 55,
+    "word": "bath",
+    "phonetic": "[bæθ]",
+    "pos": "名詞",
+    "meaning": "洗澡 / 沐浴",
+    "example": "A warm bath will help you relax after work.（工作後洗個熱水澡能幫你放鬆。）"
+  },
+  {
+    "id": 56,
+    "word": "be (are)",
+    "phonetic": "[bi] ([ɑr])",
+    "pos": "動詞",
+    "meaning": "是 / 存在",
+    "example": "To be happy is important. / They are my good friends.（快樂很重要。/ 他們是我的好朋友。基本英語核心動詞之一。）"
+  },
+  {
+    "id": 57,
+    "word": "beautiful",
+    "phonetic": "[ˈbjutəfəl]",
+    "pos": "形容詞",
+    "meaning": "美麗的",
+    "example": "The garden is full of beautiful flowers.（花園裡開滿了美麗的花朵。）"
+  },
+  {
+    "id": 58,
+    "word": "because",
+    "phonetic": "[bɪˈkɔz]",
+    "pos": "連接詞",
+    "meaning": "因為",
+    "example": "I stayed at home because it was raining heavily.（因為下大雨，我待在家裡。）"
+  },
+  {
+    "id": 59,
+    "word": "bed",
+    "phonetic": "[bɛd]",
+    "pos": "名詞",
+    "meaning": "床",
+    "example": "It is time for the children to go to bed.（孩子們該上床睡覺了。）"
+  },
+  {
+    "id": 60,
+    "word": "bee",
+    "phonetic": "[bi]",
+    "pos": "名詞",
+    "meaning": "蜜蜂",
+    "example": "A bee is flying around the open window.（一隻蜜蜂正在打開的窗戶周圍飛著。）"
+  },
+  {
+    "id": 61,
+    "word": "before",
+    "phonetic": "[bɪˈfor]",
+    "pos": "介系詞 / 連接詞",
+    "meaning": "在...之前",
+    "example": "Always wash your hands before meals.（飯前務必洗手。）"
+  },
+  {
+    "id": 62,
+    "word": "behavior",
+    "phonetic": "[bɪˈhevjɚ]",
+    "pos": "名詞",
+    "meaning": "行為 / 舉止",
+    "example": "The teacher praised the boy's good behavior.（老師表揚了這個男孩的良好行為。）"
+  },
+  {
+    "id": 63,
+    "word": "belief",
+    "phonetic": "[bɪˈlif]",
+    "pos": "名詞",
+    "meaning": "信念 / 看法",
+    "example": "It is my belief that honesty is the best policy.（我的信念是：誠實為上策。）"
+  },
+  {
+    "id": 64,
+    "word": "bell",
+    "phonetic": "[bɛl]",
+    "pos": "名詞",
+    "meaning": "鈴 / 鐘",
+    "example": "The school bell rings at eight o'clock.（學校的鐘聲在八點響起。）"
+  },
+  {
+    "id": 65,
+    "word": "bent",
+    "phonetic": "[bɛnt]",
+    "pos": "形容詞",
+    "meaning": "彎曲的",
+    "example": "The iron bar is bent and cannot be used.（這根鐵條彎曲了，無法使用。）"
+  },
+  {
+    "id": 66,
+    "word": "berry",
+    "phonetic": "[ˈbɛri]",
+    "pos": "名詞",
+    "meaning": "莓果",
+    "example": "She picked a sweet red berry from the bush.（她從灌木叢中摘了一顆甜甜的紅莓果。）"
+  },
+  {
+    "id": 67,
+    "word": "between",
+    "phonetic": "[bɪˈtwin]",
+    "pos": "介系詞",
+    "meaning": "在...之間（兩者）",
+    "example": "The table is between the two chairs.（桌子在兩張椅子中間。）"
+  },
+  {
+    "id": 68,
+    "word": "bird",
+    "phonetic": "[bɝd]",
+    "pos": "名詞",
+    "meaning": "鳥",
+    "example": "A little bird is singing on the tree branch.（一隻小鳥正在樹枝上唱歌。）"
+  },
+  {
+    "id": 69,
+    "word": "birth",
+    "phonetic": "[bɝθ]",
+    "pos": "名詞",
+    "meaning": "出生",
+    "example": "She gave birth to a healthy baby girl.（她生下了一個健康的健康女嬰。）"
+  },
+  {
+    "id": 70,
+    "word": "bit",
+    "phonetic": "[bɪt]",
+    "pos": "名詞",
+    "meaning": "一小塊 / 一點點",
+    "example": "Please give the dog a small bit of meat.（請給這隻狗一小塊肉。）"
+  },
+  {
+    "id": 71,
+    "word": "bite",
+    "phonetic": "[baɪt]",
+    "pos": "名詞",
+    "meaning": "咬 / 叮咬",
+    "example": "Be careful not to get an insect bite.（小心不要被昆蟲叮咬。）"
+  },
+  {
+    "id": 72,
+    "word": "bitter",
+    "phonetic": "[ˈbɪtɚ]",
+    "pos": "形容詞",
+    "meaning": "苦的",
+    "example": "Medicine often has a bitter taste.（藥通常有苦味。）"
+  },
+  {
+    "id": 73,
+    "word": "black",
+    "phonetic": "[blæk]",
+    "pos": "形容詞 / 名詞",
+    "meaning": "黑色的 / 黑色",
+    "example": "He wore a black coat to the formal dinner.（他穿了一件黑色大衣去參加正式晚宴。）"
+  },
+  {
+    "id": 74,
+    "word": "blade",
+    "phonetic": "[bled]",
+    "pos": "名詞",
+    "meaning": "刀刃 / 葉片",
+    "example": "The knife has a very sharp blade.（這把刀有一個非常鋒利的刀刃。）"
+  },
+  {
+    "id": 75,
+    "word": "blood",
+    "phonetic": "[blʌd]",
+    "pos": "名詞",
+    "meaning": "血液",
+    "example": "Blood carries oxygen throughout our body.（血液將氧氣輸送到我們全身。）"
+  },
+  {
+    "id": 76,
+    "word": "blow",
+    "phonetic": "[blo]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "吹 / 打擊",
+    "example": "The wind gave a strong blow to the sail.（風對船帆產生了強烈的吹力。基本英語中常作名詞使用。）"
+  },
+  {
+    "id": 77,
+    "word": "blue",
+    "phonetic": "[blu]",
+    "pos": "形容詞 / 名詞",
+    "meaning": "藍色的 / 藍色",
+    "example": "The sky is clear and blue today.（今天的氣空晴朗而蔚藍。）"
+  },
+  {
+    "id": 78,
+    "word": "board",
+    "phonetic": "[bord]",
+    "pos": "名詞",
+    "meaning": "木板 / 告示牌",
+    "example": "The teacher wrote the homework on the board.（老師把作業寫在黑板上。）"
+  },
+  {
+    "id": 79,
+    "word": "boat",
+    "phonetic": "[bot]",
+    "pos": "名詞",
+    "meaning": "船",
+    "example": "We took a small boat across the lake.（我們搭了一艘小船過湖。）"
+  },
+  {
+    "id": 80,
+    "word": "body",
+    "phonetic": "[ˈbɑdi]",
+    "pos": "名詞",
+    "meaning": "身體",
+    "example": "Exercise is good for both mind and body.（運動對身心都有好處。）"
+  },
+  {
+    "id": 81,
+    "word": "boiling",
+    "phonetic": "[ˈbɔɪlɪŋ]",
+    "pos": "形容詞 / 名詞",
+    "meaning": "沸騰的 / 沸騰",
+    "example": "Put the vegetables into the boiling water.（把蔬菜放進沸騰的水中。）"
+  },
+  {
+    "id": 82,
+    "word": "bone",
+    "phonetic": "[bon]",
+    "pos": "名詞",
+    "meaning": "骨頭",
+    "example": "The dog is chewing a large bone.（這隻狗正在啃一根大骨頭。）"
+  },
+  {
+    "id": 83,
+    "word": "book",
+    "phonetic": "[bʊk]",
+    "pos": "名詞",
+    "meaning": "書本",
+    "example": "He is reading an interesting book about history.（他正在讀一本關於歷史的有趣書籍。）"
+  },
+  {
+    "id": 84,
+    "word": "boot",
+    "phonetic": "[but]",
+    "pos": "名詞",
+    "meaning": "靴子",
+    "example": "Put on your leather boot before going into the mud.（走進泥地前先穿上你的皮靴。）"
+  },
+  {
+    "id": 85,
+    "word": "bottle",
+    "phonetic": "[ˈbɑtl]",
+    "pos": "名詞",
+    "meaning": "瓶子",
+    "example": "There is some clean water in the glass bottle.（玻璃瓶裡有一些乾淨的水。）"
+  },
+  {
+    "id": 86,
+    "word": "box",
+    "phonetic": "[bɑks]",
+    "pos": "名詞",
+    "meaning": "箱子 / 盒子",
+    "example": "The gifts were packed in a cardboard box.（禮物被裝在一個紙箱裡。）"
+  },
+  {
+    "id": 87,
+    "word": "boy",
+    "phonetic": "[bɔɪ]",
+    "pos": "名詞",
+    "meaning": "男孩",
+    "example": "The little boy is playing with his toy car.（那個小男孩正在玩他的玩具車。）"
+  },
+  {
+    "id": 88,
+    "word": "brain",
+    "phonetic": "[bren]",
+    "pos": "名詞",
+    "meaning": "大腦 / 智力",
+    "example": "The human brain controls our thoughts and actions.（人類的大腦控制著我們的思想與行為。）"
+  },
+  {
+    "id": 89,
+    "word": "brake",
+    "phonetic": "[brek]",
+    "pos": "名詞",
+    "meaning": "煞車",
+    "example": "Put your foot on the brake to stop the car.（把腳踩在煞車上以讓車停下來。）"
+  },
+  {
+    "id": 90,
+    "word": "branch",
+    "phonetic": "[bræntʃ]",
+    "pos": "名詞",
+    "meaning": "樹枝 / 分支",
+    "example": "The bird flew up and sat on a tree branch.（鳥兒飛上去，停在樹枝上。）"
+  },
+  {
+    "id": 91,
+    "word": "brass",
+    "phonetic": "[bræs]",
+    "pos": "名詞",
+    "meaning": "黃銅",
+    "example": "The door handle is made of solid brass.（門把手是由實心黃銅製成的。）"
+  },
+  {
+    "id": 92,
+    "word": "bread",
+    "phonetic": "[brɛd]",
+    "pos": "名詞",
+    "meaning": "麵包",
+    "example": "I usually have two slices of bread for breakfast.（我早餐通常吃兩片麵包。）"
+  },
+  {
+    "id": 93,
+    "word": "breath",
+    "phonetic": "[brɛθ]",
+    "pos": "名詞",
+    "meaning": "呼吸 / 氣息",
+    "example": "Take a deep breath before you start to speak.（在你開始說話前，先深吸一口氣。）"
+  },
+  {
+    "id": 94,
+    "word": "brick",
+    "phonetic": "[brɪk]",
+    "pos": "名詞",
+    "meaning": "磚塊",
+    "example": "The house is built of red brick.（這棟房子是用紅磚蓋的。）"
+  },
+  {
+    "id": 95,
+    "word": "bridge",
+    "phonetic": "[brɪdʒ]",
+    "pos": "名詞",
+    "meaning": "橋樑",
+    "example": "We walked across the old stone bridge.（我們走過了那座老石橋。）"
+  },
+  {
+    "id": 96,
+    "word": "bright",
+    "phonetic": "[braɪt]",
+    "pos": "形容詞",
+    "meaning": "明亮的 / 聰明的",
+    "example": "The sun is very bright this afternoon.（今天下午的陽光非常明亮。）"
+  },
+  {
+    "id": 97,
+    "word": "broken",
+    "phonetic": "[ˈbrokən]",
+    "pos": "形容詞",
+    "meaning": "破碎的 / 壞掉的",
+    "example": "The window is broken, so the cold wind comes in.（窗戶碎了，所以冷風吹了進來。）"
+  },
+  {
+    "id": 98,
+    "word": "brother",
+    "phonetic": "[ˈbrʌðɚ]",
+    "pos": "名詞",
+    "meaning": "兄弟",
+    "example": "My older brother helped me with my homework.（我的哥哥幫我輔導功課。）"
+  },
+  {
+    "id": 99,
+    "word": "brown",
+    "phonetic": "[braʊn]",
+    "pos": "形容詞 / 名詞",
+    "meaning": "褐色的 / 棕色",
+    "example": "The dog has smooth brown hair.（這隻狗有平滑的棕色毛髮。）"
+  },
+  {
+    "id": 100,
+    "word": "brush",
+    "phonetic": "[brʌʃ]",
+    "pos": "名詞",
+    "meaning": "刷子",
+    "example": "Use this small brush to clean your shoes.（用這把小刷子來清理你的鞋子。）"
+  },
+  {
+    "id": 101,
+    "word": "bucket",
+    "phonetic": "[ˈbʌkɪt]",
+    "pos": "名詞",
+    "meaning": "水桶",
+    "example": "He filled the wooden bucket with water.（他把木桶裝滿了水。）"
+  },
+  {
+    "id": 102,
+    "word": "building",
+    "phonetic": "[ˈbɪldɪŋ]",
+    "pos": "名詞",
+    "meaning": "建築物",
+    "example": "That tall building is a modern hospital.（那棟高大的建築物是一所現代化的醫院。）"
+  },
+  {
+    "id": 103,
+    "word": "bulb",
+    "phonetic": "[bʌlb]",
+    "pos": "名詞",
+    "meaning": "燈泡 / 植物鱗莖",
+    "example": "The electric bulb in the kitchen is broken.（廚房的電燈泡壞了。）"
+  },
+  {
+    "id": 104,
+    "word": "burn",
+    "phonetic": "[bɝn]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "燒傷 / 灼傷",
+    "example": "She got a minor burn from the hot water.（她被熱水輕微燙傷。）"
+  },
+  {
+    "id": 105,
+    "word": "burst",
+    "phonetic": "[bɝst]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "爆裂 / 突發",
+    "example": "There was a sudden burst of noise in the street.（街道上突然傳出一陣巨大的噪音。）"
+  },
+  {
+    "id": 106,
+    "word": "business",
+    "phonetic": "[ˈbɪznɪs]",
+    "pos": "名詞",
+    "meaning": "生意 / 事務",
+    "example": "He runs a small clothing business in the town.（他在鎮上經營一家小型服裝生意。）"
+  },
+  {
+    "id": 107,
+    "word": "but",
+    "phonetic": "[bʌt]",
+    "pos": "連接詞",
+    "meaning": "但是",
+    "example": "I wanted to go out, but it started to rain.（我想出去，但是開始下雨了。）"
+  },
+  {
+    "id": 108,
+    "word": "butter",
+    "phonetic": "[ˈbʌtɚ]",
+    "pos": "名詞",
+    "meaning": "奶油",
+    "example": "Please spread some butter on my bread.（請在我的麵包上抹點奶油。）"
+  },
+  {
+    "id": 109,
+    "word": "button",
+    "phonetic": "[ˈbʌtn]",
+    "pos": "名詞",
+    "meaning": "鈕扣 / 按鈕",
+    "example": "The top button of his shirt is missing. / Press the red button.（他襯衫最上面的鈕扣掉了。/ 按下紅色按鈕。）"
+  },
+  {
+    "id": 110,
+    "word": "by",
+    "phonetic": "[baɪ]",
+    "pos": "介系詞",
+    "meaning": "被 / 經由 / 在...旁邊",
+    "example": "The book was written by a famous writer. / Come and sit by me.（這本書是由一位著名的作家寫的。/ 過來坐在我旁邊。）"
+  },
+  {
+    "id": 111,
+    "word": "cake",
+    "phonetic": "[kek]",
+    "pos": "名詞",
+    "meaning": "蛋糕",
+    "example": "She made a delicious chocolate cake for my birthday.（她為 my 生日做了一個美味的巧克力蛋糕。）"
+  },
+  {
+    "id": 112,
+    "word": "camera",
+    "phonetic": "[ˈkæmərə]",
+    "pos": "名詞",
+    "meaning": "相機",
+    "example": "He used his new camera to take photos of the birds.（他用他的新相機拍了那些鳥的照片。）"
+  },
+  {
+    "id": 113,
+    "word": "canvas",
+    "phonetic": "[ˈkænvəs]",
+    "pos": "名詞",
+    "meaning": "帆布 / 油畫布",
+    "example": "The tents are made of strong, thick canvas.（這些帳篷是由堅固、厚實的帆布製成的。）"
+  },
+  {
+    "id": 114,
+    "word": "card",
+    "phonetic": "[kɑrd]",
+    "pos": "名詞",
+    "meaning": "卡片 / 紙牌",
+    "example": "He sent me a beautiful greeting card from London.（他從倫敦寄給我一張美麗的賀卡。）"
+  },
+  {
+    "id": 115,
+    "word": "care",
+    "phonetic": "[kɛr]",
+    "pos": "名詞",
+    "meaning": "照顧 / 小心",
+    "example": "You must take care of your health in winter.（冬天你必須好好照顧自己的健康。）"
+  },
+  {
+    "id": 116,
+    "word": "carriage",
+    "phonetic": "[ˈkærɪdʒ]",
+    "pos": "名詞",
+    "meaning": "馬車 / 車廂",
+    "example": "The royal family rode in a beautiful horse carriage.（皇室成員乘坐在一輛美麗的馬車裡。）"
+  },
+  {
+    "id": 117,
+    "word": "cart",
+    "phonetic": "[kɑrt]",
+    "pos": "名詞",
+    "meaning": "手推車 / 貨車",
+    "example": "The farmer loaded the wooden cart with apples.（農夫把蘋果裝上那輛木製手推車。）"
+  },
+  {
+    "id": 118,
+    "word": "cat",
+    "phonetic": "[kæt]",
+    "pos": "名詞",
+    "meaning": "貓",
+    "example": "A small black cat is sleeping under the table.（一隻小黑貓正在桌子底下睡覺。）"
+  },
+  {
+    "id": 119,
+    "word": "cause",
+    "phonetic": "[kɔz]",
+    "pos": "名詞",
+    "meaning": "原因 / 起因",
+    "example": "The police are looking for the cause of the fire.（警方正在尋找這場火災的起因。）"
+  },
+  {
+    "id": 120,
+    "word": "certain",
+    "phonetic": "[ˈsɝtn]",
+    "pos": "形容詞",
+    "meaning": "確定的 / 某個",
+    "example": "I am certain that he will come to the meeting.（我確定他會來參加會議。）"
+  },
+  {
+    "id": 121,
+    "word": "chain",
+    "phonetic": "[tʃen]",
+    "pos": "名詞",
+    "meaning": "鏈條 / 連鎖",
+    "example": "He locked his bicycle with a strong iron chain.（他用一條堅固的鐵鏈鎖住了他的腳踏車。）"
+  },
+  {
+    "id": 122,
+    "word": "chalk",
+    "phonetic": "[tʃɔk]",
+    "pos": "名詞",
+    "meaning": "粉筆",
+    "example": "The teacher used a piece of white chalk to write.（老師用了一支白粉筆寫字。）"
+  },
+  {
+    "id": 123,
+    "word": "chance",
+    "phonetic": "[tʃæns]",
+    "pos": "名詞",
+    "meaning": "機會 / 可能性",
+    "example": "This is your last chance to pass the test.（這是你通過考試的最後機會。）"
+  },
+  {
+    "id": 124,
+    "word": "change",
+    "phonetic": "[tʃendʒ]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "改變 / 零錢",
+    "example": "The autumn weather brings a change in temperature.（秋天的天氣帶來了溫度的改變。）"
+  },
+  {
+    "id": 125,
+    "word": "cheap",
+    "phonetic": "[tʃip]",
+    "pos": "形容詞",
+    "meaning": "便宜的",
+    "example": "These shoes are very cheap but good.（這些鞋子很便宜但是很好。）"
+  },
+  {
+    "id": 126,
+    "word": "cheese",
+    "phonetic": "[tʃiz]",
+    "pos": "名詞",
+    "meaning": "起司 / 乳酪",
+    "example": "Put a slice of cheese between the bread.（在麵包中間放一片起司。）"
+  },
+  {
+    "id": 127,
+    "word": "chemical",
+    "phonetic": "[ˈkɛmɪkəl]",
+    "pos": "名詞 / 形容詞",
+    "meaning": "化學製品 / 化學的",
+    "example": "Scientists mixed a dangerous chemical in the room.（科學家在房間裡混合了一種危險的化學物質。）"
+  },
+  {
+    "id": 128,
+    "word": "chest",
+    "phonetic": "[tʃɛst]",
+    "pos": "名詞",
+    "meaning": "胸膛 / 大箱子",
+    "example": "He felt a slight pain in his chest.（他感到胸口有一點痛。）"
+  },
+  {
+    "id": 129,
+    "word": "chief",
+    "phonetic": "[tʃif]",
+    "pos": "形容詞 / 名詞",
+    "meaning": "主要的 / 首領",
+    "example": "Rice is the chief food in many Asian countries.（米飯是許多亞洲國家的主要食物。）"
+  },
+  {
+    "id": 130,
+    "word": "chin",
+    "phonetic": "[tʃɪn]",
+    "pos": "名詞",
+    "meaning": "下巴",
+    "example": "He rested his chin on his hand while thinking.（他思考時把下巴靠在手上。）"
+  },
+  {
+    "id": 131,
+    "word": "church",
+    "phonetic": "[tʃɝtʃ]",
+    "pos": "名詞",
+    "meaning": "教堂",
+    "example": "They go to the old church every Sunday.（他們每個星期天都去那座老教堂。）"
+  },
+  {
+    "id": 132,
+    "word": "circle",
+    "phonetic": "[ˈsɝkl]",
+    "pos": "名詞",
+    "meaning": "圓圈",
+    "example": "The children stood in a circle to play a game.（孩子們站成一個圓圈玩遊戲。）"
+  },
+  {
+    "id": 133,
+    "word": "clean",
+    "phonetic": "[klin]",
+    "pos": "形容詞",
+    "meaning": "乾淨的",
+    "example": "Always keep your hands and clothes clean.（隨時保持你的雙手和衣物乾淨。）"
+  },
+  {
+    "id": 134,
+    "word": "clear",
+    "phonetic": "[klɪr]",
+    "pos": "形容詞",
+    "meaning": "清晰的 / 晴朗的",
+    "example": "The water in the mountain river is very clear.（山間河流裡的水非常清澈。）"
+  },
+  {
+    "id": 135,
+    "word": "clock",
+    "phonetic": "[klɑk]",
+    "pos": "名詞",
+    "meaning": "時鐘",
+    "example": "The clock on the wall says it is ten o'clock.（牆上的時鐘顯示現在是十點鐘。）"
+  },
+  {
+    "id": 136,
+    "word": "cloth",
+    "phonetic": "[klɔθ]",
+    "pos": "名詞",
+    "meaning": "布料 / 布",
+    "example": "She used a wet cloth to clean the table.（她用一塊濕布來擦桌子。）"
+  },
+  {
+    "id": 137,
+    "word": "cloud",
+    "phonetic": "[klaʊd]",
+    "pos": "名詞",
+    "meaning": "雲",
+    "example": "A dark cloud covered the sun before the rain.（下雨前，一朵烏雲遮住了太陽。）"
+  },
+  {
+    "id": 138,
+    "word": "coal",
+    "phonetic": "[kol]",
+    "pos": "名詞",
+    "meaning": "煤炭",
+    "example": "They burned coal to keep the house warm.（他們燒煤炭來保持房子溫暖。）"
+  },
+  {
+    "id": 139,
+    "word": "coat",
+    "phonetic": "[kot]",
+    "pos": "名詞",
+    "meaning": "外套 / 大衣",
+    "example": "Put on your heavy coat; it is cold outside.（穿上你的厚大衣，外面很冷。）"
+  },
+  {
+    "id": 140,
+    "word": "cold",
+    "phonetic": "[kold]",
+    "pos": "形容詞 / 名詞",
+    "meaning": "冷的 / 感冒",
+    "example": "I prefer hot tea to cold water today.（今天比起冷水，我更喜歡熱茶。）"
+  },
+  {
+    "id": 141,
+    "word": "collar",
+    "phonetic": "[ˈkɑlɚ]",
+    "pos": "名詞",
+    "meaning": "領子 / 頸圈",
+    "example": "The dog wears a red leather collar with a bell.（這隻狗戴著一個帶有鈴鐺的紅皮頸圈。）"
+  },
+  {
+    "id": 142,
+    "word": "color",
+    "phonetic": "[ˈkʌlɚ]",
+    "pos": "名詞",
+    "meaning": "顏色",
+    "example": "Blue is my favorite color for a shirt.（藍色是我最喜歡的襯衫顏色。）"
+  },
+  {
+    "id": 143,
+    "word": "comb",
+    "phonetic": "[kom]",
+    "pos": "名詞",
+    "meaning": "梳子",
+    "example": "She bought a small wooden comb for her hair.（她買了一把小木梳來梳頭髮。）"
+  },
+  {
+    "id": 144,
+    "word": "come",
+    "phonetic": "[kʌm]",
+    "pos": "動詞",
+    "meaning": "來",
+    "example": "Please come to my house tomorrow afternoon.（請明天下午到我家來。基本英語 18 個核心動詞之一。）"
+  },
+  {
+    "id": 145,
+    "word": "comfort",
+    "phonetic": "[ˈkʌmfɚt]",
+    "pos": "名詞",
+    "meaning": "舒適 / 安慰",
+    "example": "The warm bed gave great comfort to the tired traveler.（溫暖的床給疲憊的旅人帶來了極大的舒適。）"
+  },
+  {
+    "id": 146,
+    "word": "committee",
+    "phonetic": "[kəˈmɪti]",
+    "pos": "名詞",
+    "meaning": "委員會",
+    "example": "The committee will make a decision next week.（委員會將在下週做出決定。）"
+  },
+  {
+    "id": 147,
+    "word": "common",
+    "phonetic": "[ˈkɑmən]",
+    "pos": "形容詞",
+    "meaning": "常見的 / 共同的",
+    "example": "Colds are very common during the winter.（感冒在冬天非常常見。）"
+  },
+  {
+    "id": 148,
+    "word": "company",
+    "phonetic": "[ˈkʌmpəni]",
+    "pos": "名詞",
+    "meaning": "公司 / 陪伴",
+    "example": "He works for a large trade company in the city.（他在城裡的一家大型貿易公司工作。）"
+  },
+  {
+    "id": 149,
+    "word": "comparison",
+    "phonetic": "[kəmˈpærəsn]",
+    "pos": "名詞",
+    "meaning": "比較",
+    "example": "By comparison, this room is bigger than that one.（相較之下，這個房間比那個大。）"
+  },
+  {
+    "id": 150,
+    "word": "complete",
+    "phonetic": "[kəmˈplit]",
+    "pos": "形容詞",
+    "meaning": "完整的 / 完成的",
+    "example": "After years of work, the building is now complete.（經過多年的工作，這棟建築現在已經完工了。）"
+  },
+  {
+    "id": 151,
+    "word": "competition",
+    "phonetic": "[ˌkɑmpəˈtɪʃən]",
+    "pos": "名詞",
+    "meaning": "競爭 / 比賽",
+    "example": "He won first prize in the school swimming competition.（他在學校游泳比賽中獲得第一名。）"
+  },
+  {
+    "id": 152,
+    "word": "complex",
+    "phonetic": "[kɑmˈplɛks]",
+    "pos": "形容詞",
+    "meaning": "複雜的",
+    "example": "The machine has a complex system of gears.（這台機器有一個複雜的齒輪系統。）"
+  },
+  {
+    "id": 153,
+    "word": "condition",
+    "phonetic": "[kənˈdɪʃən]",
+    "pos": "名詞",
+    "meaning": "狀況 / 條件",
+    "example": "The old car is still in a very good condition.（這輛舊車的狀況依然非常好。）"
+  },
+  {
+    "id": 154,
+    "word": "connection",
+    "phonetic": "[kəˈnɛkʃən]",
+    "pos": "名詞",
+    "meaning": "連接 / 關係",
+    "example": "There is a close connection between these two events.（這兩起事件之間有密切的關係。）"
+  },
+  {
+    "id": 155,
+    "word": "conscious",
+    "phonetic": "[ˈkɑnʃəs]",
+    "pos": "形容詞",
+    "meaning": "有意識的 / 意識到的",
+    "example": "He became conscious of someone walking behind him.（他意識到有人走在他後面。）"
+  },
+  {
+    "id": 156,
+    "word": "control",
+    "phonetic": "[kənˈtrol]",
+    "pos": "名詞",
+    "meaning": "控制 / 掌管",
+    "example": "Drivers must keep control of their speed.（駕駛必須控制好他們的車速。）"
+  },
+  {
+    "id": 157,
+    "word": "cook",
+    "phonetic": "[kʊk]",
+    "pos": "名詞",
+    "meaning": "廚師",
+    "example": "My father is an excellent cook in our family.（我父親是我們家裡很棒的廚師。）"
+  },
+  {
+    "id": 158,
+    "word": "copper",
+    "phonetic": "[ˈkɑpɚ]",
+    "pos": "名詞",
+    "meaning": "紅銅 / 銅",
+    "example": "Electrical wires are usually made of copper.（電線通常是由銅製成的。）"
+  },
+  {
+    "id": 159,
+    "word": "copy",
+    "phonetic": "[ˈkɑpi]",
+    "pos": "名詞",
+    "meaning": "副本 / 複製品",
+    "example": "Please make a copy of this document for me.（請幫我複印一份這份文件的副本。）"
+  },
+  {
+    "id": 160,
+    "word": "cord",
+    "phonetic": "[kɔrd]",
+    "pos": "名詞",
+    "meaning": "繩索 / 電線",
+    "example": "Tie the box tightly with a thick nylon cord.（用粗尼龍繩把箱子綁緊。）"
+  },
+  {
+    "id": 161,
+    "word": "cork",
+    "phonetic": "[kɔrk]",
+    "pos": "名詞",
+    "meaning": "軟木塞",
+    "example": "He pulled the cork out of the wine bottle.（他把軟木塞從酒瓶中拔了出來。）"
+  },
+  {
+    "id": 162,
+    "word": "cotton",
+    "phonetic": "[ˈkɑtn]",
+    "pos": "名詞",
+    "meaning": "棉花 / 棉織品",
+    "example": "This comfortable summer shirt is made of pure cotton.（這件舒適的夏日襯衫是由純棉製成的。）"
+  },
+  {
+    "id": 163,
+    "word": "cough",
+    "phonetic": "[kɔf]",
+    "pos": "名詞",
+    "meaning": "咳嗽",
+    "example": "He has a bad cough and needs to see a doctor.（他咳得很厲害，需要去看醫生。）"
+  },
+  {
+    "id": 164,
+    "word": "country",
+    "phonetic": "[ˈkʌntri]",
+    "pos": "名詞",
+    "meaning": "國家 / 鄉下",
+    "example": "Taiwan is a beautiful country surrounded by sea.（台灣是一個被海洋圍繞的美麗國家。）"
+  },
+  {
+    "id": 165,
+    "word": "cover",
+    "phonetic": "[ˈkʌvɚ]",
+    "pos": "名詞",
+    "meaning": "封面 / 覆蓋物",
+    "example": "Put a clear cover on the book to protect it.（在書上套一個透明書套以保護它。）"
+  },
+  {
+    "id": 166,
+    "word": "cow",
+    "phonetic": "[kaʊ]",
+    "pos": "名詞",
+    "meaning": "母牛 / 奶牛",
+    "example": "The farmer gets fresh milk from his cow every morning.（農夫每天早上從他的奶牛那裡獲得新鮮牛奶。）"
+  },
+  {
+    "id": 167,
+    "word": "crack",
+    "phonetic": "[kræk]",
+    "pos": "名詞",
+    "meaning": "裂縫",
+    "example": "There is a small crack in the glass cup.（這個玻璃杯上有一道小裂縫。）"
+  },
+  {
+    "id": 168,
+    "word": "credit",
+    "phonetic": "[ˈkrɛdɪt]",
+    "pos": "名詞",
+    "meaning": "信用 / 信譽",
+    "example": "You can buy this machine on credit and pay later.（你可以用信用貸款購買這台機器，稍後再付款。）"
+  },
+  {
+    "id": 169,
+    "word": "crime",
+    "phonetic": "[kraɪm]",
+    "pos": "名詞",
+    "meaning": "罪行 / 犯罪",
+    "example": "Stealing other people's money is a serious crime.（偷竊別人的錢是一項嚴重的罪行。）"
+  },
+  {
+    "id": 170,
+    "word": "cruel",
+    "phonetic": "[ˈkruəl]",
+    "pos": "形容詞",
+    "meaning": "殘忍的",
+    "example": "It is cruel to keep a wild bird in a small cage.（把野鳥關在小籠子裡是很殘忍的。）"
+  },
+  {
+    "id": 171,
+    "word": "crush",
+    "phonetic": "[krʌʃ]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "壓碎 / 擁擠的人群",
+    "example": "The fall of the heavy stone gave a crush to the tin.（大石頭砸下來把錫罐壓扁了。）"
+  },
+  {
+    "id": 172,
+    "word": "cry",
+    "phonetic": "[kraɪ]",
+    "pos": "名詞",
+    "meaning": "哭聲 / 叫喊",
+    "example": "We heard a loud cry for help from the river.（我們聽到河裡傳來大聲的呼救聲。）"
+  },
+  {
+    "id": 173,
+    "word": "cup",
+    "phonetic": "[kʌp]",
+    "pos": "名詞",
+    "meaning": "杯子",
+    "example": "He drank a hot cup of coffee this morning.（他今天早上喝了一杯熱咖啡。）"
+  },
+  {
+    "id": 174,
+    "word": "current",
+    "phonetic": "[ˈkɝənt]",
+    "pos": "名詞 / 形容詞",
+    "meaning": "水流 / 當前的",
+    "example": "The river current is too strong for swimming.（這條河的水流太急，不適合游泳。）"
+  },
+  {
+    "id": 175,
+    "word": "curtain",
+    "phonetic": "[ˈkɝtn]",
+    "pos": "名詞",
+    "meaning": "窗簾",
+    "example": "She drew the dark curtain to block the light.（她拉上深色窗簾以阻擋光線。）"
+  },
+  {
+    "id": 176,
+    "word": "curve",
+    "phonetic": "[kɝv]",
+    "pos": "名詞",
+    "meaning": "曲線 / 彎道",
+    "example": "Slow down the car before you reach the sharp curve.（在到達急彎道之前請放慢車速。）"
+  },
+  {
+    "id": 177,
+    "word": "cushion",
+    "phonetic": "[ˈkʊʃən]",
+    "pos": "名詞",
+    "meaning": "墊子 / 靠墊",
+    "example": "Place a soft cushion on the hard wooden chair.（在硬木椅上放一個柔軟的靠墊。）"
+  },
+  {
+    "id": 178,
+    "word": "cut",
+    "phonetic": "[kʌt]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "傷口 / 切割",
+    "example": "He got a small cut on his finger from the paper.（他的手指被紙割傷了一個小傷口。）"
+  },
+  {
+    "id": 179,
+    "word": "damage",
+    "phonetic": "[ˈdæmɪdʒ]",
+    "pos": "名詞",
+    "meaning": "損害 / 傷害",
+    "example": "The storm caused severe damage to the roof.（暴風雨對屋頂造成了嚴重的損害。）"
+  },
+  {
+    "id": 180,
+    "word": "danger",
+    "phonetic": "[ˈdendʒɚ]",
+    "pos": "名詞",
+    "meaning": "危險",
+    "example": "The signs warned the drivers of the danger ahead.（標誌警告駕駛人前方有危險。）"
+  },
+  {
+    "id": 181,
+    "word": "dark",
+    "phonetic": "[dɑrk]",
+    "pos": "形容詞 / 名詞",
+    "meaning": "黑暗的 / 黑暗",
+    "example": "It gets dark very early during the winter.（冬天時天黑得非常早。）"
+  },
+  {
+    "id": 182,
+    "word": "daughter",
+    "phonetic": "[ˈdɔtɚ]",
+    "pos": "名詞",
+    "meaning": "女兒",
+    "example": "They have one son and a younger daughter.（他們有一個兒子和一個較小的女兒。）"
+  },
+  {
+    "id": 183,
+    "word": "day",
+    "phonetic": "[de]",
+    "pos": "名詞",
+    "meaning": "白天 / 一天",
+    "example": "I work five hours a day at the library.（我每天在圖書館工作五個小時。）"
+  },
+  {
+    "id": 184,
+    "word": "dead",
+    "phonetic": "[dɛd]",
+    "pos": "形容詞",
+    "meaning": "死去的",
+    "example": "We found a dead bird under the big tree.（我們在大樹下發現了一隻死鳥。）"
+  },
+  {
+    "id": 185,
+    "word": "dear",
+    "phonetic": "[dɪr]",
+    "pos": "形容詞",
+    "meaning": "親愛的 / 昂貴的",
+    "example": "My dear friend sent me a long letter.（我親愛的朋友寄給我一封長信。）"
+  },
+  {
+    "id": 186,
+    "word": "death",
+    "phonetic": "[dɛθ]",
+    "pos": "名詞",
+    "meaning": "死亡",
+    "example": "The old leader's death made everyone sad.（老領袖的逝世讓每個人都很悲傷。）"
+  },
+  {
+    "id": 187,
+    "word": "debt",
+    "phonetic": "[dɛt]",
+    "pos": "名詞",
+    "meaning": "債務",
+    "example": "He worked hard to pay off his bank debt.（他努力工作以還清他的銀行債務。）"
+  },
+  {
+    "id": 188,
+    "word": "decision",
+    "phonetic": "[dɪˈsɪʒən]",
+    "pos": "名詞",
+    "meaning": "決定",
+    "example": "Have you made a decision about your job?（你對你的工作做出決定了嗎？）"
+  },
+  {
+    "id": 189,
+    "word": "deep",
+    "phonetic": "[dip]",
+    "pos": "形容詞",
+    "meaning": "深的",
+    "example": "The water in this part of the river is very deep.（這段河水非常深。）"
+  },
+  {
+    "id": 190,
+    "word": "degree",
+    "phonetic": "[dɪˈɡri]",
+    "pos": "名詞",
+    "meaning": "度數 / 學位",
+    "example": "The temperature dropped by one degree last night.（昨晚溫度下降了一度。）"
+  },
+  {
+    "id": 191,
+    "word": "delicate",
+    "phonetic": "[ˈdɛləkɪt]",
+    "pos": "形容詞",
+    "meaning": "精緻的 / 脆弱的",
+    "example": "These delicate glass cups break very easily.（這些精緻的玻璃杯非常容易碎。）"
+  },
+  {
+    "id": 192,
+    "word": "dependent",
+    "phonetic": "[dɪˈpɛndənt]",
+    "pos": "形容詞",
+    "meaning": "依賴的 / 取決於",
+    "example": "Good health is dependent on proper food and exercise.（良好的健康取決於適當的食物和運動。）"
+  },
+  {
+    "id": 193,
+    "word": "design",
+    "phonetic": "[dɪˈzaɪn]",
+    "pos": "名詞",
+    "meaning": "設計 / 圖案",
+    "example": "I really like the simple design of this house.（我非常喜歡這棟房子簡單的設計。）"
+  },
+  {
+    "id": 194,
+    "word": "desire",
+    "phonetic": "[dɪˈzaɪɚ]",
+    "pos": "名詞",
+    "meaning": "慾望 / 渴望",
+    "example": "He has a strong desire to travel around the world.（他有周遊世界的強烈渴望。）"
+  },
+  {
+    "id": 195,
+    "word": "destruction",
+    "phonetic": "[dɪˈstrʌkʃən]",
+    "pos": "名詞",
+    "meaning": "破壞 / 毀滅",
+    "example": "The fire led to the complete destruction of the woods.（這場大火導致了森林的徹底毀滅。）"
+  },
+  {
+    "id": 196,
+    "word": "detail",
+    "phonetic": "[ˈditel]",
+    "pos": "名詞",
+    "meaning": "細節",
+    "example": "Please tell me every detail of the meeting.（請告訴我會議的每一個細節。）"
+  },
+  {
+    "id": 197,
+    "word": "development",
+    "phonetic": "[dɪˈvɛləpmənt]",
+    "pos": "名詞",
+    "meaning": "發展 / 開發",
+    "example": "This land is ready for the development of a park.（這片土地已經準備好用來開發公園。）"
+  },
+  {
+    "id": 198,
+    "word": "different",
+    "phonetic": "[ˈdɪfərənt]",
+    "pos": "形容詞",
+    "meaning": "不同的",
+    "example": "He gave a different answer from his brother.（他給出了一個與他兄弟不同的答案。）"
+  },
+  {
+    "id": 199,
+    "word": "digestion",
+    "phonetic": "[daɪˈdʒɛstʃən]",
+    "pos": "名詞",
+    "meaning": "消化",
+    "example": "Walking after meals is good for your digestion.（飯後散步對你的消化有好處。）"
+  },
+  {
+    "id": 200,
+    "word": "direction",
+    "phonetic": "[dəˈrɛkʃən]",
+    "pos": "名詞",
+    "meaning": "方向 / 指引",
+    "example": "They walked in the opposite direction of the station.（他們朝著車站的相反方向走去。）"
+  },
+  {
+    "id": 201,
+    "word": "dirty",
+    "phonetic": "[ˈdɝti]",
+    "pos": "形容詞",
+    "meaning": "髒的",
+    "example": "Put your dirty clothes into the washing machine.（把你的髒衣服放進洗衣機裡。）"
+  },
+  {
+    "id": 202,
+    "word": "discovery",
+    "phonetic": "[dɪˈskʌvəri]",
+    "pos": "名詞",
+    "meaning": "發現",
+    "example": "The discovery of America changed world history.（美洲的發現改變了世界歷史。）"
+  },
+  {
+    "id": 203,
+    "word": "discussion",
+    "phonetic": "[dɪˈskʌʃən]",
+    "pos": "名詞",
+    "meaning": "討論",
+    "example": "We had a long discussion about the new plan.（我們針對這項新計劃進行了長期的討論。）"
+  },
+  {
+    "id": 204,
+    "word": "disease",
+    "phonetic": "[dɪˈziz]",
+    "pos": "名詞",
+    "meaning": "疾病",
+    "example": "Doctors are working hard to stop this dangerous disease.（醫生們正努力阻止這種危險的疾病。）"
+  },
+  {
+    "id": 205,
+    "word": "disgust",
+    "phonetic": "[dɪsˈɡʌst]",
+    "pos": "名詞",
+    "meaning": "厭惡 / 反感",
+    "example": "She looked at the dirty room with deep disgust.（她帶著深深的厭惡看著那個髒亂的房間。）"
+  },
+  {
+    "id": 206,
+    "word": "distance",
+    "phonetic": "[ˈdɪstəns]",
+    "pos": "名詞",
+    "meaning": "距離",
+    "example": "The distance between the two cities is sixty miles.（這兩座城市之間的距離是六十英哩。）"
+  },
+  {
+    "id": 207,
+    "word": "distribution",
+    "phonetic": "[ˌdɪstrəˈbjuʃən]",
+    "pos": "名詞",
+    "meaning": "分配 / 分發",
+    "example": "The distribution of food to the poor started today.（向窮人分發食物的工作今天開始了。）"
+  },
+  {
+    "id": 208,
+    "word": "division",
+    "phonetic": "[dəˈvɪʒən]",
+    "pos": "名詞",
+    "meaning": "分開 / 部門 / 除法",
+    "example": "The division of the land caused an argument.（土地的劃分引發了爭論。）"
+  },
+  {
+    "id": 209,
+    "word": "do",
+    "phonetic": "[du]",
+    "pos": "動詞",
+    "meaning": "做 / 執行",
+    "example": "I will do my best to complete the work early.（我會盡最大努力提早完成這項工作。基本英語核心動詞之一。）"
+  },
+  {
+    "id": 210,
+    "word": "dog",
+    "phonetic": "[dɔɡ]",
+    "pos": "名詞",
+    "meaning": "狗",
+    "example": "The brown dog barked when the postman came.（郵差來時，那隻棕色的狗叫了。）"
+  },
+  {
+    "id": 211,
+    "word": "door",
+    "phonetic": "[dor]",
+    "pos": "名詞",
+    "meaning": "門",
+    "example": "Please close the door when you leave the room.（你離開房間時請關上門。）"
+  },
+  {
+    "id": 212,
+    "word": "doubt",
+    "phonetic": "[daʊt]",
+    "pos": "名詞",
+    "meaning": "懷疑 / 疑問",
+    "example": "There is no doubt that he is a good teacher.（毫無疑問，他是一位好老師。）"
+  },
+  {
+    "id": 213,
+    "word": "down",
+    "phonetic": "[daʊn]",
+    "pos": "介系詞 / 副詞",
+    "meaning": "向下",
+    "example": "He ran down the stairs to meet his mother.（他跑下樓梯去接他的母親。）"
+  },
+  {
+    "id": 214,
+    "word": "drain",
+    "phonetic": "[dren]",
+    "pos": "名詞",
+    "meaning": "排水管 / 排水溝",
+    "example": "Water went down the drain in the kitchen.（水從廚房的排水管流了下去。）"
+  },
+  {
+    "id": 215,
+    "word": "drawer",
+    "phonetic": "[ˈdrɔɚ]",
+    "pos": "名詞",
+    "meaning": "抽屜",
+    "example": "He put the important papers into the top drawer.（他把重要的文件放進最上面的抽屜裡。）"
+  },
+  {
+    "id": 216,
+    "word": "dress",
+    "phonetic": "[drɛs]",
+    "pos": "名詞",
+    "meaning": "連身裙 / 服裝",
+    "example": "She wore a beautiful blue dress to the party.（她穿著一件美麗的藍色連身裙去參加聚會。）"
+  },
+  {
+    "id": 217,
+    "word": "drink",
+    "phonetic": "[drɪŋk]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "飲料 / 喝",
+    "example": "May I have a cold drink of water?（我可以喝一杯冷水嗎？基本英語中常用作名詞。）"
+  },
+  {
+    "id": 218,
+    "word": "driving",
+    "phonetic": "[ˈdraɪvɪŋ]",
+    "pos": "名詞 / 形容詞",
+    "meaning": "駕駛 / 推進的",
+    "example": "Safe driving requires a lot of attention.（安全駕駛需要高度的注意力。）"
+  },
+  {
+    "id": 219,
+    "word": "drop",
+    "phonetic": "[drɑp]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "一滴 / 下降",
+    "example": "A drop of rain fell on my face.（一滴雨水落到我的臉上。）"
+  },
+  {
+    "id": 220,
+    "word": "dry",
+    "phonetic": "[draɪ]",
+    "pos": "形容詞",
+    "meaning": "乾燥的",
+    "example": "The warm wind made the wet clothes dry.（暖風讓濕衣服變乾了。）"
+  },
+  {
+    "id": 221,
+    "word": "dust",
+    "phonetic": "[dʌst]",
+    "pos": "名詞",
+    "meaning": "灰塵",
+    "example": "The old books on the shelf were covered in dust.（書架上的舊書都沾滿了灰塵。）"
+  },
+  {
+    "id": 222,
+    "word": "ear",
+    "phonetic": "[ɪr]",
+    "pos": "名詞",
+    "meaning": "耳朵",
+    "example": "A rabbit has long ears to hear sounds clearly.（兔子有長長的耳朵可以清晰地聽到聲音。）"
+  },
+  {
+    "id": 223,
+    "word": "early",
+    "phonetic": "[ˈɝli]",
+    "pos": "形容詞 / 副詞",
+    "meaning": "早的 / 早地",
+    "example": "He wakes up early in the morning to run.（他早上很早起床去跑步。）"
+  },
+  {
+    "id": 224,
+    "word": "earth",
+    "phonetic": "[ɝθ]",
+    "pos": "名詞",
+    "meaning": "地球 / 泥土",
+    "example": "The earth moves around the sun.（地球繞著太陽運轉。）"
+  },
+  {
+    "id": 225,
+    "word": "east",
+    "phonetic": "[ist]",
+    "pos": "名詞 / 形容詞 / 副詞",
+    "meaning": "東方 / 向東的",
+    "example": "The sun rises in the east every morning.（太陽每天早晨從東方升起。）"
+  },
+  {
+    "id": 226,
+    "word": "edge",
+    "phonetic": "[ɛdʒ]",
+    "pos": "名詞",
+    "meaning": "邊緣",
+    "example": "Do not put the glass cup near the edge of the table.（不要把玻璃杯放在桌子邊緣附近。）"
+  },
+  {
+    "id": 227,
+    "word": "education",
+    "phonetic": "[ˌɛdʒəˈkeʃən]",
+    "pos": "名詞",
+    "meaning": "教育",
+    "example": "Good education is very important for children.（良好的教育對孩子來說非常重要。）"
+  },
+  {
+    "id": 228,
+    "word": "effect",
+    "phonetic": "[ɪˈfɛkt]",
+    "pos": "名詞",
+    "meaning": "效果 / 影響",
+    "example": "The medicine had a good effect on his cold.（這藥對他的感冒有很好的效果。）"
+  },
+  {
+    "id": 229,
+    "word": "egg",
+    "phonetic": "[ɛɡ]",
+    "pos": "名詞",
+    "meaning": "蛋",
+    "example": "She boiled an egg for breakfast.（她煮了一個蛋當早餐。）"
+  },
+  {
+    "id": 230,
+    "word": "elastic",
+    "phonetic": "[ɪˈlæstɪk]",
+    "pos": "形容詞 / 名詞",
+    "meaning": "有彈性的 / 橡皮筋",
+    "example": "Use an elastic band to tie the papers together.（用橡皮筋把文件綁在一起。）"
+  },
+  {
+    "id": 231,
+    "word": "electric",
+    "phonetic": "[ɪˈlɛktrɪk]",
+    "pos": "形容詞",
+    "meaning": "電的 / 動力的",
+    "example": "We bought a new electric stove for the kitchen.（我們為廚房買了一個新的電爐。）"
+  },
+  {
+    "id": 232,
+    "word": "end",
+    "phonetic": "[ɛnd]",
+    "pos": "名詞",
+    "meaning": "結尾 / 盡頭",
+    "example": "Walk to the end of the street and turn left.（走到這條街的盡頭然後向左轉。）"
+  },
+  {
+    "id": 233,
+    "word": "engine",
+    "phonetic": "[ˈɛndʒən]",
+    "pos": "名詞",
+    "meaning": "引擎 / 發動機",
+    "example": "The car stopped because the engine was too hot.（汽車停了下來，因為引擎太熱了。）"
+  },
+  {
+    "id": 234,
+    "word": "enough",
+    "phonetic": "[ɪˈnʌf]",
+    "pos": "形容詞 / 副詞",
+    "meaning": "足夠的 / 足夠地",
+    "example": "There is enough food for everyone at the party.（宴會上有足夠每個人吃的食物。）"
+  },
+  {
+    "id": 235,
+    "word": "equal",
+    "phonetic": "[ˈikwəl]",
+    "pos": "形容詞",
+    "meaning": "相等的 / 平等的",
+    "example": "Two plus two is equal to four.（二加二等於四。）"
+  },
+  {
+    "id": 236,
+    "word": "error",
+    "phonetic": "[ˈɛrɚ]",
+    "pos": "名詞",
+    "meaning": "錯誤",
+    "example": "There is a small error in your calculation.（你的計算中有一個小錯誤。）"
+  },
+  {
+    "id": 237,
+    "word": "even",
+    "phonetic": "[ˈivən]",
+    "pos": "副詞 / 形容詞",
+    "meaning": "甚至 / 偶數的",
+    "example": "It was so cold that even the river froze.（天氣太冷了，甚至連河水都結冰了。）"
+  },
+  {
+    "id": 238,
+    "word": "event",
+    "phonetic": "[ɪˈvɛnt]",
+    "pos": "名詞",
+    "meaning": "事件 / 活動",
+    "example": "The school sports event will take place tomorrow.（學校的體育活動將在明天舉行。）"
+  },
+  {
+    "id": 239,
+    "word": "ever",
+    "phonetic": "[ˈɛvɚ]",
+    "pos": "副詞",
+    "meaning": "曾經 / 永遠",
+    "example": "Have you ever seen a blue bird?（你曾經見過藍色的鳥嗎？）"
+  },
+  {
+    "id": 240,
+    "word": "every",
+    "phonetic": "[ˈɛvri]",
+    "pos": "形容詞",
+    "meaning": "每一個",
+    "example": "Every student must bring a book to class.（每個學生都必須帶一本書來上課。）"
+  },
+  {
+    "id": 241,
+    "word": "example",
+    "phonetic": "[ɪɡˈzæmpl]",
+    "pos": "名詞",
+    "meaning": "例子 / 榜樣",
+    "example": "Please give me an example of how to use this word.（請給我一個如何使用這個字的例子。）"
+  },
+  {
+    "id": 242,
+    "word": "exchange",
+    "phonetic": "[ɪksˈtʃendʒ]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "交換",
+    "example": "We had a friendly exchange of ideas during the meeting.（我們在會議中進行了友好的意見交換。）"
+  },
+  {
+    "id": 243,
+    "word": "existence",
+    "phonetic": "[ɪɡˈzɪstəns]",
+    "pos": "名詞",
+    "meaning": "存在",
+    "example": "Scientists doubt the existence of life on that planet.（科學家懷疑那個星球上存在生命。）"
+  },
+  {
+    "id": 244,
+    "word": "expansion",
+    "phonetic": "[ɪkˈspænʃən]",
+    "pos": "名詞",
+    "meaning": "擴張 / 膨脹",
+    "example": "Heat causes the expansion of metal.（熱會導致金屬膨脹。）"
+  },
+  {
+    "id": 245,
+    "word": "experience",
+    "phonetic": "[ɪkˈspɪrɪəns]",
+    "pos": "名詞",
+    "meaning": "經驗 / 經歷",
+    "example": "She has five years of experience as a teacher.（她有五年擔任教師的經驗。）"
+  },
+  {
+    "id": 246,
+    "word": "expert",
+    "phonetic": "[ˈɛkspɚt]",
+    "pos": "名詞 / 形容詞",
+    "meaning": "專家 / 專門的",
+    "example": "He is an expert in repairing old clocks.（他是修理舊時鐘的專家。）"
+  },
+  {
+    "id": 247,
+    "word": "eye",
+    "phonetic": "[aɪ]",
+    "pos": "名詞",
+    "meaning": "眼睛",
+    "example": "Close your eyes and go to sleep.（閉上你的眼睛，去睡覺吧。）"
+  },
+  {
+    "id": 248,
+    "word": "face",
+    "phonetic": "[fes]",
+    "pos": "名詞",
+    "meaning": "臉",
+    "example": "She had a big smile on her face.（她的臉上帶著燦爛的笑容。）"
+  },
+  {
+    "id": 249,
+    "word": "fact",
+    "phonetic": "[fækt]",
+    "pos": "名詞",
+    "meaning": "事實",
+    "example": "It is a fact that the earth is round.（地球是圓的是一個事實。）"
+  },
+  {
+    "id": 250,
+    "word": "fall",
+    "phonetic": "[fɔl]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "落下 / 秋天",
+    "example": "The sudden fall of snow covered the ground.（突降的大雪覆蓋了地面。）"
+  },
+  {
+    "id": 251,
+    "word": "FALSE",
+    "phonetic": "[fɔls]",
+    "pos": "形容詞",
+    "meaning": "錯誤的 / 虛假的",
+    "example": "Is the statement true or false?（這個陳述是正確的還是錯誤的？）"
+  },
+  {
+    "id": 252,
+    "word": "family",
+    "phonetic": "[ˈfæməli]",
+    "pos": "名詞",
+    "meaning": "家庭 / 家人",
+    "example": "My family lives in a small town near the sea.（我的家人住在海邊的一個小鎮上。）"
+  },
+  {
+    "id": 253,
+    "word": "far",
+    "phonetic": "[fɑr]",
+    "pos": "形容詞 / 副詞",
+    "meaning": "遠的 / 遠地",
+    "example": "The station is not far from our house.（車站離我們家不遠。）"
+  },
+  {
+    "id": 254,
+    "word": "farm",
+    "phonetic": "[fɑrm]",
+    "pos": "名詞",
+    "meaning": "農場",
+    "example": "They grow rice and vegetables on their farm.（他們在他們的農場上種植稻米和蔬菜。）"
+  },
+  {
+    "id": 255,
+    "word": "fat",
+    "phonetic": "[fæt]",
+    "pos": "形容詞 / 名詞",
+    "meaning": "胖的 / 脂肪",
+    "example": "The pig grew very fat after a few months.（幾個月後，這隻豬長得很胖。）"
+  },
+  {
+    "id": 256,
+    "word": "father",
+    "phonetic": "[ˈfɑðɚ]",
+    "pos": "名詞",
+    "meaning": "父親",
+    "example": "My father works in a large trade company.（我父親在一家大型貿易公司工作。）"
+  },
+  {
+    "id": 257,
+    "word": "fear",
+    "phonetic": "[fɪr]",
+    "pos": "名詞",
+    "meaning": "害怕 / 恐懼",
+    "example": "The little child has a fear of the dark.（這個小孩子害怕黑暗。）"
+  },
+  {
+    "id": 258,
+    "word": "feather",
+    "phonetic": "[ˈfɛðɚ]",
+    "pos": "名詞",
+    "meaning": "羽毛",
+    "example": "A bird's feather is very light and soft.（鳥的羽毛非常輕且柔軟。）"
+  },
+  {
+    "id": 259,
+    "word": "feeble",
+    "phonetic": "[ˈfibl]",
+    "pos": "形容詞",
+    "meaning": "微弱的 / 虛弱的",
+    "example": "The old man made a feeble attempt to walk.（老人做出了微弱的嘗試想走路。）"
+  },
+  {
+    "id": 260,
+    "word": "feeling",
+    "phonetic": "[ˈfilɪŋ]",
+    "pos": "名詞",
+    "meaning": "感覺 / 情感",
+    "example": "I have a feeling that it will rain today.（我有一種今天會下雨的感覺。）"
+  },
+  {
+    "id": 261,
+    "word": "female",
+    "phonetic": "[ˈfimel]",
+    "pos": "形容詞 / 名詞",
+    "meaning": "女性的 / 雌性的",
+    "example": "A female bird is sitting on the eggs.（一隻雌鳥正坐在蛋上。）"
+  },
+  {
+    "id": 262,
+    "word": "fertile",
+    "phonetic": "[ˈfɝtl]",
+    "pos": "形容詞",
+    "meaning": "肥沃的",
+    "example": "The soil near the river is very fertile.（河流附近的土地非常肥沃。）"
+  },
+  {
+    "id": 263,
+    "word": "fiction",
+    "phonetic": "[ˈfɪkʃən]",
+    "pos": "名詞",
+    "meaning": "小說 / 虛構",
+    "example": "I prefer reading true stories to fiction.（比起虛構小說，我更喜歡讀真實的故事。）"
+  },
+  {
+    "id": 264,
+    "word": "field",
+    "phonetic": "[fild]",
+    "pos": "名詞",
+    "meaning": "田地 / 領域",
+    "example": "The cows are eating grass in the green field.（母牛正在綠色的田地裡吃草。）"
+  },
+  {
+    "id": 265,
+    "word": "fight",
+    "phonetic": "[faɪt]",
+    "pos": "名詞",
+    "meaning": "打架 / 戰鬥",
+    "example": "The two boys had a fight about the toy.（那兩個男孩為了玩具打了起來。）"
+  },
+  {
+    "id": 266,
+    "word": "finger",
+    "phonetic": "[ˈfɪŋɡɚ]",
+    "pos": "名詞",
+    "meaning": "手指",
+    "example": "He hurt his index finger with a needle.（他的食指被針弄傷了。）"
+  },
+  {
+    "id": 267,
+    "word": "fire",
+    "phonetic": "[faɪr]",
+    "pos": "名詞",
+    "meaning": "火 / 火災",
+    "example": "We sat near the fire to keep ourselves warm.（我們坐在火堆旁取暖。）"
+  },
+  {
+    "id": 268,
+    "word": "first",
+    "phonetic": "[fɝst]",
+    "pos": "形容詞 / 副詞",
+    "meaning": "第一的 / 首先",
+    "example": "This is my first time visiting Taiwan.（這是我第一次造訪台灣。）"
+  },
+  {
+    "id": 269,
+    "word": "fish",
+    "phonetic": "[fɪʃ]",
+    "pos": "名詞",
+    "meaning": "魚",
+    "example": "A small fish is swimming in the glass bowl.（一隻小魚正在玻璃碗裡游著。）"
+  },
+  {
+    "id": 270,
+    "word": "fixed",
+    "phonetic": "[fɪkst]",
+    "pos": "形容詞",
+    "meaning": "固定的 / 確定的",
+    "example": "The meeting will take place at a fixed time.（會議將在固定的時間舉行。）"
+  },
+  {
+    "id": 271,
+    "word": "flag",
+    "phonetic": "[flæɡ]",
+    "pos": "名詞",
+    "meaning": "旗幟",
+    "example": "The national flag was flying in the wind.（國旗在風中飄揚。）"
+  },
+  {
+    "id": 272,
+    "word": "flame",
+    "phonetic": "[flem]",
+    "pos": "名詞",
+    "meaning": "火焰",
+    "example": "The flame of the candle was bright and yellow.（蠟燭的火焰又亮又黃。）"
+  },
+  {
+    "id": 273,
+    "word": "flat",
+    "phonetic": "[flæt]",
+    "pos": "形容詞",
+    "meaning": "平的 / 平坦的",
+    "example": "The earth looks flat, but it is actually round.（大地看起來是平的，但實際上是圓的。）"
+  },
+  {
+    "id": 274,
+    "word": "flight",
+    "phonetic": "[flaɪt]",
+    "pos": "名詞",
+    "meaning": "飛行 / 航班",
+    "example": "Our flight to Paris will leave at eight.（我們去巴黎的航班將在八點起飛。）"
+  },
+  {
+    "id": 275,
+    "word": "floor",
+    "phonetic": "[flor]",
+    "pos": "名詞",
+    "meaning": "地板 / 樓層",
+    "example": "Please wipe the water off the kitchen floor.（請把廚房地板上的水擦乾淨。）"
+  },
+  {
+    "id": 276,
+    "word": "flower",
+    "phonetic": "[ˈflaʊɚ]",
+    "pos": "名詞",
+    "meaning": "花朵",
+    "example": "He gave his mother a beautiful red flower.（他給了他母親一朵美麗的紅花。）"
+  },
+  {
+    "id": 277,
+    "word": "fly",
+    "phonetic": "[flaɪ]",
+    "pos": "名詞",
+    "meaning": "蒼蠅",
+    "example": "A fly is buzzing around the sweet food.（一隻蒼蠅在甜食周圍嗡嗡作響。）"
+  },
+  {
+    "id": 278,
+    "word": "fold",
+    "phonetic": "[fold]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "摺痕 / 摺疊",
+    "example": "Make a clean fold in the middle of the paper.（在紙的張中間做出整齊的摺痕。）"
+  },
+  {
+    "id": 279,
+    "word": "food",
+    "phonetic": "[fud]",
+    "pos": "名詞",
+    "meaning": "食物",
+    "example": "Rice and bread are common types of food.（米飯和麵包是常見的食物種類。）"
+  },
+  {
+    "id": 280,
+    "word": "foolish",
+    "phonetic": "[ˈfulɪʃ]",
+    "pos": "形容詞",
+    "meaning": "愚蠢的",
+    "example": "It was foolish of him to lose his money.（他把錢弄丟了真是愚蠢。）"
+  },
+  {
+    "id": 281,
+    "word": "foot",
+    "phonetic": "[fʊt]",
+    "pos": "名詞",
+    "meaning": "腳 / 英尺",
+    "example": "He put his left foot into the cold water.（他把他的左腳伸進冷水裡。）"
+  },
+  {
+    "id": 282,
+    "word": "for",
+    "phonetic": "[fɔr]",
+    "pos": "介系詞",
+    "meaning": "為了 / 給 / 持續",
+    "example": "I bought this warm coat for my father.（我為我父親買了這件厚大衣。）"
+  },
+  {
+    "id": 283,
+    "word": "force",
+    "phonetic": "[fɔrs]",
+    "pos": "名詞",
+    "meaning": "力量 / 強迫",
+    "example": "The strong force of the wind broke the window.（強風的力量吹碎了窗戶。）"
+  },
+  {
+    "id": 284,
+    "word": "fork",
+    "phonetic": "[fɔrk]",
+    "pos": "名詞",
+    "meaning": "叉子",
+    "example": "Use a fork and a knife to eat the meat.（用叉子和刀子吃肉。）"
+  },
+  {
+    "id": 285,
+    "word": "form",
+    "phonetic": "[fɔrm]",
+    "pos": "名詞",
+    "meaning": "表格 / 形狀",
+    "example": "Please fill out this application form now.（請現在填寫這張申請表。）"
+  },
+  {
+    "id": 286,
+    "word": "forward",
+    "phonetic": "[ˈfɔrwɚd]",
+    "pos": "副詞 / 形容詞",
+    "meaning": "向前",
+    "example": "He took one step forward to speak to me.（他向前走了一步與我說話。）"
+  },
+  {
+    "id": 287,
+    "word": "fowl",
+    "phonetic": "[faʊl]",
+    "pos": "名詞",
+    "meaning": "家禽（雞、鴨等）",
+    "example": "The farmer keeps ducks, geese, and other fowl.（農夫飼養鴨、鵝和其他家禽。）"
+  },
+  {
+    "id": 288,
+    "word": "frame",
+    "phonetic": "[frem]",
+    "pos": "名詞",
+    "meaning": "框架 / 鏡框",
+    "example": "She put her family photo in a wooden frame.（她把全家福相片放在木製相框裡。）"
+  },
+  {
+    "id": 289,
+    "word": "free",
+    "phonetic": "[fri]",
+    "pos": "形容詞",
+    "meaning": "自由的 / 免費的",
+    "example": "You are free to leave whenever you like.（你隨時可以自由離開。）"
+  },
+  {
+    "id": 290,
+    "word": "frequent",
+    "phonetic": "[ˈfrikwənt]",
+    "pos": "形容詞",
+    "meaning": "頻繁的",
+    "example": "He made frequent visits to the hospital.（他頻繁地前往醫院就診。）"
+  },
+  {
+    "id": 291,
+    "word": "friend",
+    "phonetic": "[frɛnd]",
+    "pos": "名詞",
+    "meaning": "朋友",
+    "example": "He is a good friend of mine from school.（他是我學校裡的一位好朋友。）"
+  },
+  {
+    "id": 292,
+    "word": "from",
+    "phonetic": "[frʌm]",
+    "pos": "介系詞",
+    "meaning": "來自 / 從...起",
+    "example": "I received a long letter from my brother.（我收到一封來自兄弟的長信。）"
+  },
+  {
+    "id": 293,
+    "word": "front",
+    "phonetic": "[frʌnt]",
+    "pos": "名詞 / 形容詞",
+    "meaning": "前面 / 前方的",
+    "example": "The garden is at the front of the house.（花園在房子的前面。）"
+  },
+  {
+    "id": 294,
+    "word": "fruit",
+    "phonetic": "[frut]",
+    "pos": "名詞",
+    "meaning": "水果",
+    "example": "Apple is a sweet and healthy kind of fruit.（蘋果是一種甜美且健康的水果。）"
+  },
+  {
+    "id": 295,
+    "word": "full",
+    "phonetic": "[fʊl]",
+    "pos": "形容詞",
+    "meaning": "滿的 / 飽的",
+    "example": "The glass bottle is full of fresh water.（這個玻璃瓶裝滿了新鮮的水。）"
+  },
+  {
+    "id": 296,
+    "word": "future",
+    "phonetic": "[ˈfjutʃɚ]",
+    "pos": "名詞 / 形容詞",
+    "meaning": "未來 / 未來的",
+    "example": "No one can tell what will happen in the future.（沒有人能預料未來會發生什麼事。）"
+  },
+  {
+    "id": 297,
+    "word": "garden",
+    "phonetic": "[ˈɡɑrdn]",
+    "pos": "名詞",
+    "meaning": "花園",
+    "example": "There are many beautiful flowers in the garden.（花園裡有許多美麗的花朵。）"
+  },
+  {
+    "id": 298,
+    "word": "general",
+    "phonetic": "[ˈdʒɛnərəl]",
+    "pos": "形容詞 / 名詞",
+    "meaning": "一般的 / 將軍",
+    "example": "This is a matter of general interest.（這是一個一般大眾都感興趣的事項。）"
+  },
+  {
+    "id": 299,
+    "word": "get",
+    "phonetic": "[ɡɛt]",
+    "pos": "動詞",
+    "meaning": "得到 / 獲得",
+    "example": "Please get a cup of warm water for me.（請幫我拿一杯溫水。基本英語 18 個核心動詞之一。）"
+  },
+  {
+    "id": 300,
+    "word": "girl",
+    "phonetic": "[ɡɝl]",
+    "pos": "名詞",
+    "meaning": "女孩",
+    "example": "The little girl is playing with a doll.（那個小女孩正在玩洋娃娃。）"
+  },
+  {
+    "id": 301,
+    "word": "give",
+    "phonetic": "[ɡɪv]",
+    "pos": "動詞",
+    "meaning": "給予",
+    "example": "I will give this useful book to my friend.（我會把這本有用的書給我的朋友。基本英語 18 個核心動詞之一。）"
+  },
+  {
+    "id": 302,
+    "word": "glass",
+    "phonetic": "[ɡlæs]",
+    "pos": "名詞",
+    "meaning": "玻璃 / 玻璃杯",
+    "example": "The window is made of thick and clear glass.（窗戶是由厚實透明的玻璃製成的。）"
+  },
+  {
+    "id": 303,
+    "word": "glove",
+    "phonetic": "[ɡlʌv]",
+    "pos": "名詞",
+    "meaning": "手套",
+    "example": "Wear your leather gloves; it is cold.（戴上你的皮手套，天氣很冷。）"
+  },
+  {
+    "id": 304,
+    "word": "go",
+    "phonetic": "[ɡo]",
+    "pos": "動詞",
+    "meaning": "去 / 前往",
+    "example": "We will go to the market after breakfast.（我們早餐後要去市場。基本英語 18 個核心動詞之一。）"
+  },
+  {
+    "id": 305,
+    "word": "goat",
+    "phonetic": "[ɡot]",
+    "pos": "名詞",
+    "meaning": "山羊",
+    "example": "The white goat is eating grass on the hill.（那隻白山羊正在山上吃草。）"
+  },
+  {
+    "id": 306,
+    "word": "gold",
+    "phonetic": "[ɡold]",
+    "pos": "名詞 / 形容詞",
+    "meaning": "黃金 / 金製的",
+    "example": "Her beautiful ring is made of pure gold.（她那隻美麗的戒指是由純金製成的。）"
+  },
+  {
+    "id": 307,
+    "word": "good",
+    "phonetic": "[ɡʊd]",
+    "pos": "形容詞",
+    "meaning": "好的",
+    "example": "Reading books is a good habit for everyone.（讀書對每個人來說都是個好習慣。）"
+  },
+  {
+    "id": 308,
+    "word": "government",
+    "phonetic": "[ˈɡʌvɚnmənt]",
+    "pos": "名詞",
+    "meaning": "政府",
+    "example": "The government built a new school here.（政府在這裡建了一所新學校。）"
+  },
+  {
+    "id": 309,
+    "word": "grain",
+    "phonetic": "[ɡren]",
+    "pos": "名詞",
+    "meaning": "穀物 / 顆粒",
+    "example": "The birds are looking for grain on the ground.（鳥兒正在地上尋找穀物。）"
+  },
+  {
+    "id": 310,
+    "word": "grass",
+    "phonetic": "[ɡræs]",
+    "pos": "名詞",
+    "meaning": "草 / 草地",
+    "example": "The children are sitting on the green grass.（孩子們正坐在綠色的草地上。）"
+  },
+  {
+    "id": 311,
+    "word": "great",
+    "phonetic": "[ɡret]",
+    "pos": "形容詞",
+    "meaning": "偉大的 / 巨大的",
+    "example": "He is a great writer who wrote many books.（他是一位寫了許多書的偉大作家。）"
+  },
+  {
+    "id": 312,
+    "word": "green",
+    "phonetic": "[ɡrin]",
+    "pos": "形容詞 / 名詞",
+    "meaning": "綠色的 / 綠色",
+    "example": "The leaves of the trees turn green in spring.（樹葉在春天變成綠色。）"
+  },
+  {
+    "id": 313,
+    "word": "grey / gray",
+    "phonetic": "[ɡre]",
+    "pos": "形容詞 / 名詞",
+    "meaning": "灰色的 / 灰色",
+    "example": "The old man has short grey hair.（那位老人留著短灰髮。）"
+  },
+  {
+    "id": 314,
+    "word": "grip",
+    "phonetic": "[ɡrɪp]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "緊握 / 掌控",
+    "example": "He kept a firm grip on the heavy bag.（他緊緊握住那個沉重的袋子。）"
+  },
+  {
+    "id": 315,
+    "word": "group",
+    "phonetic": "[ɡrup]",
+    "pos": "名詞",
+    "meaning": "小組 / 團體",
+    "example": "A group of students went to the library.（一組學生去了圖書館。）"
+  },
+  {
+    "id": 316,
+    "word": "growth",
+    "phonetic": "[ɡroθ]",
+    "pos": "名詞",
+    "meaning": "生長 / 增長",
+    "example": "Proper food is necessary for the growth of children.（適當的食物對兒童的生長是必須的。）"
+  },
+  {
+    "id": 317,
+    "word": "guide",
+    "phonetic": "[ɡaɪd]",
+    "pos": "名詞",
+    "meaning": "導遊 / 指南",
+    "example": "The tour guide showed us the old castle.（導遊帶我們參觀了那座古堡。）"
+  },
+  {
+    "id": 318,
+    "word": "gun",
+    "phonetic": "[ɡʌn]",
+    "pos": "名詞",
+    "meaning": "槍械",
+    "example": "The soldier carried a heavy gun on his back.（士兵背上背著一把沉重的槍。）"
+  },
+  {
+    "id": 319,
+    "word": "hair",
+    "phonetic": "[hɛr]",
+    "pos": "名詞",
+    "meaning": "頭髮 / 毛髮",
+    "example": "She has long, dark hair.（她留著烏黑的長髮。）"
+  },
+  {
+    "id": 320,
+    "word": "hammer",
+    "phonetic": "[ˈhæmɚ]",
+    "pos": "名詞",
+    "meaning": "鐵錘",
+    "example": "Use a hammer to put the nail into the wall.（用鐵錘把釘子敲進牆裡。）"
+  },
+  {
+    "id": 321,
+    "word": "hand",
+    "phonetic": "[hænd]",
+    "pos": "名詞",
+    "meaning": "手",
+    "example": "Always wash your hands before you eat.（飯前務必洗手。）"
+  },
+  {
+    "id": 322,
+    "word": "hanging",
+    "phonetic": "[ˈhæŋɪŋ]",
+    "pos": "形容詞 / 名詞",
+    "meaning": "懸掛的 / 絞刑",
+    "example": "There is a beautiful picture hanging on the wall.（牆上掛著一張美麗的畫。）"
+  },
+  {
+    "id": 323,
+    "word": "happy",
+    "phonetic": "[ˈhæpi]",
+    "pos": "形容詞",
+    "meaning": "快樂的",
+    "example": "We are happy to hear the good news.（我們很高興聽到這個好消息。）"
+  },
+  {
+    "id": 324,
+    "word": "harbor",
+    "phonetic": "[ˈhɑrbɚ]",
+    "pos": "名詞",
+    "meaning": "港口 / 海港",
+    "example": "Many large boats are resting in the harbor.（許多大船正停泊在港口中。）"
+  },
+  {
+    "id": 325,
+    "word": "hard",
+    "phonetic": "[hɑrd]",
+    "pos": "形容詞 / 副詞",
+    "meaning": "硬的 / 困難的 / 努力地",
+    "example": "Diamond is a very hard stone. / He works hard.（鑽石是極硬的石頭。/ 他努力工作。）"
+  },
+  {
+    "id": 326,
+    "word": "harmony",
+    "phonetic": "[ˈhɑrməni]",
+    "pos": "名詞",
+    "meaning": "和諧 / 融洽",
+    "example": "They live in perfect harmony with their neighbors.（他們與鄰居相處得非常融洽。）"
+  },
+  {
+    "id": 327,
+    "word": "hat",
+    "phonetic": "[hæt]",
+    "pos": "名詞",
+    "meaning": "帽子",
+    "example": "Put on your hat before going out into the sun.（到陽光下之前先戴上帽子。）"
+  },
+  {
+    "id": 328,
+    "word": "hate",
+    "phonetic": "[het]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "仇恨 / 憎恨",
+    "example": "He showed great hate towards the cruel enemy.（他對殘暴的敵人展現了極大的恨意。）"
+  },
+  {
+    "id": 329,
+    "word": "have",
+    "phonetic": "[hæv]",
+    "pos": "動詞",
+    "meaning": "有 / 擁有",
+    "example": "I have two books in my bag.（我包包裡有兩本書。基本英語 18 個核心動詞之一。）"
+  },
+  {
+    "id": 330,
+    "word": "he",
+    "phonetic": "[hi]",
+    "pos": "代名詞",
+    "meaning": "他",
+    "example": "He is a famous engineer at the factory.（他是那家工廠著名的工程師。）"
+  },
+  {
+    "id": 331,
+    "word": "head",
+    "phonetic": "[hɛd]",
+    "pos": "名詞",
+    "meaning": "頭部 / 首領",
+    "example": "Wear a helmet to protect your head.（戴上安全帽以保護你的頭部。）"
+  },
+  {
+    "id": 332,
+    "word": "healthy",
+    "phonetic": "[ˈhɛlθi]",
+    "pos": "形容詞",
+    "meaning": "健康的",
+    "example": "Proper food keeps your body healthy.（適當的食物能保持身體健康。）"
+  },
+  {
+    "id": 333,
+    "word": "hearing",
+    "phonetic": "[ˈhɪrɪŋ]",
+    "pos": "名詞",
+    "meaning": "聽覺 / 聽力",
+    "example": "The old man has excellent hearing.（那位老人的聽力非常好。）"
+  },
+  {
+    "id": 334,
+    "word": "heart",
+    "phonetic": "[hɑrt]",
+    "pos": "名詞",
+    "meaning": "心臟 / 核心",
+    "example": "Regular exercise is good for your heart.（規律運動對你的心臟有好處。）"
+  },
+  {
+    "id": 335,
+    "word": "heat",
+    "phonetic": "[hit]",
+    "pos": "名詞",
+    "meaning": "熱度 / 高溫",
+    "example": "The extreme heat of the summer made us tired.（夏天的高溫讓我們感到疲倦。）"
+  },
+  {
+    "id": 336,
+    "word": "help",
+    "phonetic": "[hɛlp]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "幫助",
+    "example": "Thank you for your help with my project.（謝謝你對我專案的幫助。）"
+  },
+  {
+    "id": 337,
+    "word": "here",
+    "phonetic": "[hɪr]",
+    "pos": "副詞",
+    "meaning": "這裡",
+    "example": "Come here and look at this beautiful flower.（過來這裡看看這朵美麗的花。）"
+  },
+  {
+    "id": 338,
+    "word": "high",
+    "phonetic": "[haɪ]",
+    "pos": "形容詞",
+    "meaning": "高的",
+    "example": "The plane flew high above the high mountains.（飛機在高山之上高高飛過。）"
+  },
+  {
+    "id": 339,
+    "word": "history",
+    "phonetic": "[ˈhɪstəri]",
+    "pos": "名詞",
+    "meaning": "歷史",
+    "example": "We love to read books about world history.（我們喜歡讀關於世界歷史的書。）"
+  },
+  {
+    "id": 340,
+    "word": "hole",
+    "phonetic": "[hol]",
+    "pos": "名詞",
+    "meaning": "洞 / 孔",
+    "example": "The little rabbit ran into a hole in the ground.（小兔子跑進了地上的洞裡。）"
+  },
+  {
+    "id": 341,
+    "word": "hollow",
+    "phonetic": "[ˈhɑlo]",
+    "pos": "形容詞",
+    "meaning": "空心的 / 凹陷的",
+    "example": "Owls often live in a hollow tree branch.（貓頭鷹常住在空心的樹枝裡。）"
+  },
+  {
+    "id": 342,
+    "word": "hook",
+    "phonetic": "[hʊk]",
+    "pos": "名詞",
+    "meaning": "鉤子",
+    "example": "Hang your warm coat on the hook behind the door.（把你的厚大衣掛在門後的鉤子上。）"
+  },
+  {
+    "id": 343,
+    "word": "hope",
+    "phonetic": "[hop]",
+    "pos": "名詞",
+    "meaning": "希望",
+    "example": "There is still a strong hope of winning the game.（贏得這場比賽依然保有很大的希望。）"
+  },
+  {
+    "id": 344,
+    "word": "horn",
+    "phonetic": "[hɔrn]",
+    "pos": "名詞",
+    "meaning": "獸角 / 喇叭",
+    "example": "The goat has two sharp horns on its head.（那隻山羊頭上有兩隻尖銳的角。）"
+  },
+  {
+    "id": 345,
+    "word": "horse",
+    "phonetic": "[hɔrs]",
+    "pos": "名詞",
+    "meaning": "馬",
+    "example": "The farmer rode his black horse to the market.（農夫騎著他的黑馬去市場。）"
+  },
+  {
+    "id": 346,
+    "word": "hospital",
+    "phonetic": "[ˈhɑspɪtl]",
+    "pos": "名詞",
+    "meaning": "醫院",
+    "example": "The sick child was sent to the modern hospital.（生病的孩子被送往那家現代化的醫院。）"
+  },
+  {
+    "id": 347,
+    "word": "hour",
+    "phonetic": "[ˈaʊɚ]",
+    "pos": "名詞",
+    "meaning": "小時",
+    "example": "We walked for one hour around the beautiful lake.（我們沿著美麗的湖泊散步了一個小時。）"
+  },
+  {
+    "id": 348,
+    "word": "house",
+    "phonetic": "[haʊs]",
+    "pos": "名詞",
+    "meaning": "房屋 / 房子",
+    "example": "They live in a white house near the high school.（他們住在中學附近的一棟白房子裡。）"
+  },
+  {
+    "id": 349,
+    "word": "how",
+    "phonetic": "[haʊ]",
+    "pos": "副詞",
+    "meaning": "如何 / 怎樣",
+    "example": "Please tell me how to use this automatic machine.（請告訴我如何使用這台自動化機器。）"
+  },
+  {
+    "id": 350,
+    "word": "humor",
+    "phonetic": "[ˈbjumɚ]",
+    "pos": "名詞",
+    "meaning": "幽默感",
+    "example": "The teacher is full of humor and makes us laugh.（老師充滿幽默感，總是讓我們大笑。）"
+  },
+  {
+    "id": 351,
+    "word": "I",
+    "phonetic": "[aɪ]",
+    "pos": "代名詞",
+    "meaning": "我",
+    "example": "I am reading an interesting book about nature.（我正在讀一本關於大自然的有趣書籍。）"
+  },
+  {
+    "id": 352,
+    "word": "ice",
+    "phonetic": "[aɪs]",
+    "pos": "名詞",
+    "meaning": "冰",
+    "example": "Put some ice into my cup of water, please.（請放些冰塊到我的水杯裡。）"
+  },
+  {
+    "id": 353,
+    "word": "idea",
+    "phonetic": "[aɪˈdiə]",
+    "pos": "名詞",
+    "meaning": "想法 / 主意",
+    "example": "He came up with an excellent idea to save money.（他想出了一個省錢的好主意。）"
+  },
+  {
+    "id": 354,
+    "word": "if",
+    "phonetic": "[ɪf]",
+    "pos": "連接詞",
+    "meaning": "如果",
+    "example": "If it rains tomorrow, we will stay at home.（如果明天地下雨，我們就待在家裡。）"
+  },
+  {
+    "id": 355,
+    "word": "ill",
+    "phonetic": "[ɪl]",
+    "pos": "形容詞",
+    "meaning": "生病的",
+    "example": "She stayed in bed because she felt very ill.（因為她覺得病得很厲害，所以躺在床上。）"
+  },
+  {
+    "id": 356,
+    "word": "important",
+    "phonetic": "[ɪmˈpɔrtnt]",
+    "pos": "形容詞",
+    "meaning": "重要的",
+    "example": "It is important to double-check the record.（仔細覆核這項紀錄是很重要的。）"
+  },
+  {
+    "id": 357,
+    "word": "impulse",
+    "phonetic": "[ˈɪmpʌls]",
+    "pos": "名詞",
+    "meaning": "衝動 / 推動力",
+    "example": "He had a sudden impulse to buy that expensive watch.（他突然有一股衝動想買那隻昂貴的手錶。）"
+  },
+  {
+    "id": 358,
+    "word": "in",
+    "phonetic": "[ɪn]",
+    "pos": "介系詞",
+    "meaning": "在...裡面",
+    "example": "The key is in the drawer of the desk.（鑰匙在書桌的抽屜裡。）"
+  },
+  {
+    "id": 359,
+    "word": "increase",
+    "phonetic": "[ɪnˈkris]",
+    "pos": "名詞",
+    "meaning": "增加 / 增長",
+    "example": "There is a steady increase in the price of gold.（黃金價格正在穩定增長。）"
+  },
+  {
+    "id": 360,
+    "word": "industry",
+    "phonetic": "[ˈɪndəstri]",
+    "pos": "名詞",
+    "meaning": "工業 / 產業",
+    "example": "The car industry employs many process engineers.（汽車工業雇用了許多製程工程師。）"
+  },
+  {
+    "id": 361,
+    "word": "ink",
+    "phonetic": "[ɪŋk]",
+    "pos": "名詞",
+    "meaning": "墨水",
+    "example": "Please fill my black pen with some fresh ink.（請幫我的黑筆加點新鮮墨水。）"
+  },
+  {
+    "id": 362,
+    "word": "insect",
+    "phonetic": "[ˈɪnsɛkt]",
+    "pos": "名詞",
+    "meaning": "昆蟲",
+    "example": "An ant is a small and hard-working insect.（螞蟻是一種弱小且勤勞的昆蟲。）"
+  },
+  {
+    "id": 363,
+    "word": "instrument",
+    "phonetic": "[ˈɪnstrəmənt]",
+    "pos": "名詞",
+    "meaning": "儀器 / 工具 / 樂器",
+    "example": "The laboratory has a complex instrument for testing.（實驗室有一台用於檢測的複雜儀器。）"
+  },
+  {
+    "id": 364,
+    "word": "insurance",
+    "phonetic": "[ɪnˈʃʊrəns]",
+    "pos": "名詞",
+    "meaning": "保險",
+    "example": "He paid for car insurance to protect his new vehicle.（他支付了汽車保險以保護他的新車。）"
+  },
+  {
+    "id": 365,
+    "word": "interest",
+    "phonetic": "[ˈɪntrɪst]",
+    "pos": "名詞",
+    "meaning": "興趣 / 利息",
+    "example": "He shows a deep interest in value investing.（他對價值投資展現了深厚的興趣。）"
+  },
+  {
+    "id": 366,
+    "word": "invention",
+    "phonetic": "[ɪnˈvɛnʃən]",
+    "pos": "名詞",
+    "meaning": "發明",
+    "example": "The invention of the electric light bulb changed our lives.（電燈泡的發明改變了我們的生活。）"
+  },
+  {
+    "id": 367,
+    "word": "iron",
+    "phonetic": "[ˈaɪɚn]",
+    "pos": "名詞 / 形容詞",
+    "meaning": "鐵 / 鐵製的",
+    "example": "The strong bridge is built of solid iron.（那座堅固的橋樑是由實鐵建造的。）"
+  },
+  {
+    "id": 368,
+    "word": "island",
+    "phonetic": "[ˈaɪlənd]",
+    "pos": "名詞",
+    "meaning": "島嶼",
+    "example": "Taiwan is a beautiful island with green mountains.（台灣是一個擁有翠綠山巒的美麗島嶼。）"
+  },
+  {
+    "id": 369,
+    "word": "jelly",
+    "phonetic": "[ˈdʒɛli]",
+    "pos": "名詞",
+    "meaning": "果凍 / 膠狀物",
+    "example": "The children love to eat sweet apple jelly.（孩子們喜歡吃甜甜的蘋果果凍。）"
+  },
+  {
+    "id": 370,
+    "word": "jewel",
+    "phonetic": "[ˈdʒuəl]",
+    "pos": "名詞",
+    "meaning": "珠寶 / 首飾",
+    "example": "She keeps her expensive jewels in a safe box.（她把昂貴的珠寶存在保險箱裡。）"
+  },
+  {
+    "id": 371,
+    "word": "join",
+    "phonetic": "[dʒɔɪn]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "接合處 / 加入",
+    "example": "You can see the join where the two pipes meet.（你可以看到兩條管路交會的接合處。基本英語中常用名詞代表動作結果。）"
+  },
+  {
+    "id": 372,
+    "word": "journey",
+    "phonetic": "[ˈdʒɝni]",
+    "pos": "名詞",
+    "meaning": "旅程 / 旅行",
+    "example": "They took a long train journey to Paris last year.（他們去年搭乘了長途火車前往巴黎旅行。）"
+  },
+  {
+    "id": 373,
+    "word": "judge",
+    "phonetic": "[dʒʌdʒ]",
+    "pos": "名詞",
+    "meaning": "法官 / 裁判",
+    "example": "The judge listened carefully to the whole story.（法官仔細聆聽了整個故事的始末。）"
+  },
+  {
+    "id": 374,
+    "word": "jump",
+    "phonetic": "[dʒʌmp]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "跳躍",
+    "example": "The horse made a great jump over the wooden fence.（那匹馬高高地跳過了木製圍籬。）"
+  },
+  {
+    "id": 375,
+    "word": "keep",
+    "phonetic": "[kip]",
+    "pos": "動詞",
+    "meaning": "保持 / 保存 / 維持",
+    "example": "Please keep the room clean and quiet.（請保持房間乾淨與安靜。基本英語 18 個核心動詞之一。）"
+  },
+  {
+    "id": 376,
+    "word": "kettle",
+    "phonetic": "[ˈkɛtl]",
+    "pos": "名詞",
+    "meaning": "水壺",
+    "example": "Put the kettle on the stove to boil some water.（把水壺放在爐子上燒些水。）"
+  },
+  {
+    "id": 377,
+    "word": "key",
+    "phonetic": "[ki]",
+    "pos": "名詞",
+    "meaning": "鑰匙",
+    "example": "He turned the key in the lock to open the door.（他轉動鎖裡的鑰匙把門打開。）"
+  },
+  {
+    "id": 378,
+    "word": "kick",
+    "phonetic": "[kɪk]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "踢",
+    "example": "He gave a strong kick to the football.（他用力地踢了一腳足球。）"
+  },
+  {
+    "id": 379,
+    "word": "kind",
+    "phonetic": "[kaɪnd]",
+    "pos": "形容詞 / 名詞",
+    "meaning": "仁慈的 / 種類",
+    "example": "What kind of fruit do you prefer?（你比較喜歡哪一種水果？）"
+  },
+  {
+    "id": 380,
+    "word": "kiss",
+    "phonetic": "[kɪs]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "接吻 / 吻",
+    "example": "She gave her baby a sweet kiss on the cheek.（她在寶寶的臉頰上輕輕吻了一下。）"
+  },
+  {
+    "id": 381,
+    "word": "knee",
+    "phonetic": "[ni]",
+    "pos": "名詞",
+    "meaning": "膝蓋",
+    "example": "He hurt his left knee while working in the garden.（他在花園工作時弄傷了左膝。）"
+  },
+  {
+    "id": 382,
+    "word": "knife",
+    "phonetic": "[naɪf]",
+    "pos": "名詞",
+    "meaning": "刀子",
+    "example": "This sharp knife has a thin steel blade.（這把鋒利的刀子有一個薄鋼刀刃。）"
+  },
+  {
+    "id": 383,
+    "word": "knot",
+    "phonetic": "[nɑt]",
+    "pos": "名詞",
+    "meaning": "繩結",
+    "example": "Tie a tight knot at the end of the cord.（在繩索的盡頭打一個緊緊的結。）"
+  },
+  {
+    "id": 384,
+    "word": "knowledge",
+    "phonetic": "[ˈnɑlɪdʒ]",
+    "pos": "名詞",
+    "meaning": "知識",
+    "example": "Reading gives us a lot of useful knowledge.（閱讀帶給我們許多實用的知識。）"
+  },
+  {
+    "id": 385,
+    "word": "land",
+    "phonetic": "[lænd]",
+    "pos": "名詞",
+    "meaning": "土地 / 陸地",
+    "example": "The farmer bought a piece of land to grow vegetables.（農夫買了一塊地來種植蔬菜。）"
+  },
+  {
+    "id": 386,
+    "word": "language",
+    "phonetic": "[ˈlæŋɡwɪdʒ]",
+    "pos": "名詞",
+    "meaning": "語言",
+    "example": "English is a useful language for international trade.（英語是國際貿易中非常實用的語言。）"
+  },
+  {
+    "id": 387,
+    "word": "last",
+    "phonetic": "[læst]",
+    "pos": "形容詞 / 副詞",
+    "meaning": "最後的 / 最近的",
+    "example": "This is the last train to the city tonight.（這是今晚前往市區的最後一班火車。）"
+  },
+  {
+    "id": 388,
+    "word": "late",
+    "phonetic": "[let]",
+    "pos": "形容詞 / 副詞",
+    "meaning": "遲的 / 晚的",
+    "example": "He was late for the meeting because of the traffic.（因為交通原因，他開會遲到了。）"
+  },
+  {
+    "id": 389,
+    "word": "laugh",
+    "phonetic": "[læf]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "笑聲",
+    "example": "Her happy laugh made everyone in the room smile.（她快樂的笑聲讓房間裡的每個人都露出了笑容。）"
+  },
+  {
+    "id": 390,
+    "word": "law",
+    "phonetic": "[lɔ]",
+    "pos": "名詞",
+    "meaning": "法律",
+    "example": "Everyone must obey the law of the country.（每個人都必須遵守國家的法律。）"
+  },
+  {
+    "id": 391,
+    "word": "lead",
+    "phonetic": "[lɛd] / [lid]",
+    "pos": "名詞",
+    "meaning": "鉛 / 領先",
+    "example": "The pipes are made of lead. / He took the lead in the race.（這些管路是由鉛製成的。/ 他在比賽中處於領先。）"
+  },
+  {
+    "id": 392,
+    "word": "leaf",
+    "phonetic": "[lif]",
+    "pos": "名詞",
+    "meaning": "樹葉",
+    "example": "A green leaf fell from the tall tree branch.（一片綠葉從高高的樹枝上落了下來。）"
+  },
+  {
+    "id": 393,
+    "word": "learning",
+    "phonetic": "[ˈlɝnɪŋ]",
+    "pos": "名詞",
+    "meaning": "學習 / 知識",
+    "example": "A library is an excellent place for learning.（圖書館是學習的絕佳場所。）"
+  },
+  {
+    "id": 394,
+    "word": "leather",
+    "phonetic": "[ˈlɛðɚ]",
+    "pos": "名詞 / 形容詞",
+    "meaning": "皮革 / 皮製的",
+    "example": "He wore a black leather coat during his journey.（他在旅途中穿著一件黑色皮大衣。）"
+  },
+  {
+    "id": 395,
+    "word": "left",
+    "phonetic": "[lɛft]",
+    "pos": "形容詞 / 副詞 / 名詞",
+    "meaning": "左邊的 / 向左",
+    "example": "Turn left at the end of the straight road.（在這條直路的盡頭向左轉。）"
+  },
+  {
+    "id": 396,
+    "word": "leg",
+    "phonetic": "[lɛɡ]",
+    "pos": "名詞",
+    "meaning": "腿部",
+    "example": "The table has four strong wooden legs.（這張桌子有四隻堅固的木製桌腳。）"
+  },
+  {
+    "id": 397,
+    "word": "let",
+    "phonetic": "[lɛt]",
+    "pos": "動詞",
+    "meaning": "讓 / 允許",
+    "example": "Please let me use your computer for a minute.（請讓我借用一下你的電腦。基本英語 18 個核心動詞之一。）"
+  },
+  {
+    "id": 398,
+    "word": "letter",
+    "phonetic": "[ˈlɛtɚ]",
+    "pos": "名詞",
+    "meaning": "信件 / 字母",
+    "example": "I sent a long letter to my family yesterday.（我昨天寄了一封長信給我的家人。）"
+  },
+  {
+    "id": 399,
+    "word": "level",
+    "phonetic": "[ˈlɛvəl]",
+    "pos": "名詞 / 形容詞",
+    "meaning": "水平 / 平的",
+    "example": "Check the water level in the tank regularly.（定期檢查水箱中的水位。）"
+  },
+  {
+    "id": 400,
+    "word": "library",
+    "phonetic": "[ˈlaɪbrɛri]",
+    "pos": "名詞",
+    "meaning": "圖書館",
+    "example": "I go to the public library to read books on weekends.（我週末去公共圖書館讀書。）"
+  },
+  {
+    "id": 401,
+    "word": "lift",
+    "phonetic": "[lɪft]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "電梯 / 抬起",
+    "example": "Take the lift to the fifth floor of the building.（搭乘電梯到大樓的五樓。）"
+  },
+  {
+    "id": 402,
+    "word": "light",
+    "phonetic": "[laɪt]",
+    "pos": "名詞 / 形容詞",
+    "meaning": "光線 / 輕的 / 明亮的",
+    "example": "The sun gives us light and heat during the day.（太陽在白天給予我們光和熱。）"
+  },
+  {
+    "id": 403,
+    "word": "like",
+    "phonetic": "[laɪk]",
+    "pos": "介系詞 / 連接詞 / 形容詞",
+    "meaning": "像 / 如同",
+    "example": "The baby looks just like his older brother.（這寶寶長得就像他的哥哥一樣。）"
+  },
+  {
+    "id": 404,
+    "word": "limit",
+    "phonetic": "[ˈlɪmɪt]",
+    "pos": "名詞",
+    "meaning": "限制 / 限度",
+    "example": "There is a speed limit of sixty miles an hour here.（這裡有每小時六十英哩的時速限制。）"
+  },
+  {
+    "id": 405,
+    "word": "line",
+    "phonetic": "[laɪn]",
+    "pos": "名詞",
+    "meaning": "線條 / 隊伍",
+    "example": "Draw a straight line on the white paper with a pencil.（用鉛筆在白紙上畫一條直線。）"
+  },
+  {
+    "id": 406,
+    "word": "linen",
+    "phonetic": "[ˈlɪnɪn]",
+    "pos": "名詞 / 形容詞",
+    "meaning": "亞麻布 / 亞麻製的",
+    "example": "These high-quality sheets are made of pure linen.（這些高品質的床單是由純亞麻布製成的。）"
+  },
+  {
+    "id": 407,
+    "word": "lip",
+    "phonetic": "[lɪp]",
+    "pos": "名詞",
+    "meaning": "嘴唇",
+    "example": "He touched his dry lip with his finger.（他用手指碰了碰自己乾燥的嘴唇。）"
+  },
+  {
+    "id": 408,
+    "word": "liquid",
+    "phonetic": "[ˈlɪkwɪd]",
+    "pos": "名詞 / 形容詞",
+    "meaning": "液體 / 液態的",
+    "example": "Water is a clear liquid that we need every day.（水是我們每天都需要的透明液體。）"
+  },
+  {
+    "id": 409,
+    "word": "list",
+    "phonetic": "[lɪst]",
+    "pos": "名詞",
+    "meaning": "清單",
+    "example": "Write a list of the goods you need to buy.（寫下你需要購買的物品清單。）"
+  },
+  {
+    "id": 410,
+    "word": "little (less, least)",
+    "phonetic": "[ˈlɪtl] ([lɛs], [list])",
+    "pos": "形容詞",
+    "meaning": "少的 / 小的",
+    "example": "The little girl has less sugar than her brother.（這個小女孩分到的糖比她哥哥少。）"
+  },
+  {
+    "id": 411,
+    "word": "living",
+    "phonetic": "[ˈlɪvɪŋ]",
+    "pos": "形容詞 / 名詞",
+    "meaning": "活著的 / 生計",
+    "example": "He makes a living by selling beautiful art.（他靠販售美麗的藝術品維持生計。）"
+  },
+  {
+    "id": 412,
+    "word": "lock",
+    "phonetic": "[lɑk]",
+    "pos": "名詞",
+    "meaning": "鎖",
+    "example": "The iron lock on the wooden door is broken.（木門上的鐵鎖壞了。）"
+  },
+  {
+    "id": 413,
+    "word": "long",
+    "phonetic": "[lɔŋ]",
+    "pos": "形容詞",
+    "meaning": "長的",
+    "example": "The train journey from Hsinchu to Taipei is not long.（從新竹到台北的火車旅程並不長。）"
+  },
+  {
+    "id": 414,
+    "word": "look",
+    "phonetic": "[lʊk]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "看 / 外觀",
+    "example": "Take a careful look at this technical document.（仔細看一下這份技術文件。）"
+  },
+  {
+    "id": 415,
+    "word": "loose",
+    "phonetic": "[lus]",
+    "pos": "形容詞",
+    "meaning": "鬆的",
+    "example": "The screw on the machine handle is loose.（機器手把上的螺絲鬆了。）"
+  },
+  {
+    "id": 416,
+    "word": "loss",
+    "phonetic": "[lɔs]",
+    "pos": "名詞",
+    "meaning": "損失",
+    "example": "The company suffered a great financial loss this year.（公司今年遭受了巨大的財務損失。）"
+  },
+  {
+    "id": 417,
+    "word": "loud",
+    "phonetic": "[laʊd]",
+    "pos": "形容詞 / 副詞",
+    "meaning": "大聲的",
+    "example": "A loud noise came from the factory building.（工廠大樓裡傳出一聲巨響。）"
+  },
+  {
+    "id": 418,
+    "word": "love",
+    "phonetic": "[lʌv]",
+    "pos": "名詞",
+    "meaning": "愛 / 熱愛",
+    "example": "A mother's love for her children is very great.（母親對孩子的愛是非常偉大的。）"
+  },
+  {
+    "id": 419,
+    "word": "low",
+    "phonetic": "[lo]",
+    "pos": "形容詞",
+    "meaning": "低的",
+    "example": "The temperature is very low in the high mountains.（高山上的溫度非常低。）"
+  },
+  {
+    "id": 420,
+    "word": "machine",
+    "phonetic": "[məˈʃin]",
+    "pos": "名詞",
+    "meaning": "機器",
+    "example": "This automatic machine is used for packing food.（這台自動化機器是用來包裝食物的。）"
+  },
+  {
+    "id": 421,
+    "word": "make",
+    "phonetic": "[mek]",
+    "pos": "動詞",
+    "meaning": "製造 / 做 / 使",
+    "example": "He can make a beautiful table out of wood.（他能用木頭做一張漂亮的桌子。基本英語 18 個核心動詞之一。）"
+  },
+  {
+    "id": 422,
+    "word": "male",
+    "phonetic": "[mel]",
+    "pos": "形容詞 / 名詞",
+    "meaning": "男性的 / 雄性的",
+    "example": "The male bird has more colorful feathers than the female.（雄鳥的羽毛比雌鳥更鮮豔。）"
+  },
+  {
+    "id": 423,
+    "word": "man",
+    "phonetic": "[mæn]",
+    "pos": "名詞",
+    "meaning": "男人 / 人類",
+    "example": "The old man walked slowly down the straight street.（那位老人沿著筆直的街道緩慢走著。）"
+  },
+  {
+    "id": 424,
+    "word": "manager",
+    "phonetic": "[ˈmænɪdʒɚ]",
+    "pos": "名詞",
+    "meaning": "經理 / 主管",
+    "example": "The factory manager signed the validation protocol.（工廠經理簽署了驗證協議。）"
+  },
+  {
+    "id": 425,
+    "word": "map",
+    "phonetic": "[mæp]",
+    "pos": "名詞",
+    "meaning": "地圖",
+    "example": "We used a detailed map to find our way in Paris.（我們用一張詳細的地圖在巴黎找路。）"
+  },
+  {
+    "id": 426,
+    "word": "mark",
+    "phonetic": "[mɑrk]",
+    "pos": "名詞",
+    "meaning": "標記 / 分數",
+    "example": "There is a dark mark on the white shirt.（那件白襯衫上有一個深色的污漬標記。）"
+  },
+  {
+    "id": 427,
+    "word": "market",
+    "phonetic": "[ˈmɑrkɪt]",
+    "pos": "名詞",
+    "meaning": "市場",
+    "example": "She bought fresh fruit and vegetables at the market.（她在市場買了新鮮的水果和蔬菜。）"
+  },
+  {
+    "id": 428,
+    "word": "married",
+    "phonetic": "[ˈmærid]",
+    "pos": "形容詞",
+    "meaning": "已婚的",
+    "example": "They have been married for five happy years.（他們已經過了五年的幸福婚姻生活。）"
+  },
+  {
+    "id": 429,
+    "word": "match",
+    "phonetic": "[mætʃ]",
+    "pos": "名詞",
+    "meaning": "比賽 / 火柴 / 配對",
+    "example": "He struck a match to light the candle in the dark.（他在黑暗中劃了一根火柴來點燃蠟燭。）"
+  },
+  {
+    "id": 430,
+    "word": "material",
+    "phonetic": "[məˈtɪrɪəl]",
+    "pos": "名詞",
+    "meaning": "材料 / 原料",
+    "example": "Steel is an important material for building bridges.（鋼是建造橋樑的重要材料。）"
+  },
+  {
+    "id": 431,
+    "word": "mass",
+    "phonetic": "[mæs]",
+    "pos": "名詞",
+    "meaning": "塊 / 大量 / 質量",
+    "example": "A large mass of snow fell from the mountain top.（一大塊積雪從山頂落了下來。）"
+  },
+  {
+    "id": 432,
+    "word": "may",
+    "phonetic": "[me]",
+    "pos": "動詞",
+    "meaning": "可能 / 可以",
+    "example": "You may use my pen to fill out this form.（你可以用我的筆填寫這張表單。基本英語核心助動詞之一。）"
+  },
+  {
+    "id": 433,
+    "word": "meal",
+    "phonetic": "[mil]",
+    "pos": "名詞",
+    "meaning": "一餐 / 膳食",
+    "example": "Breakfast is the most important meal of the day.（早餐是一天當中最重要的一餐。）"
+  },
+  {
+    "id": 434,
+    "word": "measure",
+    "phonetic": "[ˈmɛʒɚ]",
+    "pos": "名詞",
+    "meaning": "測量 / 尺寸 / 措施",
+    "example": "Take a careful measure of the room before buying a bed.（買床之前，請仔細測量房間的尺寸。）"
+  },
+  {
+    "id": 435,
+    "word": "meat",
+    "phonetic": "[mit]",
+    "pos": "名詞",
+    "meaning": "肉類",
+    "example": "He does not eat meat; he prefers vegetables.（他不吃肉，他比較喜歡蔬菜。）"
+  },
+  {
+    "id": 436,
+    "word": "medical",
+    "phonetic": "[ˈmɛdəkəl]",
+    "pos": "形容詞",
+    "meaning": "醫療的 / 文學的",
+    "example": "The sick child received excellent medical care.（生病的孩子得到了極佳的醫療照顧。）"
+  },
+  {
+    "id": 437,
+    "word": "meeting",
+    "phonetic": "[ˈmitɪŋ]",
+    "pos": "名詞",
+    "meaning": "會議 / 聚會",
+    "example": "The important project meeting will start at ten o'clock.（重要的專案會議將在十點鐘開始。）"
+  },
+  {
+    "id": 438,
+    "word": "memory",
+    "phonetic": "[ˈmɛməri]",
+    "pos": "名詞",
+    "meaning": "記憶 / 回憶",
+    "example": "The old grandmother has a very good memory.（老祖母的記憶力非常好。）"
+  },
+  {
+    "id": 439,
+    "word": "metal",
+    "phonetic": "[ˈmɛtl]",
+    "pos": "名詞 / 形容詞",
+    "meaning": "金屬 / 金屬製的",
+    "example": "The heavy box has a strong metal handle.（那個沉重的箱子有一個堅固的金屬把手。）"
+  },
+  {
+    "id": 440,
+    "word": "middle",
+    "phonetic": "[ˈmɪdl]",
+    "pos": "名詞 / 形容詞",
+    "meaning": "中間 / 中央的",
+    "example": "Place the flower vase right in the middle of the table.（把花瓶放在桌子的正中間。）"
+  },
+  {
+    "id": 441,
+    "word": "military",
+    "phonetic": "[ˈmɪləˌtɛri]",
+    "pos": "形容詞 / 名詞",
+    "meaning": "軍事的 / 軍隊",
+    "example": "He wore his formal military coat to the event.（他穿著正式的軍大衣出席活動。）"
+  },
+  {
+    "id": 442,
+    "word": "milk",
+    "phonetic": "[mɪlk]",
+    "pos": "名詞",
+    "meaning": "牛奶",
+    "example": "Drinking warm milk before bed helps you sleep.（睡前喝溫牛奶能幫你入睡。）"
+  },
+  {
+    "id": 443,
+    "word": "mind",
+    "phonetic": "[maɪnd]",
+    "pos": "名詞",
+    "meaning": "心智 / 頭腦 / 想法",
+    "example": "Keep an open mind when learning new knowledge.（學習新知識時要保持開放的心態。）"
+  },
+  {
+    "id": 444,
+    "word": "mine",
+    "phonetic": "[maɪn]",
+    "pos": "代名詞 / 名詞",
+    "meaning": "我的（所有格代名詞）/ 礦坑",
+    "example": "This book is mine, not my brother's. / He works in a gold mine.（這本書是我的。/ 他在金礦工作。）"
+  },
+  {
+    "id": 445,
+    "word": "minute",
+    "phonetic": "[ˈmɪnɪt]",
+    "pos": "名詞",
+    "meaning": "分鐘",
+    "example": "Please wait for one minute; I am almost ready.（請等一分鐘，我幾乎準備好了。）"
+  },
+  {
+    "id": 446,
+    "word": "mist",
+    "phonetic": "[mɪst]",
+    "pos": "名詞",
+    "meaning": "薄霧",
+    "example": "A light mist covered the river early this morning.（今天清晨，一層薄霧籠罩著河流。）"
+  },
+  {
+    "id": 447,
+    "word": "mixed",
+    "phonetic": "[mɪkst]",
+    "pos": "形容詞",
+    "meaning": "混合的",
+    "example": "Put the mixed vegetables into the boiling water.（把混合蔬菜放進沸騰的水中。）"
+  },
+  {
+    "id": 448,
+    "word": "money",
+    "phonetic": "[ˈmʌni]",
+    "pos": "名詞",
+    "meaning": "金錢",
+    "example": "He saved a large amount of money to buy a car.（他存了很大一筆錢想買車。）"
+  },
+  {
+    "id": 449,
+    "word": "monkey",
+    "phonetic": "[ˈmʌŋki]",
+    "pos": "名詞",
+    "meaning": "猴子",
+    "example": "A little monkey is climbing the tall tree branch.（一隻小猴子正在爬高高的樹枝。）"
+  },
+  {
+    "id": 450,
+    "word": "month",
+    "phonetic": "[mʌnθ]",
+    "pos": "名詞",
+    "meaning": "月份",
+    "example": "June is the sixth month of the year.（六月是一年中的第六個月。）"
+  },
+  {
+    "id": 451,
+    "word": "moon",
+    "phonetic": "[mun]",
+    "pos": "名詞",
+    "meaning": "月亮",
+    "example": "The bright moon gave light to the dark street.（明亮的月光照亮了黑暗的街道。）"
+  },
+  {
+    "id": 452,
+    "word": "morning",
+    "phonetic": "[ˈmɔrnɪŋ]",
+    "pos": "名詞",
+    "meaning": "早晨 / 上午",
+    "example": "I usually go for a short walk in the morning.（我通常在早晨去散一下步。）"
+  },
+  {
+    "id": 453,
+    "word": "mother",
+    "phonetic": "[ˈmʌðɚ]",
+    "pos": "名詞",
+    "meaning": "母親",
+    "example": "The mother kissed her sleeping baby girl.（母親吻了她正在熟睡的女嬰。）"
+  },
+  {
+    "id": 454,
+    "word": "motion",
+    "phonetic": "[ˈmoʃən]",
+    "pos": "名詞",
+    "meaning": "運動 / 移動 / 提議",
+    "example": "The steady motion of the train made me sleepy.（火車穩定的移動讓我昏昏欲睡。）"
+  },
+  {
+    "id": 455,
+    "word": "mountain",
+    "phonetic": "[ˈmaʊntn]",
+    "pos": "名詞",
+    "meaning": "山脈 / 高山",
+    "example": "There is still dark green forest on the high mountain.（高山上依然有深綠色的森林。）"
+  },
+  {
+    "id": 456,
+    "word": "mouth",
+    "phonetic": "[maʊθ]",
+    "pos": "名詞",
+    "meaning": "嘴巴",
+    "example": "Open your mouth so the doctor can take a look.（張開你的嘴，好讓醫生看一下。）"
+  },
+  {
+    "id": 457,
+    "word": "move",
+    "phonetic": "[muv]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "移動 / 舉動",
+    "example": "It was a wise move to double-check the figures.（覆核這些數據是一個明智的舉動。）"
+  },
+  {
+    "id": 458,
+    "word": "much (more",
+    "phonetic": "most)",
+    "pos": "[mʌtʃ] ([mor], [most])",
+    "meaning": "形容詞 / 副詞",
+    "example": "許多的 / 更 / 最"
+  },
+  {
+    "id": 459,
+    "word": "muscle",
+    "phonetic": "[ˈmʌsl]",
+    "pos": "名詞",
+    "meaning": "肌肉",
+    "example": "Heavy strength training helps to build strong muscle.（重量力量訓練有助於建立強壯的肌肉。）"
+  },
+  {
+    "id": 460,
+    "word": "music",
+    "phonetic": "[ˈmjuzɪk]",
+    "pos": "名詞",
+    "meaning": "音樂",
+    "example": "Listening to beautiful music can help you relax.（聆聽美妙的音樂可以幫助你放鬆。）"
+  },
+  {
+    "id": 461,
+    "word": "nail",
+    "phonetic": "[nel]",
+    "pos": "名詞",
+    "meaning": "釘子 / 指甲",
+    "example": "He used a heavy hammer to drive the nail into wood.（他用一把重鐵錘把釘子敲進木頭裡。）"
+  },
+  {
+    "id": 462,
+    "word": "name",
+    "phonetic": "[nem]",
+    "pos": "名詞",
+    "meaning": "名字",
+    "example": "Please write your full name on the list.（請在清單上寫下您的全名。）"
+  },
+  {
+    "id": 463,
+    "word": "narrow",
+    "phonetic": "[ˈnæro]",
+    "pos": "形容詞",
+    "meaning": "狹窄的",
+    "example": "The car could not pass through the narrow street.（汽車無法通過那條狹窄的街道。）"
+  },
+  {
+    "id": 464,
+    "word": "nation",
+    "phonetic": "[ˈneʃən]",
+    "pos": "名詞",
+    "meaning": "國家 / 民族",
+    "example": "Every nation has its own unique history and art.（每個國家都有其獨特的歷史和藝術。）"
+  },
+  {
+    "id": 465,
+    "word": "natural",
+    "phonetic": "[ˈnætʃərəl]",
+    "pos": "形容詞",
+    "meaning": "自然的 / 天然的",
+    "example": "Milk is a natural food that is good for children.（牛奶是一種對兒童有好處的天然食物。）"
+  },
+  {
+    "id": 466,
+    "word": "near",
+    "phonetic": "[nɪr]",
+    "pos": "介系詞 / 形容詞 / 副詞",
+    "meaning": "靠近 / 附近的",
+    "example": "Our house is very near the high school.（我們家離中學非常近。）"
+  },
+  {
+    "id": 467,
+    "word": "necessary",
+    "phonetic": "[ˈnɛsəˌsɛri]",
+    "pos": "形容詞",
+    "meaning": "必要的",
+    "example": "Proper training is necessary for safe driving.（適當的培訓對於安全駕駛是必要的。）"
+  },
+  {
+    "id": 468,
+    "word": "neck",
+    "phonetic": "[nɛk]",
+    "pos": "名詞",
+    "meaning": "脖子 / 頸部",
+    "example": "She wore a beautiful gold chain around her neck.（她脖子上戴著一條美麗的金鏈子。）"
+  },
+  {
+    "id": 469,
+    "word": "need",
+    "phonetic": "[nid]",
+    "pos": "名詞",
+    "meaning": "需要 / 需求",
+    "example": "There is an urgent need for fresh water in the town.（鎮上對淡水有迫切的需求。）"
+  },
+  {
+    "id": 470,
+    "word": "needle",
+    "phonetic": "[ˈnidl]",
+    "pos": "名詞",
+    "meaning": "針",
+    "example": "She used a small steel needle to fix the shirt.（她用一支小鋼針來修補襯衫。）"
+  },
+  {
+    "id": 471,
+    "word": "nerve",
+    "phonetic": "[nɝv]",
+    "pos": "名詞",
+    "meaning": "神經 / 勇氣",
+    "example": "The optical nerve connects the eye to the brain.（視神經將眼睛與大腦連接起來。）"
+  },
+  {
+    "id": 472,
+    "word": "net",
+    "phonetic": "[nɛt]",
+    "pos": "名詞",
+    "meaning": "網 / 網狀物",
+    "example": "The fisherman caught many fish with his large net.（漁夫用他的大網捕到了許多魚。）"
+  },
+  {
+    "id": 473,
+    "word": "new",
+    "phonetic": "[nu]",
+    "pos": "形容詞",
+    "meaning": "新的",
+    "example": "He bought a new automatic camera yesterday.（他昨天買了一台新的自動相機。）"
+  },
+  {
+    "id": 474,
+    "word": "news",
+    "phonetic": "[nuz]",
+    "pos": "名詞",
+    "meaning": "新聞 / 消息",
+    "example": "We were happy to hear the good news of your success.（我們很高興聽到你成功的好消息。）"
+  },
+  {
+    "id": 475,
+    "word": "night",
+    "phonetic": "[naɪt]",
+    "pos": "名詞",
+    "meaning": "夜晚",
+    "example": "The sky was full of bright stars last night.（昨晚的天空布滿了明亮的星星。）"
+  },
+  {
+    "id": 476,
+    "word": "no",
+    "phonetic": "[no]",
+    "pos": "形容詞 / 副詞",
+    "meaning": "沒有 / 不",
+    "example": "There is no water left in the glass bottle.（玻璃瓶裡沒有留下一點水。）"
+  },
+  {
+    "id": 477,
+    "word": "noise",
+    "phonetic": "[nɔɪz]",
+    "pos": "名詞",
+    "meaning": "噪音 / 聲音",
+    "example": "A loud noise came from the broken engine.（壞掉的引擎傳出一聲巨響。）"
+  },
+  {
+    "id": 478,
+    "word": "normal",
+    "phonetic": "[ˈnɔrml]",
+    "pos": "形容詞",
+    "meaning": "正常的 / 正規的",
+    "example": "His body temperature is completely normal today.（他今天的體溫完全正常。）"
+  },
+  {
+    "id": 479,
+    "word": "north",
+    "phonetic": "[nɔrθ]",
+    "pos": "名詞 / 形容詞 / 副詞",
+    "meaning": "北方 / 向北的",
+    "example": "The cold wind blows from the north in winter.（冬天冷風從北方吹來。）"
+  },
+  {
+    "id": 480,
+    "word": "nose",
+    "phonetic": "[noz]",
+    "pos": "名詞",
+    "meaning": "鼻子",
+    "example": "The brown dog has a very keen nose for smell.（那隻棕色狗的鼻子對氣味非常靈敏。）"
+  },
+  {
+    "id": 481,
+    "word": "not",
+    "phonetic": "[nɑt]",
+    "pos": "副詞",
+    "meaning": "不 / 不是",
+    "example": "This book is not mine; it belongs to my brother.（這本書不是我的，它是我兄弟的。）"
+  },
+  {
+    "id": 482,
+    "word": "note",
+    "phonetic": "[not]",
+    "pos": "名詞",
+    "meaning": "筆記 / 便條 / 音符",
+    "example": "He wrote a short note to remind himself of the meeting.（他寫了一張短便條來提醒自己開會。）"
+  },
+  {
+    "id": 483,
+    "word": "now",
+    "phonetic": "[naʊ]",
+    "pos": "副詞",
+    "meaning": "現在",
+    "example": "Please come here now; we need your help.（請現在過來，我們需要你的幫助。）"
+  },
+  {
+    "id": 484,
+    "word": "number",
+    "phonetic": "[ˈnʌmbɚ]",
+    "pos": "名詞",
+    "meaning": "數字 / 數量",
+    "example": "A large number of students visited the library.（大批學生參觀了圖書館。）"
+  },
+  {
+    "id": 485,
+    "word": "nut",
+    "phonetic": "[nʌt]",
+    "pos": "名詞",
+    "meaning": "堅果 / 螺帽",
+    "example": "An ant was carrying a small piece of nut.（一隻螞蟻正搬著一小塊堅果。）"
+  },
+  {
+    "id": 486,
+    "word": "observation",
+    "phonetic": "[ˌɑbzɚˈveʃən]",
+    "pos": "名詞",
+    "meaning": "觀察 / 觀測",
+    "example": "The scientist made a careful observation of the liquid.（科學家對該液體進行了仔細的觀察。）"
+  },
+  {
+    "id": 487,
+    "word": "of",
+    "phonetic": "[ʌv]",
+    "pos": "介系詞",
+    "meaning": "...的 / 關於",
+    "example": "The cover of the book is bright red.（這本書的封面是鮮紅色的。）"
+  },
+  {
+    "id": 488,
+    "word": "off",
+    "phonetic": "[ɔf]",
+    "pos": "介系詞 / 副詞",
+    "meaning": "離開 / 關掉",
+    "example": "Please turn off the electric stove before leaving.（離開前請關閉電爐。）"
+  },
+  {
+    "id": 489,
+    "word": "offer",
+    "phonetic": "[ˈɔfɚ]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "提供 / 提議",
+    "example": "Thank you for your kind offer of help.（謝謝你熱心提供幫助。）"
+  },
+  {
+    "id": 490,
+    "word": "office",
+    "phonetic": "[ˈɔfɪs]",
+    "pos": "名詞",
+    "meaning": "辦公室",
+    "example": "His office is on the fifth floor of the building.（他的辦公室在大樓的五樓。）"
+  },
+  {
+    "id": 491,
+    "word": "oil",
+    "phonetic": "[ɔɪl]",
+    "pos": "名詞",
+    "meaning": "油 / 石油",
+    "example": "Put some olive oil into the mixed vegetables.（在沙拉蔬菜中加入一些橄欖油。）"
+  },
+  {
+    "id": 492,
+    "word": "old",
+    "phonetic": "[old]",
+    "pos": "形容詞",
+    "meaning": "年老的 / 舊的",
+    "example": "The old man lives in a beautiful wooden house.（那位老人住在一棟美麗的木屋裡。）"
+  },
+  {
+    "id": 493,
+    "word": "on",
+    "phonetic": "[ɑn]",
+    "pos": "介系詞 / 副詞",
+    "meaning": "在...之上 / 進行中",
+    "example": "The key is resting on the kitchen table.（鑰匙正放在廚房桌上。）"
+  },
+  {
+    "id": 494,
+    "word": "only",
+    "phonetic": "[ˈonli]",
+    "pos": "形容詞 / 副詞",
+    "meaning": "只有 / 唯一的",
+    "example": "He is the only student who passed the hard test.（他是唯一通過這場硬核測試的學生。）"
+  },
+  {
+    "id": 495,
+    "word": "open",
+    "phonetic": "[ˈopən]",
+    "pos": "形容詞",
+    "meaning": "開放的 / 打開的",
+    "example": "Please keep the window open for fresh air.（請保持窗戶打開以引入新鮮空氣。）"
+  },
+  {
+    "id": 496,
+    "word": "operation",
+    "phonetic": "[ˌɑpəˈreʃən]",
+    "pos": "名詞",
+    "meaning": "操作 / 運作 / 手術",
+    "example": "The smooth operation of the machine is important.（機器的順暢運作非常重要。）"
+  },
+  {
+    "id": 497,
+    "word": "opinion",
+    "phonetic": "[əˈpɪnjən]",
+    "pos": "名詞",
+    "meaning": "意見 / 看法",
+    "example": "In my opinion, honesty is the best policy.（依我看，誠實是最好的策略。）"
+  },
+  {
+    "id": 498,
+    "word": "opposite",
+    "phonetic": "[ˈɑpəzɪt]",
+    "pos": "形容詞 / 名詞",
+    "meaning": "相反的 / 對面",
+    "example": "They walked in the opposite direction of the station.（他們朝著車站的相反方向走去。）"
+  },
+  {
+    "id": 499,
+    "word": "or",
+    "phonetic": "[ɔr]",
+    "pos": "連接詞",
+    "meaning": "或者",
+    "example": "Would you prefer hot tea or cold water?（你想要熱茶還是冷水？）"
+  },
+  {
+    "id": 500,
+    "word": "orange",
+    "phonetic": "[ˈɔrɪndʒ]",
+    "pos": "名詞 / 形容詞",
+    "meaning": "柳橙 / 橘色的",
+    "example": "She ate a sweet orange after her breakfast.（她早餐後吃了一個甜柳橙。）"
+  },
+  {
+    "id": 501,
+    "word": "order",
+    "phonetic": "[ˈɔrdɚ]",
+    "pos": "名詞",
+    "meaning": "命令 / 訂單 / 順序",
+    "example": "Put the historical records in alphabetical order.（將歷史記錄按字母順序排列。）"
+  },
+  {
+    "id": 502,
+    "word": "organization",
+    "phonetic": "[ˌɔrɡənəˈzeʃən]",
+    "pos": "名詞",
+    "meaning": "組織 / 機構",
+    "example": "He works for an international trade organization.（他在一個國際貿易組織工作。）"
+  },
+  {
+    "id": 503,
+    "word": "ornament",
+    "phonetic": "[ˈɔrnəmənt]",
+    "pos": "名詞",
+    "meaning": "裝飾品",
+    "example": "The glass ornament on the shelf is delicate.（架子上的玻璃裝飾品非常精緻。）"
+  },
+  {
+    "id": 504,
+    "word": "other",
+    "phonetic": "[ˈʌðɚ]",
+    "pos": "形容詞 / 代名詞",
+    "meaning": "其他的",
+    "example": "I have no other choices but to agree.（除了同意外我別無選擇。）"
+  },
+  {
+    "id": 505,
+    "word": "out",
+    "phonetic": "[aʊt]",
+    "pos": "介系詞 / 副詞",
+    "meaning": "在外 / 向外",
+    "example": "He walked out of the narrow street into the open field.（他走出狹窄的街道，來到開闊的田野。）"
+  },
+  {
+    "id": 506,
+    "word": "oven",
+    "phonetic": "[ˈʌvən]",
+    "pos": "名詞",
+    "meaning": "烤箱",
+    "example": "Bake the bread in the hot oven for thirty minutes.（將麵包在熱烤箱中烘烤三十分鐘。）"
+  },
+  {
+    "id": 507,
+    "word": "over",
+    "phonetic": "[ˈovɚ]",
+    "pos": "介系詞 / 副詞",
+    "meaning": "在...之上 / 結束",
+    "example": "The plane flew high over the high mountains.（飛機在高山之上高高飛過。）"
+  },
+  {
+    "id": 508,
+    "word": "owner",
+    "phonetic": "[ˈonɚ]",
+    "pos": "名詞",
+    "meaning": "所有者 / 物主",
+    "example": "He is the proud owner of a new automatic car.（他是一輛新自動排檔車的驕傲車主。）"
+  },
+  {
+    "id": 509,
+    "word": "page",
+    "phonetic": "[pedʒ]",
+    "pos": "名詞",
+    "meaning": "頁面 / 頁碼",
+    "example": "Please open your book to page eighty-five.（請將書翻到第 85 頁。）"
+  },
+  {
+    "id": 510,
+    "word": "pain",
+    "phonetic": "[pen]",
+    "pos": "名詞",
+    "meaning": "疼痛 / 痛苦",
+    "example": "He felt a sudden sharp pain in his left arm.（他左臂突然感到一陣劇痛。）"
+  },
+  {
+    "id": 511,
+    "word": "paint",
+    "phonetic": "[pent]",
+    "pos": "名詞",
+    "meaning": "油漆 / 顏料",
+    "example": "Use wet white paint to cover the old wall.（使用濕的白漆來覆蓋舊牆。）"
+  },
+  {
+    "id": 512,
+    "word": "paper",
+    "phonetic": "[ˈpepɚ]",
+    "pos": "名詞",
+    "meaning": "紙張 / 文件",
+    "example": "Write your name on a clean sheet of white paper.（在一張乾淨的白紙上寫下你的名字。）"
+  },
+  {
+    "id": 513,
+    "word": "parallel",
+    "phonetic": "[ˈpærəlɛl]",
+    "pos": "形容詞",
+    "meaning": "平行的",
+    "example": "Draw two parallel lines on the paper with a pencil.（用 pencil 在紙上畫兩條平行線。）"
+  },
+  {
+    "id": 514,
+    "word": "parcel",
+    "phonetic": "[ˈpɑrsl]",
+    "pos": "名詞",
+    "meaning": "包裹",
+    "example": "The postman delivered a large parcel to our house.（郵差把一個大包裹送到了我們家。）"
+  },
+  {
+    "id": 515,
+    "word": "part",
+    "phonetic": "[pɑrt]",
+    "pos": "名詞",
+    "meaning": "部分 / 零件",
+    "example": "This is the most interesting part of the history book.（這是這本歷史書中最有趣的部分。）"
+  },
+  {
+    "id": 516,
+    "word": "past",
+    "phonetic": "[pæst]",
+    "pos": "名詞 / 介系詞 / 形容詞",
+    "meaning": "過去 / 經過",
+    "example": "In the past, people used horse carriages to travel.（過去，人們乘坐馬車旅行。）"
+  },
+  {
+    "id": 517,
+    "word": "paste",
+    "phonetic": "[pest]",
+    "pos": "名詞",
+    "meaning": "糊狀物 / 漿糊",
+    "example": "Use strong flour paste to fix the paper box.（用強力的麵粉漿糊來固定紙箱。）"
+  },
+  {
+    "id": 518,
+    "word": "payment",
+    "phonetic": "[ˈpemənt]",
+    "pos": "名詞",
+    "meaning": "付款 / 款項",
+    "example": "The bank received his payment for the loan.（銀行收到了他的貸款款項。）"
+  },
+  {
+    "id": 519,
+    "word": "peace",
+    "phonetic": "[pis]",
+    "pos": "名詞",
+    "meaning": "和平 / 平靜",
+    "example": "We love the perfect peace of the countryside.（我們熱愛鄉間完美的寧靜。）"
+  },
+  {
+    "id": 520,
+    "word": "pen",
+    "phonetic": "[pɛn]",
+    "pos": "名詞",
+    "meaning": "鋼筆 / 原子筆",
+    "example": "Please fill my black pen with some fresh ink.（請幫我的黑筆加點新鮮墨水。）"
+  },
+  {
+    "id": 521,
+    "word": "pencil",
+    "phonetic": "[ˈpɛnsl]",
+    "pos": "名詞",
+    "meaning": "鉛筆",
+    "example": "Use a sharp pencil to draw a straight line.（用鋒利的鉛筆畫一條直線。）"
+  },
+  {
+    "id": 522,
+    "word": "person",
+    "phonetic": "[ˈpɝsn]",
+    "pos": "名詞",
+    "meaning": "人",
+    "example": "He is a very honest person who always tells the truth.（ transition他是一個總是說真話的誠實人。）"
+  },
+  {
+    "id": 523,
+    "word": "physical",
+    "phonetic": "[ˈfɪzɪkəl]",
+    "pos": "形容詞",
+    "meaning": "身體的 / 物理的 / 物質的",
+    "example": "Heavy strength training requires great physical force.（重量力量訓練需要巨大的身體力量。）"
+  },
+  {
+    "id": 524,
+    "word": "picture",
+    "phonetic": "[ˈpɪktʃɚ]",
+    "pos": "名詞",
+    "meaning": "圖片 / 照片 / 圖畫",
+    "example": "She put her family picture in a wooden frame.（她把全家福相片放在木製相框裡。）"
+  },
+  {
+    "id": 525,
+    "word": "pig",
+    "phonetic": "[pɪɡ]",
+    "pos": "名詞",
+    "meaning": "豬",
+    "example": "The farmer keeps a fat brown pig on his farm.（農夫在農場裡養了一隻肥胖的棕色豬。）"
+  },
+  {
+    "id": 526,
+    "word": "pin",
+    "phonetic": "[pɪn]",
+    "pos": "名詞",
+    "meaning": "大頭針 / 別針",
+    "example": "Use a small metal pin to secure the papers.（使用一個小金屬別針來固定文件。）"
+  },
+  {
+    "id": 527,
+    "word": "pipe",
+    "phonetic": "[paɪp]",
+    "pos": "名詞",
+    "meaning": "管路 / 煙斗",
+    "example": "The hygienic stainless steel pipe is completely clean.（這條衛生級不鏽鋼管路完全乾淨。）"
+  },
+  {
+    "id": 528,
+    "word": "place",
+    "phonetic": "[ples]",
+    "pos": "名詞",
+    "meaning": "地方 / 位置",
+    "example": "The library is an excellent place for learning.（圖書館是學習的絕佳場所。）"
+  },
+  {
+    "id": 529,
+    "word": "plane",
+    "phonetic": "[plen]",
+    "pos": "名詞",
+    "meaning": "飛機 / 平面",
+    "example": "The plane took off for Paris at eight o'clock.（飛機在八點鐘起飛前往巴黎。）"
+  },
+  {
+    "id": 530,
+    "word": "plant",
+    "phonetic": "[plænt]",
+    "pos": "名詞",
+    "meaning": "植物 / 工廠",
+    "example": "Water the little green plant every morning.（每天早晨為這株綠色小植物澆水。）"
+  },
+  {
+    "id": 531,
+    "word": "plate",
+    "phonetic": "[plet]",
+    "pos": "名詞",
+    "meaning": "盤子 / 金屬板",
+    "example": "Put the slices of bread on a clean white plate.（將麵包片放在乾淨的白盤子上。）"
+  },
+  {
+    "id": 532,
+    "word": "play",
+    "phonetic": "[ple]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "遊戲 / 戲劇 / 玩耍",
+    "example": "The children are at play in the garden.（孩子們正在花園裡玩耍。）"
+  },
+  {
+    "id": 533,
+    "word": "please",
+    "phonetic": "[pliz]",
+    "pos": "副詞",
+    "meaning": "請",
+    "example": "Please give me a cup of warm water.（請給我一杯溫水。）"
+  },
+  {
+    "id": 534,
+    "word": "pleasure",
+    "phonetic": "[ˈplɛʒɚ]",
+    "pos": "名詞",
+    "meaning": "快樂 / 欣慰",
+    "example": "It gives me great pleasure to meet you here.（能在這裡見到你，我感到非常高興。）"
+  },
+  {
+    "id": 535,
+    "word": "plough / plow",
+    "phonetic": "[plaʊ]",
+    "pos": "名詞",
+    "meaning": "犁",
+    "example": "The old farmer used a heavy iron plough in the field.（老農夫在田裡使用一把沉重的鐵犁。）"
+  },
+  {
+    "id": 536,
+    "word": "pocket",
+    "phonetic": "[ˈpɑkɪt]",
+    "pos": "名詞",
+    "meaning": "口袋",
+    "example": "He put his leather wallet into his coat pocket.（他把皮夾放進大衣口袋裡。）"
+  },
+  {
+    "id": 537,
+    "word": "point",
+    "phonetic": "[pɔɪnt]",
+    "pos": "名詞",
+    "meaning": "尖端 / 要點 / 點",
+    "example": "Look at the sharp point of the needle.（看這根針尖銳的尖端。）"
+  },
+  {
+    "id": 538,
+    "word": "poison",
+    "phonetic": "[ˈpɔɪzn]",
+    "pos": "名詞",
+    "meaning": "毒藥 / 毒物",
+    "example": "Keep that chemical poison away from children.（讓那種化學毒物遠離兒童。）"
+  },
+  {
+    "id": 539,
+    "word": "polish",
+    "phonetic": "[ˈpɑlɪʃ]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "擦亮劑 / 光澤",
+    "example": "Apply some shoe polish to keep your leather boots bright.（抹一些鞋油以保持皮靴光亮。）"
+  },
+  {
+    "id": 540,
+    "word": "political",
+    "phonetic": "[pəˈlɪtɪkəl]",
+    "pos": "形容詞",
+    "meaning": "政治的",
+    "example": "He expressed an interest in world political history.（他對世界政治歷史表達了興趣。）"
+  },
+  {
+    "id": 541,
+    "word": "poor",
+    "phonetic": "[pʊr]",
+    "pos": "形容詞",
+    "meaning": "貧窮的 / 可憐的 / 差的",
+    "example": "The distribution of food to the poor families started today.（向貧困家庭分發食物的工作今天開始了。）"
+  },
+  {
+    "id": 542,
+    "word": "porter",
+    "phonetic": "[ˈpɔrtɚ]",
+    "pos": "名詞",
+    "meaning": "搬運工 / 行李員",
+    "example": "The porter helped the tired travelers carry their heavy bags.（搬運工幫助疲憊的旅客搬運沉重的行李。）"
+  },
+  {
+    "id": 543,
+    "word": "position",
+    "phonetic": "[pəˈzɪʃən]",
+    "pos": "名詞",
+    "meaning": "位置 / 職位",
+    "example": "Check the mechanical position of the pump valve.（檢查泵浦閥門的機械位置。）"
+  },
+  {
+    "id": 544,
+    "word": "possible",
+    "phonetic": "[ˈpɑsəbl]",
+    "pos": "形容詞",
+    "meaning": "可能的",
+    "example": "It is possible to complete the technical review today.（今天完成技術審查是有可能的。）"
+  },
+  {
+    "id": 545,
+    "word": "pot",
+    "phonetic": "[pɑt]",
+    "pos": "名詞",
+    "meaning": "罐 / 壺 / 鍋",
+    "example": "She boiled some vegetables in a metal pot.（她在金屬鍋裡煮了一些蔬菜。）"
+  },
+  {
+    "id": 546,
+    "word": "potato",
+    "phonetic": "[pəˈteto]",
+    "pos": "名詞",
+    "meaning": "馬鈴薯",
+    "example": "He baked a large potato in the hot oven.（他在熱烤箱裡烤了一個大馬鈴薯。）"
+  },
+  {
+    "id": 547,
+    "word": "powder",
+    "phonetic": "[ˈpaʊdɚ]",
+    "pos": "名詞",
+    "meaning": "粉末",
+    "example": "Mix the white chemical powder with warm water.（將白色化學粉末與溫水混合。）"
+  },
+  {
+    "id": 548,
+    "word": "power",
+    "phonetic": "[ˈpaʊɚ]",
+    "pos": "名詞",
+    "meaning": "力量 / 電力 / 權力",
+    "example": "The new engine has great mechanical power.（這台新引擎具有強大的機械動力。）"
+  },
+  {
+    "id": 549,
+    "word": "present",
+    "phonetic": "[ˈprɛznt]",
+    "pos": "名詞 / 形容詞",
+    "meaning": "禮物 / 現在的 / 出席的",
+    "example": "He gave his wife a beautiful birthday present.（他給了他的妻子一份美麗的生日禮物。）"
+  },
+  {
+    "id": 550,
+    "word": "price",
+    "phonetic": "[praɪs]",
+    "pos": "名詞",
+    "meaning": "價格",
+    "example": "There is a steady increase in the price of wheat.（小麥價格正在穩定上漲。）"
+  },
+  {
+    "id": 551,
+    "word": "print",
+    "phonetic": "[prɪnt]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "印刷 / 印記",
+    "example": "The small print in this document is hard to read.（這份文件中的小字體很難閱讀。）"
+  },
+  {
+    "id": 552,
+    "word": "prison",
+    "phonetic": "[ˈprɪzn]",
+    "pos": "名詞",
+    "meaning": "監獄",
+    "example": "The man was sent to prison for his serious crime.（該男子因其嚴重的罪行被送往監獄。）"
+  },
+  {
+    "id": 553,
+    "word": "private",
+    "phonetic": "[ˈpraɪvɪt]",
+    "pos": "形容詞",
+    "meaning": "私人的 / 私密的",
+    "example": "This is a private discussion about family matters.（這是關於家庭事務的私人討論。）"
+  },
+  {
+    "id": 554,
+    "word": "probable",
+    "phonetic": "[ˈprɑbəbl]",
+    "pos": "形容詞",
+    "meaning": "很可能的",
+    "example": "Rain is the probable cause of the travel delay.（下雨很可能是行程延誤的原因。）"
+  },
+  {
+    "id": 555,
+    "word": "process",
+    "phonetic": "[ˈprɑsɛs]",
+    "pos": "名詞",
+    "meaning": "過程 / 製程",
+    "example": "Qualification is a regular process for new systems.（資格驗證是新系統的常規流程。）"
+  },
+  {
+    "id": 556,
+    "word": "produce",
+    "phonetic": "[prəˈdus]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "農產品 / 生產",
+    "example": "The farm yields fresh produce like corn and apples.（該農場產出新鮮的農產品，如玉米和蘋果。）"
+  },
+  {
+    "id": 557,
+    "word": "profit",
+    "phonetic": "[ˈprɑfɪt]",
+    "pos": "名詞",
+    "meaning": "利潤 / 利益",
+    "example": "Value investing focuses on long-term profit.（價值投資專注於長期利潤。）"
+  },
+  {
+    "id": 558,
+    "word": "property",
+    "phonetic": "[ˈprɑpɚti]",
+    "pos": "名詞",
+    "meaning": "財產 / 房產 / 特性",
+    "example": "The land is the private property of the old farmer.（這片土地是老農夫的私人財產。）"
+  },
+  {
+    "id": 559,
+    "word": "prose",
+    "phonetic": "[proz]",
+    "pos": "名詞",
+    "meaning": "散文",
+    "example": "He prefers writing clear prose to beautiful verse.（比起美麗的詩句，他更喜歡寫清晰的散文。）"
+  },
+  {
+    "id": 560,
+    "word": "protest",
+    "phonetic": "[ˈprotest]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "抗議 / 反對",
+    "example": "The committee made a strong protest against the rule.（委員會對該規則提出了強烈的抗議。）"
+  },
+  {
+    "id": 561,
+    "word": "public",
+    "phonetic": "[ˈpʌblɪk]",
+    "pos": "形容詞 / 名詞",
+    "meaning": "公共的 / 大眾",
+    "example": "I go to the public library to read books on weekends.（我週末去公共圖書館讀書。）"
+  },
+  {
+    "id": 562,
+    "word": "pull",
+    "phonetic": "[pʊl]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "拉 / 拖",
+    "example": "Give a strong pull to the rope to open the stone gate.（用力拉一下繩子以打開石門。）"
+  },
+  {
+    "id": 563,
+    "word": "pump",
+    "phonetic": "[pʌmp]",
+    "pos": "名詞",
+    "meaning": "泵浦 / 抽水機",
+    "example": "Check the drain port location under the hygienic pump.（檢查衛生級泵浦下方的排水口位置。）"
+  },
+  {
+    "id": 564,
+    "word": "punishment",
+    "phonetic": "[ˈpʌnɪʃmənt]",
+    "pos": "名詞",
+    "meaning": "懲罰",
+    "example": "Severe punishment was given to the man for his crime.（該男子因其罪行受到了嚴厲的懲罰。）"
+  },
+  {
+    "id": 565,
+    "word": "purpose",
+    "phonetic": "[ˈpɝpəs]",
+    "pos": "名詞",
+    "meaning": "目的 / 意圖",
+    "example": "What is the main purpose of your technical visit?（你這次技術拜訪的主要目的是什麼？）"
+  },
+  {
+    "id": 566,
+    "word": "push",
+    "phonetic": "[pʊʃ]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "推",
+    "example": "Give a gentle push to the door to close it tightly.（輕推一下門以將其關緊。）"
+  },
+  {
+    "id": 567,
+    "word": "put",
+    "phonetic": "[pʊt]",
+    "pos": "動詞",
+    "meaning": "放置 / 表達",
+    "example": "Please put the important records into the drawer.（請將重要記錄放進抽屜裡。基本英語 18 個核心動詞之一。）"
+  },
+  {
+    "id": 568,
+    "word": "quality",
+    "phonetic": "[ˈkwɑləti]",
+    "pos": "名詞",
+    "meaning": "品質 / 特質",
+    "example": "We always check the quality of the medical product.（我們總是檢查醫療產品的品質。）"
+  },
+  {
+    "id": 569,
+    "word": "question",
+    "phonetic": "[ˈkwɛstʃən]",
+    "pos": "名詞",
+    "meaning": "問題 / 疑問",
+    "example": "If you have any question, please ask the guide.（如果你有任何問題，請詢問導遊。）"
+  },
+  {
+    "id": 570,
+    "word": "quick",
+    "phonetic": "[kwɪk]",
+    "pos": "形容詞",
+    "meaning": "快速的",
+    "example": "He made a quick decision to change his travel plan.（他快速做出決定，改變了他的旅行計劃。）"
+  },
+  {
+    "id": 571,
+    "word": "quiet",
+    "phonetic": "[ˈkwaɪət]",
+    "pos": "形容詞",
+    "meaning": "安靜的",
+    "example": "Please keep quiet while the baby is sleeping.（寶寶睡覺時請保持安靜。）"
+  },
+  {
+    "id": 572,
+    "word": "quite",
+    "phonetic": "[kwaɪt]",
+    "pos": "副詞",
+    "meaning": "相當 / 完全",
+    "example": "The technical review today is quite complete.（今天的技術審查相當完整。）"
+  },
+  {
+    "id": 573,
+    "word": "rail",
+    "phonetic": "[rel]",
+    "pos": "名詞",
+    "meaning": "鐵軌 / 欄杆",
+    "example": "The train runs smoothly along the steel rail.（火車沿著鋼軌平穩行駛。）"
+  },
+  {
+    "id": 574,
+    "word": "rain",
+    "phonetic": "[ren]",
+    "pos": "名詞",
+    "meaning": "雨 / 下雨",
+    "example": "The heavy rain covered the fields with water.（大雨讓田地裡都積滿了水。）"
+  },
+  {
+    "id": 575,
+    "word": "range",
+    "phonetic": "[rendʒ]",
+    "pos": "名詞",
+    "meaning": "範圍 / 山脈",
+    "example": "This instrument has a wide range of measurement.（這台儀器有很寬的測量範圍。）"
+  },
+  {
+    "id": 576,
+    "word": "rat",
+    "phonetic": "[ræt]",
+    "pos": "名詞",
+    "meaning": "老鼠（體型較大者）",
+    "example": "The brown dog barked when it saw a rat.（棕色狗看到老鼠時叫了起來。）"
+  },
+  {
+    "id": 577,
+    "word": "rate",
+    "phonetic": "[ret]",
+    "pos": "名詞",
+    "meaning": "比率 / 速率",
+    "example": "The rate of growth for the market is very steady.（該市場的增長率非常穩定。）"
+  },
+  {
+    "id": 578,
+    "word": "ray",
+    "phonetic": "[re]",
+    "pos": "名詞",
+    "meaning": "光線 / 射線",
+    "example": "A warm ray of sun came through the window.（一束溫暖的陽光透過窗戶照了進來。）"
+  },
+  {
+    "id": 579,
+    "word": "reaction",
+    "phonetic": "[riˈækʃən]",
+    "pos": "名詞",
+    "meaning": "反應",
+    "example": "Scientists observed the chemical reaction in the pot.（科學家觀察了鍋中的化學反應。）"
+  },
+  {
+    "id": 580,
+    "word": "reading",
+    "phonetic": "[ˈridɪŋ]",
+    "pos": "名詞",
+    "meaning": "閱讀 / 讀數",
+    "example": "Check the temperature reading on the clock display.（檢查時鐘顯示屏上的溫度讀數。）"
+  },
+  {
+    "id": 581,
+    "word": "ready",
+    "phonetic": "[ˈrɛdi]",
+    "pos": "形容詞",
+    "meaning": "準備好的",
+    "example": "I am ready to complete the validation protocol.（我已經準備好完成驗證協議了。）"
+  },
+  {
+    "id": 582,
+    "word": "reason",
+    "phonetic": "[ˈrizn]",
+    "pos": "名詞",
+    "meaning": "原因 / 理智",
+    "example": "Tell me the main reason for your late arrival.（告訴我你遲到的主要原因。）"
+  },
+  {
+    "id": 583,
+    "word": "receipt",
+    "phonetic": "[rɪˈsit]",
+    "pos": "名詞",
+    "meaning": "收據 / 收到",
+    "example": "Please give me a written receipt for my payment.（請給我一份我的付款書面收據。）"
+  },
+  {
+    "id": 584,
+    "word": "record",
+    "phonetic": "[ˈrɛkɚd]",
+    "pos": "名詞",
+    "meaning": "紀錄 / 唱片",
+    "example": "Keep a clear record of the external balance test.（對外部天平測試保持清晰的記錄。）"
+  },
+  {
+    "id": 585,
+    "word": "red",
+    "phonetic": "[rɛd]",
+    "pos": "形容詞 / 名詞",
+    "meaning": "紅色的 / 紅色",
+    "example": "She wore a beautiful red dress to the meeting.（她穿著一件美麗的紅連身裙出席會議。）"
+  },
+  {
+    "id": 586,
+    "word": "regret",
+    "phonetic": "[rɪˈɡrɛt]",
+    "pos": "名詞",
+    "meaning": "後悔 / 遺憾",
+    "example": "He expressed deep regret for his foolish action.（ transition他對自己愚蠢的行為表達了深切的遺憾。）"
+  },
+  {
+    "id": 587,
+    "word": "regular",
+    "phonetic": "[ˈrɛɡjəlɚ]",
+    "pos": "形容詞",
+    "meaning": "定期的 / 常規的 / 規則的",
+    "example": "Regular exercise keeps your body healthy and strong.（規律運動能保持身體健康強壯。）"
+  },
+  {
+    "id": 588,
+    "word": "relation",
+    "phonetic": "[rɪˈleʃən]",
+    "pos": "名詞",
+    "meaning": "關係",
+    "example": "There is a direct relation between heat and growth.（熱與生長之間有直接的關係。）"
+  },
+  {
+    "id": 589,
+    "word": "religion",
+    "phonetic": "[rɪˈlɪdʒən]",
+    "pos": "名詞",
+    "meaning": "宗教",
+    "example": "Every nation has its own history and religion.（每個國家都有其獨特的歷史與宗教。）"
+  },
+  {
+    "id": 590,
+    "word": "representative",
+    "phonetic": "[ˌrɛprɪˈzɛntətɪv]",
+    "pos": "名詞 / 形容詞",
+    "meaning": "代表 / 具代表性的",
+    "example": "The trade representative signed the final agreement.（貿易代表簽署了最終協議。）"
+  },
+  {
+    "id": 591,
+    "word": "request",
+    "phonetic": "[rɪˈkwɛst]",
+    "pos": "名詞",
+    "meaning": "請求 / 要求",
+    "example": "The manager approved my request for a new machine.（經理批准了我購買新機器的請求。）"
+  },
+  {
+    "id": 592,
+    "word": "respect",
+    "phonetic": "[rɪˈspɛkt]",
+    "pos": "名詞",
+    "meaning": "尊重 / 敬意",
+    "example": "Children should show respect to their older brother.（孩子們應該對他們的哥哥展現尊重。）"
+  },
+  {
+    "id": 593,
+    "word": "responsible",
+    "phonetic": "[rɪˈspɑnsəbl]",
+    "pos": "形容詞",
+    "meaning": "負責任的",
+    "example": "The supervisor is responsible for safety here.（主管負責這裡的安全。）"
+  },
+  {
+    "id": 594,
+    "word": "rest",
+    "phonetic": "[rɛst]",
+    "pos": "名詞",
+    "meaning": "休息 / 剩餘部分",
+    "example": "A warm bath will give great rest to your body.（洗個熱水澡會讓你的身體得到很好的休息。）"
+  },
+  {
+    "id": 595,
+    "word": "reward",
+    "phonetic": "[rɪˈwɔrd]",
+    "pos": "名詞",
+    "meaning": "獎勵 / 報酬",
+    "example": "He received a small money reward for his help.（他因為提供幫助而獲得了一筆小額的金錢獎勵。）"
+  },
+  {
+    "id": 596,
+    "word": "rhythm",
+    "phonetic": "[ˈrɪðəm]",
+    "pos": "名詞",
+    "meaning": "節奏 / 韻律",
+    "example": "The happy children danced to the rhythm of the music.（快樂的孩子們隨著音樂的節奏跳舞。）"
+  },
+  {
+    "id": 597,
+    "word": "rice",
+    "phonetic": "[raɪs]",
+    "pos": "名詞",
+    "meaning": "稻米 / 米飯",
+    "example": "Rice is the chief food in many Asian countries.（米飯是許多亞洲國家的主要食物。）"
+  },
+  {
+    "id": 598,
+    "word": "right",
+    "phonetic": "[raɪt]",
+    "pos": "形容詞 / 副詞 / 名詞",
+    "meaning": "正確的 / 右邊的 / 權利",
+    "example": "Is this the right way to the public library?（這是去公共圖書館正確的路嗎？）"
+  },
+  {
+    "id": 599,
+    "word": "ring",
+    "phonetic": "[rɪŋ]",
+    "pos": "名詞",
+    "meaning": "戒指 / 圓圈 / 鈴聲",
+    "example": "She wears a pure gold ring on her finger.（她手指上戴著一枚純金戒指。）"
+  },
+  {
+    "id": 600,
+    "word": "river",
+    "phonetic": "[ˈrɪvɚ]",
+    "pos": "名詞",
+    "meaning": "河流",
+    "example": "We took a small boat across the mountain river.（我們搭乘了一艘小船渡過山間河流。）"
+  },
+  {
+    "id": 601,
+    "word": "road",
+    "phonetic": "[rod]",
+    "pos": "名詞",
+    "meaning": "道路 / 馬路",
+    "example": "Walk along this straight road to find the station.（沿著這條筆直的道路走就能找到車站。）"
+  },
+  {
+    "id": 602,
+    "word": "rod",
+    "phonetic": "[rɑd]",
+    "pos": "名詞",
+    "meaning": "桿 / 棒",
+    "example": "The thin iron rod is bent and cannot be used.（那根細鐵桿彎曲了，無法使用。）"
+  },
+  {
+    "id": 603,
+    "word": "roll",
+    "phonetic": "[rol]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "捲 / 滾動 / 麵包捲",
+    "example": "He bought a fresh roll of bread for lunch.（他買了一個新鮮的麵包捲當午餐。）"
+  },
+  {
+    "id": 604,
+    "word": "roof",
+    "phonetic": "[ruf]",
+    "pos": "名詞",
+    "meaning": "屋頂",
+    "example": "The heavy storm caused severe damage to the roof.（暴風雨對屋頂造成了嚴重的損害。）"
+  },
+  {
+    "id": 605,
+    "word": "room",
+    "phonetic": "[rum]",
+    "pos": "名詞",
+    "meaning": "房間 / 空間",
+    "example": "There is enough room for a big bed in this house.（這棟房子裡有足夠的空間放一張大床。）"
+  },
+  {
+    "id": 606,
+    "word": "root",
+    "phonetic": "[rut]",
+    "pos": "名詞",
+    "meaning": "根 / 根源",
+    "example": "The root of the big tree goes deep into the earth.（大樹的根深扎入泥土中。）"
+  },
+  {
+    "id": 607,
+    "word": "rough",
+    "phonetic": "[rʌf]",
+    "pos": "形容詞",
+    "meaning": "粗糙的 / 粗暴的 / 艱難的",
+    "example": "The skin on his hands became rough from hard work.（他的手部皮膚因辛苦工作而變得粗糙。）"
+  },
+  {
+    "id": 608,
+    "word": "round",
+    "phonetic": "[raʊnd]",
+    "pos": "形容詞",
+    "meaning": "圓的",
+    "example": "The earth looks flat, but it is actually round.（大地看起來是平的，但實際上是圓的。）"
+  },
+  {
+    "id": 609,
+    "word": "rub",
+    "phonetic": "[rʌb]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "摩擦 / 搓抹",
+    "example": "Give a gentle rub to your skin with the cloth.（用布輕輕摩擦擦拭你的皮膚。）"
+  },
+  {
+    "id": 610,
+    "word": "rule",
+    "phonetic": "[rul]",
+    "pos": "名詞",
+    "meaning": "規則 / 規定",
+    "example": "Everyone must obey the safety rule of the plant.（每個人都必須遵守工廠的安全規定。）"
+  },
+  {
+    "id": 611,
+    "word": "run",
+    "phonetic": "[rʌn]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "跑步 / 運行",
+    "example": "He goes for a short run early every morning.（他每天清晨都會去短跑散步一下。）"
+  },
+  {
+    "id": 612,
+    "word": "sad",
+    "phonetic": "[sæd]",
+    "pos": "形容詞",
+    "meaning": "悲傷的",
+    "example": "The news of the old leader's death made us sad.（老領袖逝世的消息讓我們很悲傷。）"
+  },
+  {
+    "id": 613,
+    "word": "safe",
+    "phonetic": "[sef]",
+    "pos": "形容詞",
+    "meaning": "安全的",
+    "example": "Keep your important technical documents in a safe place.（將你重要的技術文件存放在安全的地方。）"
+  },
+  {
+    "id": 614,
+    "word": "sail",
+    "phonetic": "[sel]",
+    "pos": "名詞",
+    "meaning": "船帆 / 航行",
+    "example": "The strong wind gave a powerful blow to the sail.（強風對船帆產生了強大的吹力。）"
+  },
+  {
+    "id": 615,
+    "word": "salt",
+    "phonetic": "[sɔlt]",
+    "pos": "名詞",
+    "meaning": "鹽",
+    "example": "Please put a little salt into the boiling soup.（請在沸騰的湯裡加一點鹽。）"
+  },
+  {
+    "id": 616,
+    "word": "same",
+    "phonetic": "[sem]",
+    "pos": "形容詞",
+    "meaning": "相同的",
+    "example": "He gave the same answer as his older brother.（他給出了與他哥哥相同的答案。）"
+  },
+  {
+    "id": 617,
+    "word": "sand",
+    "phonetic": "[sænd]",
+    "pos": "名詞",
+    "meaning": "沙子",
+    "example": "The children are playing on the warm sand near the sea.（孩子們正在海邊溫暖的沙灘上玩耍。）"
+  },
+  {
+    "id": 618,
+    "word": "say",
+    "phonetic": "[se]",
+    "pos": "動詞",
+    "meaning": "說",
+    "example": "Please say what you think about the new plan.（請說說你對新計劃的想法。基本英語 18 個核心動詞之一。）"
+  },
+  {
+    "id": 619,
+    "word": "scale",
+    "phonetic": "[skel]",
+    "pos": "名詞",
+    "meaning": "天平 / 秤 / 比例",
+    "example": "Use the external balance scale to measure the mass.（使用外部天平秤來測量質量。）"
+  },
+  {
+    "id": 620,
+    "word": "school",
+    "phonetic": "[skul]",
+    "pos": "名詞",
+    "meaning": "學校",
+    "example": "The little boy goes to the high school near our house.（小男孩去我們家附近的中學上學。）"
+  },
+  {
+    "id": 621,
+    "word": "science",
+    "phonetic": "[ˈsaɪəns]",
+    "pos": "名詞",
+    "meaning": "科學",
+    "example": "Modern science helps us understand the natural world.（現代科學幫助我們了解自然世界。）"
+  },
+  {
+    "id": 622,
+    "word": "scissors",
+    "phonetic": "[ˈsɪzɚz]",
+    "pos": "名詞",
+    "meaning": "剪刀",
+    "example": "Use these sharp scissors to cut the thick paper.（用這把鋒利的剪刀來剪厚紙。）"
+  },
+  {
+    "id": 623,
+    "word": "screw",
+    "phonetic": "[skru]",
+    "pos": "名詞",
+    "meaning": "螺絲",
+    "example": "The screw on the machine handle is loose.（機器手把上的螺絲鬆了。）"
+  },
+  {
+    "id": 624,
+    "word": "sea",
+    "phonetic": "[si]",
+    "pos": "名詞",
+    "meaning": "海洋",
+    "example": "Taiwan is a beautiful island surrounded by the sea.（台灣是一個被海洋圍繞的美麗島嶼。）"
+  },
+  {
+    "id": 625,
+    "word": "seat",
+    "phonetic": "[sit]",
+    "pos": "名詞",
+    "meaning": "座位",
+    "example": "Please go back to your seat before the meeting starts.（會議開始前請回到你的座位上。）"
+  },
+  {
+    "id": 626,
+    "word": "second",
+    "phonetic": "[ˈsɛkənd]",
+    "pos": "形容詞 / 名詞",
+    "meaning": "第二的 / 秒",
+    "example": "This is the second time I have visited Paris.（這是我第二趟造訪巴黎。）"
+  },
+  {
+    "id": 627,
+    "word": "secret",
+    "phonetic": "[ˈsikrɪt]",
+    "pos": "名詞 / 形容詞",
+    "meaning": "秘密 / 秘密的",
+    "example": "Keep this private information a secret.（請對這份私人資訊保持秘密。）"
+  },
+  {
+    "id": 628,
+    "word": "secretary",
+    "phonetic": "[ˈsɛkrəˌtɛri]",
+    "pos": "名詞",
+    "meaning": "秘書",
+    "example": "The secretary wrote down every detail of the discussion.（秘書記下了討論的每一個細節。）"
+  },
+  {
+    "id": 629,
+    "word": "see",
+    "phonetic": "[si]",
+    "pos": "動詞",
+    "meaning": "看見 / 明白",
+    "example": "I can see a small bird singing on the tree branch.（我看見一隻小鳥在樹枝上唱歌。基本英語 18 個核心動詞之一。）"
+  },
+  {
+    "id": 630,
+    "word": "seed",
+    "phonetic": "[sid]",
+    "pos": "名詞",
+    "meaning": "種子",
+    "example": "The farmer put the vegetable seeds into the fertile soil.（農夫將蔬菜種子播入肥沃的土地中。）"
+  },
+  {
+    "id": 631,
+    "word": "selection",
+    "phonetic": "[səˈlɛkʃən]",
+    "pos": "名詞",
+    "meaning": "選擇 / 挑選",
+    "example": "The library has a great selection of history books.（這家圖書館有豐富的歷史書籍可供選擇。）"
+  },
+  {
+    "id": 632,
+    "word": "self",
+    "phonetic": "[sɛlf]",
+    "pos": "名詞",
+    "meaning": "自身 / 自己",
+    "example": "He wrote a short note to remind his own self.（他寫了一張短便條來提醒他自己。）"
+  },
+  {
+    "id": 633,
+    "word": "send",
+    "phonetic": "[sɛnd]",
+    "pos": "動詞",
+    "meaning": "發送 / 寄送",
+    "example": "Please send the final validation record to the manager.（請將最終驗證紀錄寄給經理。基本英語 18 個核心動詞之一。）"
+  },
+  {
+    "id": 634,
+    "word": "seem",
+    "phonetic": "[sim]",
+    "pos": "動詞",
+    "meaning": "似乎 / 好像",
+    "example": "The technical rules seem complex but are quite simple.（這些技術規則似乎很複雜，但其實相當簡單。基本英語 18 個核心動詞之一。）"
+  },
+  {
+    "id": 635,
+    "word": "sense",
+    "phonetic": "[sɛns]",
+    "pos": "名詞",
+    "meaning": "感官 / 感覺 / 理智",
+    "example": "Good drivers have a keen sense of danger.（優秀的駕駛對危險有敏銳的感覺。）"
+  },
+  {
+    "id": 636,
+    "word": "separate",
+    "phonetic": "[ˈsɛpərɪt]",
+    "pos": "形容詞",
+    "meaning": "分開的 / 個別的",
+    "example": "Keep the chemical waste in a separate pot.（將化學廢棄物存放在分開的罐子裡。）"
+  },
+  {
+    "id": 637,
+    "word": "serious",
+    "phonetic": "[ˈsɪrɪəs]",
+    "pos": "形容詞",
+    "meaning": "嚴重的 / 認真的",
+    "example": "Stealing other people's money is a serious crime.（偷竊別人的錢是一項嚴重的罪行。）"
+  },
+  {
+    "id": 638,
+    "word": "servant",
+    "phonetic": "[ˈsɝvənt]",
+    "pos": "名詞",
+    "meaning": "僕人 / 傭人",
+    "example": "The rich family employs a servant to clean the house.（這戶富有的人家雇用了一名僕人來打掃房子。）"
+  },
+  {
+    "id": 639,
+    "word": "sex",
+    "phonetic": "[sɛks]",
+    "pos": "名詞",
+    "meaning": "性別",
+    "example": "Please write your name, age, and sex on the form.（請在表格上寫下您的姓名、年齡和性別。）"
+  },
+  {
+    "id": 640,
+    "word": "shade",
+    "phonetic": "[ʃed]",
+    "pos": "名詞",
+    "meaning": "陰涼處 / 遮光物",
+    "example": "We sat in the shade of the big tree to rest.（我們坐在大樹的陰涼處休息。）"
+  },
+  {
+    "id": 641,
+    "word": "shake",
+    "phonetic": "[ʃek]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "搖動 / 握手",
+    "example": "They gave a friendly shake of hands after the agreement.（達成協議後，他們友好地握了握手。）"
+  },
+  {
+    "id": 642,
+    "word": "shame",
+    "phonetic": "[ʃem]",
+    "pos": "名詞",
+    "meaning": "羞恥 / 遺憾",
+    "example": "It is a shame that you cannot come to the party.（你不能來參加聚會真是太遺憾了。）"
+  },
+  {
+    "id": 643,
+    "word": "sharp",
+    "phonetic": "[ʃɑrp]",
+    "pos": "形容詞",
+    "meaning": "尖銳的 / 鋒利的",
+    "example": "The knife has a very sharp steel blade.（這把刀有一個非常鋒利的鋼刀刃。）"
+  },
+  {
+    "id": 644,
+    "word": "sheep",
+    "phonetic": "[ʃip]",
+    "pos": "名詞",
+    "meaning": "綿羊",
+    "example": "The farmer has a group of white sheep on the hill.（農夫在山上養了一群白綿羊。）"
+  },
+  {
+    "id": 645,
+    "word": "shelf",
+    "phonetic": "[ʃɛlf]",
+    "pos": "名詞",
+    "meaning": "架子 / 書架",
+    "example": "Put the old history books back on the top shelf.（將舊歷史書放回最上面的書架上。）"
+  },
+  {
+    "id": 646,
+    "word": "ship",
+    "phonetic": "[ʃɪp]",
+    "pos": "名詞",
+    "meaning": "船隻（大型）",
+    "example": "A large cargo ship arrived at the harbor today.（一艘大型貨輪今天抵達了港口。）"
+  },
+  {
+    "id": 647,
+    "word": "shirt",
+    "phonetic": "[ʃɝt]",
+    "pos": "名詞",
+    "meaning": "襯衫",
+    "example": "He wore a clean blue shirt to the office.（他穿著一件乾淨的藍襯衫去辦公室。）"
+  },
+  {
+    "id": 648,
+    "word": "shock",
+    "phonetic": "[ʃɑk]",
+    "pos": "名詞",
+    "meaning": "震驚 / 衝擊",
+    "example": "The sudden news of the fire gave us a great shock.（火災的突發消息給了我們巨大的震驚。）"
+  },
+  {
+    "id": 649,
+    "word": "shoe",
+    "phonetic": "[ʃu]",
+    "pos": "名詞",
+    "meaning": "鞋子",
+    "example": "Use this small brush to clean your dirty shoes.（用這把小刷子來清理你髒掉的鞋子。）"
+  },
+  {
+    "id": 650,
+    "word": "short",
+    "phonetic": "[ʃɔrt]",
+    "pos": "形容詞",
+    "meaning": "短的 / 矮的",
+    "example": "I usually go for a short walk after lunch.（我午餐後通常會去短暫散步一下。）"
+  },
+  {
+    "id": 651,
+    "word": "shut",
+    "phonetic": "[ʃʌt]",
+    "pos": "形容詞",
+    "meaning": "關閉的",
+    "example": "Please keep the door shut to block the cold wind.（請保持門關閉以阻擋冷風。）"
+  },
+  {
+    "id": 652,
+    "word": "side",
+    "phonetic": "[saɪd]",
+    "pos": "名詞",
+    "meaning": "側面 / 一邊",
+    "example": "Walk along the left side of the straight road.（沿著這條筆直道路的左側行走。）"
+  },
+  {
+    "id": 653,
+    "word": "sign",
+    "phonetic": "[saɪn]",
+    "pos": "名詞",
+    "meaning": "標誌 / 告示 / 跡象",
+    "example": "The traffic sign warned the drivers of danger ahead.（交通標誌警告駕駛人前方有危險。）"
+  },
+  {
+    "id": 654,
+    "word": "silk",
+    "phonetic": "[sɪlk]",
+    "pos": "名詞 / 形容詞",
+    "meaning": "絲綢 / 絲製的",
+    "example": "Her beautiful red dress is made of pure silk.（她美麗的紅連身裙是由純絲綢製成的。）"
+  },
+  {
+    "id": 655,
+    "word": "silver",
+    "phonetic": "[ˈsɪlvɚ]",
+    "pos": "名詞 / 形容詞",
+    "meaning": "白銀 / 銀製的",
+    "example": "The old drawer handle is made of solid silver.（舊抽屜把手是由實銀製成的。）"
+  },
+  {
+    "id": 656,
+    "word": "simple",
+    "phonetic": "[ˈsɪmpl]",
+    "pos": "形容詞",
+    "meaning": "簡單的",
+    "example": "I really like the simple design of this house.（我非常喜歡這棟房子簡單的設計。）"
+  },
+  {
+    "id": 657,
+    "word": "sister",
+    "phonetic": "[ˈsɪstɚ]",
+    "pos": "名詞",
+    "meaning": "姊妹",
+    "example": "My younger sister goes to the high school nearby.（我的妹妹在附近的中學上學。）"
+  },
+  {
+    "id": 658,
+    "word": "size",
+    "phonetic": "[saɪz]",
+    "pos": "名詞",
+    "meaning": "尺寸 / 大小",
+    "example": "Check the size of the pipe before connection.（在連接前請檢查管路的尺寸。）"
+  },
+  {
+    "id": 659,
+    "word": "skin",
+    "phonetic": "[skɪn]",
+    "pos": "名詞",
+    "meaning": "皮膚",
+    "example": "The sun made the skin on his face turn red.（陽光讓他臉上的皮膚變紅了。）"
+  },
+  {
+    "id": 660,
+    "word": "skirt",
+    "phonetic": "[skɝt]",
+    "pos": "名詞",
+    "meaning": "裙子",
+    "example": "She wore a short brown skirt to the market.（她穿著一條棕色短裙去市場。）"
+  },
+  {
+    "id": 661,
+    "word": "sky",
+    "phonetic": "[skaɪ]",
+    "pos": "名詞",
+    "meaning": "天空",
+    "example": "The sky is completely clear and blue today.（今天的太空完全晴朗蔚藍。）"
+  },
+  {
+    "id": 662,
+    "word": "sleep",
+    "phonetic": "[slip]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "睡眠",
+    "example": "A good night's sleep is necessary for health.（充足的夜間睡眠對健康是必要的。）"
+  },
+  {
+    "id": 663,
+    "word": "slip",
+    "phonetic": "[slɪp]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "滑倒 / 紙條",
+    "example": "He had a sudden slip on the wet kitchen floor.（他在濕滑的廚房地板上突然滑了一下。）"
+  },
+  {
+    "id": 664,
+    "word": "slope",
+    "phonetic": "[slop]",
+    "pos": "名詞",
+    "meaning": "斜坡 / 坡度",
+    "example": "The green grass grows smoothly on the mountain slope.（綠草在山坡上順暢地生長。）"
+  },
+  {
+    "id": 665,
+    "word": "slow",
+    "phonetic": "[slo]",
+    "pos": "形容詞",
+    "meaning": "緩慢的",
+    "example": "The old train made a slow journey through the hills.（老火車緩慢地穿行在山丘間。）"
+  },
+  {
+    "id": 666,
+    "word": "small",
+    "phonetic": "[smɔl]",
+    "pos": "形容詞",
+    "meaning": "小的",
+    "example": "An ant is a small and hard-working insect.（螞蟻是一種弱小且勤勞的昆蟲。）"
+  },
+  {
+    "id": 667,
+    "word": "smash",
+    "phonetic": "[smæʃ]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "破碎 / 猛撞",
+    "example": "We heard the loud smash of a broken glass cup.（我們聽到玻璃杯摔碎的巨大聲響。）"
+  },
+  {
+    "id": 668,
+    "word": "smell",
+    "phonetic": "[smɛl]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "氣味 / 聞",
+    "example": "The sweet smell of fresh bread filled the room.（新鮮麵包的甜美氣味充滿了房間。）"
+  },
+  {
+    "id": 669,
+    "word": "smile",
+    "phonetic": "[smaɪl]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "微笑",
+    "example": "She had a big smile on her face when she saw me.（她見到我時臉上帶著燦爛的微笑。）"
+  },
+  {
+    "id": 670,
+    "word": "smoke",
+    "phonetic": "[smok]",
+    "pos": "名詞",
+    "meaning": "煙雾 / 煙",
+    "example": "Dark smoke came out of the factory building.（黑煙從工廠大樓裡飄了出來。）"
+  },
+  {
+    "id": 671,
+    "word": "smooth",
+    "phonetic": "[smuð]",
+    "pos": "形容詞",
+    "meaning": "平滑的 / 順暢的",
+    "example": "The automatic pump keeps a smooth operation.（自動泵浦保持著順暢的運作。）"
+  },
+  {
+    "id": 672,
+    "word": "snake",
+    "phonetic": "[snek]",
+    "pos": "名詞",
+    "meaning": "蛇",
+    "example": "A long green snake crawled across the field.（一條綠色長蛇爬過了田地。）"
+  },
+  {
+    "id": 673,
+    "word": "sneeze",
+    "phonetic": "[sniz]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "打噴嚏",
+    "example": "His loud sneeze made the baby wake up.（他響亮的噴嚏聲把寶寶吵醒了。）"
+  },
+  {
+    "id": 674,
+    "word": "snow",
+    "phonetic": "[sno]",
+    "pos": "名詞",
+    "meaning": "雪",
+    "example": "A sudden fall of snow covered the high mountains.（突降的大雪覆蓋了高山。）"
+  },
+  {
+    "id": 675,
+    "word": "so",
+    "phonetic": "[so]",
+    "pos": "副詞 / 連接詞",
+    "meaning": "如此 / 所以 / 因此",
+    "example": "It was raining heavily, so we stayed at home.（當時正下著大雨，所以我們待在家裡。）"
+  },
+  {
+    "id": 676,
+    "word": "soap",
+    "phonetic": "[sop]",
+    "pos": "名詞",
+    "meaning": "肥皂",
+    "example": "Wash your dirty hands with clean water and soap.（用乾淨的水和肥皂清洗你弄髒的手。）"
+  },
+  {
+    "id": 677,
+    "word": "society",
+    "phonetic": "[səˈsaɪəti]",
+    "pos": "名詞",
+    "meaning": "社會 / 協會",
+    "example": "Every member of society must obey the law.（社會的每個成員都必須遵守法律。）"
+  },
+  {
+    "id": 678,
+    "word": "sock",
+    "phonetic": "[sɑk]",
+    "pos": "名詞",
+    "meaning": "短襪",
+    "example": "He put on his warm wool socks before going out.（他在出門前穿上了溫暖的羊毛襪。）"
+  },
+  {
+    "id": 679,
+    "word": "soft",
+    "phonetic": "[sɔft]",
+    "pos": "形容詞",
+    "meaning": "柔軟的",
+    "example": "Place a soft cushion on the hard wooden chair.（在硬木椅上放一個柔軟的靠墊。）"
+  },
+  {
+    "id": 680,
+    "word": "solid",
+    "phonetic": "[ˈsɑlɪd]",
+    "pos": "形容詞 / 名詞",
+    "meaning": "固體的 / 實心的 / 堅固的",
+    "example": "The strong bridge is built of solid iron.（那座堅固的橋樑是由實鐵建造的。）"
+  },
+  {
+    "id": 681,
+    "word": "some",
+    "phonetic": "[sʌm]",
+    "pos": "形容詞 / 代名詞",
+    "meaning": "一些 / 某些",
+    "example": "Please get some fresh water from the kitchen.（請去廚房拿一些新鮮的水。）"
+  },
+  {
+    "id": 682,
+    "word": "son",
+    "phonetic": "[sʌn]",
+    "pos": "名詞",
+    "meaning": "兒子",
+    "example": "They have one younger daughter and an older son.（他們有一個較小的女兒和一个哥哥兒子。）"
+  },
+  {
+    "id": 683,
+    "word": "song",
+    "phonetic": "[sɔŋ]",
+    "pos": "名詞",
+    "meaning": "歌曲",
+    "example": "The little girl sang a beautiful song for us.（小女孩為我們唱了一首美麗的歌曲。）"
+  },
+  {
+    "id": 684,
+    "word": "sort",
+    "phonetic": "[sɔrt]",
+    "pos": "名詞",
+    "meaning": "種類",
+    "example": "What sort of material is used for this pipe?（這種管路使用的是哪一種材料？）"
+  },
+  {
+    "id": 685,
+    "word": "sound",
+    "phonetic": "[saʊnd]",
+    "pos": "名詞 / 形容詞",
+    "meaning": "聲音 / 健康的 / 完好的",
+    "example": "We heard the loud sound of the school bell.（我們聽到了學校鐘聲的巨響。）"
+  },
+  {
+    "id": 686,
+    "word": "south",
+    "phonetic": "[saʊθ]",
+    "pos": "名詞 / 形容詞 / 副詞",
+    "meaning": "南方 / 向南的",
+    "example": "The birds fly to the south during the winter.（鳥類在冬天飛往南方。）"
+  },
+  {
+    "id": 687,
+    "word": "soup",
+    "phonetic": "[sup]",
+    "pos": "名詞",
+    "meaning": "湯",
+    "example": "She made a hot vegetable soup for dinner.（她做了一碗熱蔬菜湯當晚餐。）"
+  },
+  {
+    "id": 688,
+    "word": "space",
+    "phonetic": "[spes]",
+    "pos": "名詞",
+    "meaning": "空間 / 太空",
+    "example": "There is enough space for a big desk in my office.（我的辦公室裡有足夠的空間放一張大書桌。）"
+  },
+  {
+    "id": 689,
+    "word": "spade",
+    "phonetic": "[sped]",
+    "pos": "名詞",
+    "meaning": "鏟子 / 鐵鍬",
+    "example": "Use a steel spade to dig a hole in the garden.（用一把鋼鏟在花園裡挖一個洞。）"
+  },
+  {
+    "id": 690,
+    "word": "special",
+    "phonetic": "[ˈspɛʃəl]",
+    "pos": "形容詞",
+    "meaning": "特別的 / 專門的",
+    "example": "This instrument needs special care during use.（這台儀器在使用過程中需要特別的照顧。）"
+  },
+  {
+    "id": 691,
+    "word": "sponge",
+    "phonetic": "[spʌndʒ]",
+    "pos": "名詞",
+    "meaning": "海綿",
+    "example": "Use a wet sponge to wipe the kitchen table.（用一塊濕海綿來擦拭廚房桌子。）"
+  },
+  {
+    "id": 692,
+    "word": "spoon",
+    "phonetic": "[spun]",
+    "pos": "名詞",
+    "meaning": "湯匙",
+    "example": "Eat your hot soup with a small metal spoon.（用一把小金屬湯匙喝你的熱湯。）"
+  },
+  {
+    "id": 693,
+    "word": "spring",
+    "phonetic": "[sprɪŋ]",
+    "pos": "名詞",
+    "meaning": "春天 / 彈簧 / 泉水",
+    "example": "The leaves of the trees turn green in spring.（樹葉在春天變成綠色。）"
+  },
+  {
+    "id": 694,
+    "word": "square",
+    "phonetic": "[skwɛr]",
+    "pos": "形容詞 / 名詞",
+    "meaning": "正方形的 / 廣場",
+    "example": "Draw a perfect square on the paper with a pencil.（用鉛筆在紙上畫一個完美的正方形。）"
+  },
+  {
+    "id": 695,
+    "word": "stamp",
+    "phonetic": "[stæmp]",
+    "pos": "名詞",
+    "meaning": "郵票 / 印章",
+    "example": "Put a postal stamp on the cover of the letter.（在信封封面貼上一張郵票。）"
+  },
+  {
+    "id": 696,
+    "word": "stage",
+    "phonetic": "[stedʒ]",
+    "pos": "名詞",
+    "meaning": "舞台 / 階段",
+    "example": "Qualification is the final stage of the project.（資格驗證是專案的最終階段。）"
+  },
+  {
+    "id": 697,
+    "word": "star",
+    "phonetic": "[stɑr]",
+    "pos": "名詞",
+    "meaning": "星星",
+    "example": "The sky was full of bright stars last night.（昨晚的天空布滿了明亮的星星。）"
+  },
+  {
+    "id": 698,
+    "word": "start",
+    "phonetic": "[stɑrt]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "開始 / 出發",
+    "example": "The important meeting will make a start at ten.（重要會議將在十點鐘開始。）"
+  },
+  {
+    "id": 699,
+    "word": "statement",
+    "phonetic": "[ˈstetmənt]",
+    "pos": "名詞",
+    "meaning": "陳述 / 聲明",
+    "example": "Please check if this technical statement is true.（請檢查這項技術陳述是否正確。）"
+  },
+  {
+    "id": 700,
+    "word": "station",
+    "phonetic": "[ˈsteʃən]",
+    "pos": "名詞",
+    "meaning": "車站 / 局 / 所",
+    "example": "Meet me at the train station tomorrow noon.（明天中午在火車見面。）"
+  },
+  {
+    "id": 701,
+    "word": "steam",
+    "phonetic": "[stim]",
+    "pos": "名詞",
+    "meaning": "蒸汽",
+    "example": "Hot steam came out of the boiling kettle.（熱蒸汽從沸騰的水壺裡冒了出來。）"
+  },
+  {
+    "id": 702,
+    "word": "stem",
+    "phonetic": "[stɛm]",
+    "pos": "名詞",
+    "meaning": "莖 / 幹",
+    "example": "The red flower has a long green stem.（紅花有一個長長的綠色花莖。）"
+  },
+  {
+    "id": 703,
+    "word": "steel",
+    "phonetic": "[stil]",
+    "pos": "名詞 / 形容詞",
+    "meaning": "鋼鐵 / 鋼製的",
+    "example": "The hygienic pipes are made of stainless steel.（這些衛生級管路是由不鏽鋼製成的。）"
+  },
+  {
+    "id": 704,
+    "word": "step",
+    "phonetic": "[stɛp]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "腳步 / 步驟",
+    "example": "Take one step forward to check the valve position.（向前走一步以檢查閥門位置。）"
+  },
+  {
+    "id": 705,
+    "word": "stick",
+    "phonetic": "[stɪk]",
+    "pos": "名詞",
+    "meaning": "棍棒 / 枝條",
+    "example": "The old man used a wooden stick to help him walk.（老人使用一根木棍來幫助他行走。）"
+  },
+  {
+    "id": 706,
+    "word": "sticky",
+    "phonetic": "[ˈstɪki]",
+    "pos": "形容詞",
+    "meaning": "黏的",
+    "example": "Keep away from the sticky paint on the wall.（遠離牆上未乾的黏油漆。）"
+  },
+  {
+    "id": 707,
+    "word": "still",
+    "phonetic": "[stɪl]",
+    "pos": "副詞 / 形容詞",
+    "meaning": "仍然 / 靜止的",
+    "example": "The baby is still awake in his small bed.（寶寶在小床上仍然醒著。）"
+  },
+  {
+    "id": 708,
+    "word": "stitch",
+    "phonetic": "[stɪtʃ]",
+    "pos": "名詞",
+    "meaning": "一針 / 縫線",
+    "example": "The doctor put a stitch in the small cut.（醫生在小傷口上縫了一針。）"
+  },
+  {
+    "id": 709,
+    "word": "stocking",
+    "phonetic": "[ˈstɑkɪŋ]",
+    "pos": "名詞",
+    "meaning": "長襪",
+    "example": "She bought a pair of black stockings yesterday.（她昨天買了一雙黑色長襪。）"
+  },
+  {
+    "id": 710,
+    "word": "stomach",
+    "phonetic": "[ˈstʌmək]",
+    "pos": "名詞",
+    "meaning": "胃 / 腹部",
+    "example": "He felt a slight pain in his stomach after the meal.（飯後他覺得胃部有一點痛。）"
+  },
+  {
+    "id": 711,
+    "word": "stone",
+    "phonetic": "[ston]",
+    "pos": "名詞 / 形容詞",
+    "meaning": "石頭 / 石製的",
+    "example": "They walked across the old stone bridge over the river.（他們走過了河上那座古老的石橋。）"
+  },
+  {
+    "id": 712,
+    "word": "stop",
+    "phonetic": "[stɑp]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "停止 / 車站",
+    "example": "The train came to a sudden stop at the station.（火車在車站突然停了下來。）"
+  },
+  {
+    "id": 713,
+    "word": "store",
+    "phonetic": "[stor]",
+    "pos": "名詞",
+    "meaning": "商店 / 倉庫",
+    "example": "He runs a small clothing store in the town.（他在鎮上經營一家小型服裝店。）"
+  },
+  {
+    "id": 714,
+    "word": "story",
+    "phonetic": "[ˈstori]",
+    "pos": "名詞",
+    "meaning": "故事",
+    "example": "My father told an interesting story about history.（我父親講了一個關於歷史的有趣故事。）"
+  },
+  {
+    "id": 715,
+    "word": "strange",
+    "phonetic": "[strendʒ]",
+    "pos": "形容詞",
+    "meaning": "奇怪的 / 陌生的",
+    "example": "We heard a strange noise from the broken engine.（我們從壞掉的引擎裡聽到一聲奇怪的巨響。）"
+  },
+  {
+    "id": 716,
+    "word": "street",
+    "phonetic": "[strit]",
+    "pos": "名詞",
+    "meaning": "街道",
+    "example": "The car could not pass through the narrow street.（汽車無法通過那條狹窄的街道。）"
+  },
+  {
+    "id": 717,
+    "word": "stretch",
+    "phonetic": "[strɛtʃ]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "伸展 / 延展",
+    "example": "Give a long stretch to the elastic band.（把這條橡皮筋用力伸展拉長。）"
+  },
+  {
+    "id": 718,
+    "word": "stiff",
+    "phonetic": "[stɪf]",
+    "pos": "形容詞",
+    "meaning": "硬的 / 僵硬的",
+    "example": "His muscles felt stiff after the heavy strength training.（重量力量訓練後，他的肌肉感到僵硬。）"
+  },
+  {
+    "id": 719,
+    "word": "straight",
+    "phonetic": "[stret]",
+    "pos": "形容詞 / 副詞",
+    "meaning": "直的 / 筆直地",
+    "example": "Draw a straight line on the paper with a pencil.（用鉛筆在紙上畫一條直線。）"
+  },
+  {
+    "id": 720,
+    "word": "strong",
+    "phonetic": "[strɔŋ]",
+    "pos": "形容詞",
+    "meaning": "強壯的 / 強烈的",
+    "example": "The strong force of the wind broke the window glass.（強風的力量吹碎了窗戶玻璃。）"
+  },
+  {
+    "id": 721,
+    "word": "structure",
+    "phonetic": "[ˈstrʌktʃɚ]",
+    "pos": "名詞",
+    "meaning": "結構 / 建築物",
+    "example": "Engineers checked the steel structure of the building.（工程師檢查了大樓的鋼骨結構。）"
+  },
+  {
+    "id": 722,
+    "word": "substance",
+    "phonetic": "[ˈsʌbstəns]",
+    "pos": "名詞",
+    "meaning": "物質",
+    "example": "Water is a natural substance necessary for life.（水是生命必需的天然物質。）"
+  },
+  {
+    "id": 723,
+    "word": "such",
+    "phonetic": "[sʌtʃ]",
+    "pos": "形容詞 / 代名詞",
+    "meaning": "這樣的 / 如此的",
+    "example": "I have never seen such a beautiful blue bird.（我從未見過如此美麗的藍鳥。）"
+  },
+  {
+    "id": 724,
+    "word": "sudden",
+    "phonetic": "[ˈsʌdn]",
+    "pos": "形容詞",
+    "meaning": "突然的",
+    "example": "A sudden burst of noise came from the factory.（工廠裡突然傳出一陣巨大的噪音。）"
+  },
+  {
+    "id": 725,
+    "word": "sugar",
+    "phonetic": "[ˈʃʊɡɚ]",
+    "pos": "名詞",
+    "meaning": "糖",
+    "example": "Eating too much sugar is bad for your teeth.（吃太多糖對你的牙齒不好。）"
+  },
+  {
+    "id": 726,
+    "word": "suggestion",
+    "phonetic": "[səˈdʒɛstʃən]",
+    "pos": "名詞",
+    "meaning": "建議",
+    "example": "The manager approved his suggestion for a new pump.（經理批准了他關於更換新泵浦的建議。）"
+  },
+  {
+    "id": 727,
+    "word": "summer",
+    "phonetic": "[ˈsʌmɚ]",
+    "pos": "名詞",
+    "meaning": "夏天",
+    "example": "The extreme heat of the summer made us tired.（夏天的高溫讓我們感到疲倦。）"
+  },
+  {
+    "id": 728,
+    "word": "sun",
+    "phonetic": "[sʌn]",
+    "pos": "名詞",
+    "meaning": "太陽",
+    "example": "The sun rises in the east and gives us light.（太陽從東方升起並給予我們光芒。）"
+  },
+  {
+    "id": 729,
+    "word": "support",
+    "phonetic": "[səˈpɔrt]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "支持 / 支撐",
+    "example": "The wooden stick gave strong support to the old man.（那根木棍給予了老人有力的支撐。）"
+  },
+  {
+    "id": 730,
+    "word": "surprise",
+    "phonetic": "[sɚˈpraɪz]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "驚喜 / 震驚",
+    "example": "To our great surprise, he passed the hard test.（讓我們非常驚喜的是，他通過了這場硬核測試。）"
+  },
+  {
+    "id": 731,
+    "word": "sweet",
+    "phonetic": "[swit]",
+    "pos": "形容詞",
+    "meaning": "甜的",
+    "example": "She ate a sweet red apple after her dinner.（她晚飯後吃了一個甜甜的紅蘋果。）"
+  },
+  {
+    "id": 732,
+    "word": "swim",
+    "phonetic": "[swɪm]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "游泳",
+    "example": "He takes a short swim in the pool every morning.（他每天早晨都會在泳池裡短暫游泳一下。）"
+  },
+  {
+    "id": 733,
+    "word": "system",
+    "phonetic": "[ˈsɪstəm]",
+    "pos": "名詞",
+    "meaning": "系統",
+    "example": "The factory has a complex system of hygienic pipes.（這家工廠有一套複雜的衛生級管路系統。）"
+  },
+  {
+    "id": 734,
+    "word": "table",
+    "phonetic": "[ˈtebl]",
+    "pos": "名詞",
+    "meaning": "桌子 / 表格",
+    "example": "Place the important document right on the table.（將重要文件直接放在桌上。）"
+  },
+  {
+    "id": 735,
+    "word": "tail",
+    "phonetic": "[tel]",
+    "pos": "名詞",
+    "meaning": "尾巴",
+    "example": "The brown dog wagged its tail when it saw me.（棕色狗看到我時搖了搖尾巴。）"
+  },
+  {
+    "id": 736,
+    "word": "take",
+    "phonetic": "[tek]",
+    "pos": "動詞",
+    "meaning": "拿 / 帶領 / 花費",
+    "example": "Please take this record to the supervisor's office.（請將這份紀錄拿去主管辦公室。基本英語 18 個核心動詞之一。）"
+  },
+  {
+    "id": 737,
+    "word": "talk",
+    "phonetic": "[tɔk]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "談話 / 討論",
+    "example": "We had a long talk about the new project plan.（我們針對新專案計劃進行了長期的談話。）"
+  },
+  {
+    "id": 738,
+    "word": "tall",
+    "phonetic": "[tɔl]",
+    "pos": "形容詞",
+    "meaning": "高的（指人或物體高聳）",
+    "example": "That tall building near the station is a hospital.（車站附近那棟高大的建築物是一所醫院。）"
+  },
+  {
+    "id": 739,
+    "word": "taste",
+    "phonetic": "[test]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "味道 / 嚐起來",
+    "example": "Lemon juice has a very acid taste.（檸檬汁有一種非常酸的味道。）"
+  },
+  {
+    "id": 740,
+    "word": "tax",
+    "phonetic": "[tæks]",
+    "pos": "名詞",
+    "meaning": "稅 / 稅款",
+    "example": "Everyone must pay a certain amount of tax to the government.（每個人都必須向政府繳納一定數額的稅款。）"
+  },
+  {
+    "id": 741,
+    "word": "teaching",
+    "phonetic": "[ˈtʃitʃɪŋ]",
+    "pos": "名詞",
+    "meaning": "教學 / 教導",
+    "example": "Teaching young children requires a lot of care.（教導幼兒需要高度的細心與照顧。）"
+  },
+  {
+    "id": 742,
+    "word": "tendency",
+    "phonetic": "[ˈtɛndənsi]",
+    "pos": "名詞",
+    "meaning": "傾向 / 趨勢",
+    "example": "There is a steady tendency for gold prices to increase.（黃金價格有穩定上漲的趨勢。）"
+  },
+  {
+    "id": 743,
+    "word": "test",
+    "phonetic": "[tɛst]",
+    "pos": "名詞",
+    "meaning": "測試 / 檢驗",
+    "example": "Run an external balance communication test today.（今天執行一次外部天平通訊測試。）"
+  },
+  {
+    "id": 744,
+    "word": "than",
+    "phonetic": "[ðæn]",
+    "pos": "連接詞",
+    "meaning": "比 / 較之",
+    "example": "My older brother has more experience than me.（我哥哥的經驗比我豐富。）"
+  },
+  {
+    "id": 745,
+    "word": "that",
+    "phonetic": "[ðæt]",
+    "pos": "形容詞 / 代名詞 / 連接詞",
+    "meaning": "那個 / 那",
+    "example": "Please put that manual back into the drawer.（請將那本手冊放回抽屜裡。）"
+  },
+  {
+    "id": 746,
+    "word": "the",
+    "phonetic": "[ðə] / [ði]",
+    "pos": "冠詞",
+    "meaning": "這 / 那（定冠詞）",
+    "example": "The manager signed the validation record yesterday.（經理昨天簽署了那份驗證紀錄。）"
+  },
+  {
+    "id": 747,
+    "word": "then",
+    "phonetic": "[ðɛn]",
+    "pos": "副詞",
+    "meaning": "然後 / 那時",
+    "example": "We will check the valve position, then start the pump.（我們會先檢查閥門位置，然後啟動泵浦。）"
+  },
+  {
+    "id": 748,
+    "word": "theory",
+    "phonetic": "[ˈθɪəri]",
+    "pos": "名詞",
+    "meaning": "理論",
+    "example": "Scientists developed a new theory about the physical world.（科學家們發展出了一套關於物理世界的新理論。）"
+  },
+  {
+    "id": 749,
+    "word": "there",
+    "phonetic": "[ðɛr]",
+    "pos": "副詞",
+    "meaning": "那裡 / 有",
+    "example": "Put the heavy box over there near the straight wall.（把沉重的箱子放在那裡，靠近筆直的牆面。）"
+  },
+  {
+    "id": 750,
+    "word": "thick",
+    "phonetic": "[θɪk]",
+    "pos": "形容詞",
+    "meaning": "厚的 / 濃的",
+    "example": "The tents are made of strong, thick canvas.（這些帳篷是由堅固、厚實的帆布製成的。）"
+  },
+  {
+    "id": 751,
+    "word": "thin",
+    "phonetic": "[θɪn]",
+    "pos": "形容詞",
+    "meaning": "薄的 / 瘦的",
+    "example": "This sharp knife has a thin steel blade.（這把鋒利的刀子有一個薄鋼刀刃。）"
+  },
+  {
+    "id": 752,
+    "word": "thing",
+    "phonetic": "[θɪŋ]",
+    "pos": "名詞",
+    "meaning": "事情 / 東西",
+    "example": "Reading books is a good thing for everyone.（讀書對每個人來說都是件好事。）"
+  },
+  {
+    "id": 753,
+    "word": "this",
+    "phonetic": "[ðɪs]",
+    "pos": "形容詞 / 代名詞",
+    "meaning": "這個",
+    "example": "This automatic machine is used for packing food.（這台自動化機器是用來包裝食物的。）"
+  },
+  {
+    "id": 754,
+    "word": "though",
+    "phonetic": "[ðo]",
+    "pos": "連接詞",
+    "meaning": "雖然 / 儘管",
+    "example": "Though it was raining heavily, he went to the library.（雖然下著大雨，他還是去了圖書館。）"
+  },
+  {
+    "id": 755,
+    "word": "thought",
+    "phonetic": "[θɔt]",
+    "pos": "名詞",
+    "meaning": "想法 / 思想",
+    "example": "He expressed his thoughts clearly during the discussion.（他在討論中清楚表達了他的想法。）"
+  },
+  {
+    "id": 756,
+    "word": "thread",
+    "phonetic": "[θrɛd]",
+    "pos": "名詞",
+    "meaning": "線",
+    "example": "She used a long blue thread to fix the shirt.（她用一條長藍線來修補襯衫。）"
+  },
+  {
+    "id": 757,
+    "word": "throat",
+    "phonetic": "[θrot]",
+    "pos": "名詞",
+    "meaning": "喉嚨",
+    "example": "He had a bad cough and felt pain in his throat.（他咳得很厲害，覺得喉嚨痛。）"
+  },
+  {
+    "id": 758,
+    "word": "through",
+    "phonetic": "[θru]",
+    "pos": "介系詞",
+    "meaning": "穿過 / 透過",
+    "example": "We walked through the old stone arch into the garden.（我們穿過那座老石拱門走進花園。）"
+  },
+  {
+    "id": 759,
+    "word": "thumb",
+    "phonetic": "[θʌm]",
+    "pos": "名詞",
+    "meaning": "大拇指",
+    "example": "He hurt his thumb while using the heavy hammer.（他使用重鐵錘時弄傷了大拇指。）"
+  },
+  {
+    "id": 760,
+    "word": "thunder",
+    "phonetic": "[ˈθʌndɚ]",
+    "pos": "名詞",
+    "meaning": "雷聲",
+    "example": "We heard the loud sound of thunder before the rain.（下雨前我們聽到了巨大的雷聲。）"
+  },
+  {
+    "id": 761,
+    "word": "ticket",
+    "phonetic": "[ˈtɪkɪt]",
+    "pos": "名詞",
+    "meaning": "票券",
+    "example": "He bought a train ticket to Paris yesterday.（他昨天買了一張去巴黎的火車票。）"
+  },
+  {
+    "id": 762,
+    "word": "tight",
+    "phonetic": "[taɪt]",
+    "pos": "形容詞",
+    "meaning": "緊的",
+    "example": "Tie a tight knot at the end of the nylon cord.（在尼龍繩的盡頭打一個緊緊的結。）"
+  },
+  {
+    "id": 763,
+    "word": "till",
+    "phonetic": "[tɪl]",
+    "pos": "連接詞 / 介系詞",
+    "meaning": "直到...為止",
+    "example": "Please wait here till the manager comes back.（請在這裡等到經理回來。）"
+  },
+  {
+    "id": 764,
+    "word": "time",
+    "phonetic": "[taɪm]",
+    "pos": "名詞",
+    "meaning": "時間 / 次數",
+    "example": "The important project meeting will start on time.（重要的專案會議將準時開始。）"
+  },
+  {
+    "id": 765,
+    "word": "tin",
+    "phonetic": "[tɪn]",
+    "pos": "名詞",
+    "meaning": "錫 / 錫罐",
+    "example": "Put the mixed vegetables into a clean tin.（把混合蔬菜放進一個乾淨的錫罐裡。）"
+  },
+  {
+    "id": 766,
+    "word": "tired",
+    "phonetic": "[ˈtaɪɚd]",
+    "pos": "形容詞",
+    "meaning": "疲倦的",
+    "example": "The long journey made the old traveler very tired.（長途旅程讓老旅人感到非常疲倦。）"
+  },
+  {
+    "id": 767,
+    "word": "to",
+    "phonetic": "[tu]",
+    "pos": "介系詞",
+    "meaning": "到 / 向 / 給",
+    "example": "Send the technical statement to the supervisor's office.（將技術聲明送到主管辦公室。）"
+  },
+  {
+    "id": 768,
+    "word": "toe",
+    "phonetic": "[to]",
+    "pos": "名詞",
+    "meaning": "腳趾",
+    "example": "The heavy stone fell and hurt his big toe.（重石頭掉下來弄傷了他的大腳趾。）"
+  },
+  {
+    "id": 769,
+    "word": "together",
+    "phonetic": "[təˈɡɛðɚ]",
+    "pos": "副詞",
+    "meaning": "一起",
+    "example": "They signed an agreement to work together on the project.（他們簽署了一項協議，決定一起合作這個專案。）"
+  },
+  {
+    "id": 770,
+    "word": "tomorrow",
+    "phonetic": "[təˈmɑro]",
+    "pos": "名詞 / 副詞",
+    "meaning": "明天",
+    "example": "The validation communication test will take place tomorrow.（驗證通訊測試將在明天進行。）"
+  },
+  {
+    "id": 771,
+    "word": "tongue",
+    "phonetic": "[tʌŋ]",
+    "pos": "名詞",
+    "meaning": "舌頭",
+    "example": "The doctor looked at his tongue and throat.（醫生檢查了他的舌頭和喉嚨。）"
+  },
+  {
+    "id": 772,
+    "word": "tooth",
+    "phonetic": "[tuθ]",
+    "pos": "名詞",
+    "meaning": "牙齒",
+    "example": "Eating too much sugar is bad for your tooth.（吃太多糖對你的牙齒不好。）"
+  },
+  {
+    "id": 773,
+    "word": "top",
+    "phonetic": "[tɑp]",
+    "pos": "名詞 / 形容詞",
+    "meaning": "頂部 / 最上面的",
+    "example": "Place the record manual in the top drawer of the desk.（將記錄手冊放在書桌最上面的抽屜裡。）"
+  },
+  {
+    "id": 774,
+    "word": "touch",
+    "phonetic": "[tʌtʃ]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "接觸 / 觸碰",
+    "example": "The light touch of his hand made the baby smile.（他手的輕輕觸碰讓寶寶露出了笑容。）"
+  },
+  {
+    "id": 775,
+    "word": "town",
+    "phonetic": "[taʊn]",
+    "pos": "名詞",
+    "meaning": "城鎮 / 鎮",
+    "example": "He runs a small clothing business in the town.（他在鎮上經營一家小型服裝生意。）"
+  },
+  {
+    "id": 776,
+    "word": "trade",
+    "phonetic": "[tred]",
+    "pos": "名詞",
+    "meaning": "貿易 / 商業",
+    "example": "English is a useful language for international trade.（英語是國際貿易中非常實用的語言。）"
+  },
+  {
+    "id": 777,
+    "word": "train",
+    "phonetic": "[tren]",
+    "pos": "名詞",
+    "meaning": "火車",
+    "example": "We took a slow train through the green hills.（我們搭乘了慢火車穿過綠色山丘。）"
+  },
+  {
+    "id": 778,
+    "word": "transport",
+    "phonetic": "[ˈtrænspɔrt]",
+    "pos": "名詞",
+    "meaning": "運輸 / 交通工具",
+    "example": "The government built a new system of public transport.（政府建造了一套新的大眾運輸系統。）"
+  },
+  {
+    "id": 779,
+    "word": "tray",
+    "phonetic": "[tre]",
+    "pos": "名詞",
+    "meaning": "托盤",
+    "example": "She carried the cups of coffee on a wooden tray.（她用木製托盤端著幾杯咖啡。）"
+  },
+  {
+    "id": 780,
+    "word": "tree",
+    "phonetic": "[tri]",
+    "pos": "名詞",
+    "meaning": "樹木",
+    "example": "A little bird is singing on the big tree branch.（一隻小鳥正在大樹枝上唱歌。）"
+  },
+  {
+    "id": 781,
+    "word": "trick",
+    "phonetic": "[trɪk]",
+    "pos": "名詞",
+    "meaning": "惡作劇 / 詭計 / 訣竅",
+    "example": "The clown played a funny trick to make us laugh.（小丑玩了一個有趣的把戲讓我們大笑。）"
+  },
+  {
+    "id": 782,
+    "word": "trouble",
+    "phonetic": "[ˈtrʌbl]",
+    "pos": "名詞",
+    "meaning": "麻煩 / 困難",
+    "example": "The broken engine caused a lot of trouble today.（壞掉的引擎今天造成了許多麻煩。）"
+  },
+  {
+    "id": 783,
+    "word": "trousers",
+    "phonetic": "[ˈtraʊzɚz]",
+    "pos": "名詞",
+    "meaning": "長褲",
+    "example": "He wore clean brown trousers to the office meeting.（他穿著乾淨的棕色長褲出席辦公室會議。）"
+  },
+  {
+    "id": 784,
+    "word": "TRUE",
+    "phonetic": "[tru]",
+    "pos": "形容詞",
+    "meaning": "真實的 / 正確的",
+    "example": "Please check if this technical statement is true.（請檢查這項技術陳述是否正確。）"
+  },
+  {
+    "id": 785,
+    "word": "turn",
+    "phonetic": "[tɝn]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "轉動 / 轉變",
+    "example": "Give a gentle turn to the handle to open the valve.（輕輕轉動手把以打開閥門。）"
+  },
+  {
+    "id": 786,
+    "word": "twist",
+    "phonetic": "[twɪst]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "扭轉 / 纏繞",
+    "example": "Give a strong twist to the metal wire to secure it.（用力扭轉一下金屬線以將其固定。）"
+  },
+  {
+    "id": 787,
+    "word": "umbrella",
+    "phonetic": "[ʌmˈbrɛlə]",
+    "pos": "名詞",
+    "meaning": "雨傘",
+    "example": "Bring your umbrella; it is starting to rain heavily.（帶上你的雨傘，開始下大雨了。）"
+  },
+  {
+    "id": 788,
+    "word": "under",
+    "phonetic": "[ˈʌndɚ]",
+    "pos": "介系詞",
+    "meaning": "在...之下",
+    "example": "The brown dog is sleeping quietly under the table.（棕色狗正安靜地在桌子底下睡覺。）"
+  },
+  {
+    "id": 789,
+    "word": "unit",
+    "phonetic": "[ˈjunit]",
+    "pos": "名詞",
+    "meaning": "單位 / 裝置",
+    "example": "The fermentation unit is completely clean and ready.（發酵裝置已完全乾淨並準備就緒。）"
+  },
+  {
+    "id": 790,
+    "word": "up",
+    "phonetic": "[ʌp]",
+    "pos": "介系詞 / 副詞",
+    "meaning": "向上",
+    "example": "He took one step up the stairs to the second floor.（他順著樓梯向上走了一步，前往二樓。）"
+  },
+  {
+    "id": 791,
+    "word": "use",
+    "phonetic": "[jus]",
+    "pos": "名詞",
+    "meaning": "使用 / 用途",
+    "example": "The manager explained the proper use of this instrument.（經理說明了這台儀器的正確用途。）"
+  },
+  {
+    "id": 792,
+    "word": "value",
+    "phonetic": "[ˈvælju]",
+    "pos": "名詞",
+    "meaning": "價值",
+    "example": "Value investing focuses on the long-term value of a stock.（價值投資專注於股票的長期價值。）"
+  },
+  {
+    "id": 793,
+    "word": "verse",
+    "phonetic": "[vɝs]",
+    "pos": "名詞",
+    "meaning": "詩句 / 韻文",
+    "example": "He wrote a beautiful verse for his wife's birthday.（他為妻子的生日寫了一首美麗的詩句。）"
+  },
+  {
+    "id": 794,
+    "word": "very",
+    "phonetic": "[ˈvɛri]",
+    "pos": "副詞",
+    "meaning": "非常",
+    "example": "The temperature reading on thedisplay is very low today.（顯示屏上的溫度讀數今天非常低。）"
+  },
+  {
+    "id": 795,
+    "word": "vessel",
+    "phonetic": "[ˈvɛsəl]",
+    "pos": "名詞",
+    "meaning": "容器 / 船艦 / 血管",
+    "example": "The 500L fermenter vessel passed its technical review.（500L 的發酵槽容器通過了技術審查。）"
+  },
+  {
+    "id": 796,
+    "word": "view",
+    "phonetic": "[vju]",
+    "pos": "名詞",
+    "meaning": "景觀 / 觀點",
+    "example": "We had a beautiful mountain view from our room balcony.（從我們房間的陽台可以看到美麗的山景。）"
+  },
+  {
+    "id": 797,
+    "word": "violent",
+    "phonetic": "[ˈvaɪələnt]",
+    "pos": "形容詞",
+    "meaning": "猛烈的 / 暴力的",
+    "example": "The sudden storm brought a violent wind to the town.（突降的暴風雨給鎮上帶來了猛烈的狂風。）"
+  },
+  {
+    "id": 798,
+    "word": "voice",
+    "phonetic": "[vɔɪs]",
+    "pos": "名詞",
+    "meaning": "聲音（指人的說話/歌唱聲）",
+    "example": "She spoke in a quiet, gentle voice during the discussion.（她在討論中用溫和、輕柔的聲音說話。）"
+  },
+  {
+    "id": 799,
+    "word": "waiting",
+    "phonetic": "[ˈwetɪŋ]",
+    "pos": "名詞 / 形容詞",
+    "meaning": "等待 / 等候的",
+    "example": "The travelers spent an hour in the waiting room.（旅客們在候車室裡等了一個小時。）"
+  },
+  {
+    "id": 800,
+    "word": "walk",
+    "phonetic": "[wɔk]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "散步 / 步行",
+    "example": "Let us go for a short walk along the straight road.（讓我們沿著這條筆直的道路去短暫散步一下。）"
+  },
+  {
+    "id": 801,
+    "word": "wall",
+    "phonetic": "[wɔl]",
+    "pos": "名詞",
+    "meaning": "牆壁",
+    "example": "Put the external balance scale near the interior wall.（將外部天平秤放在靠內牆的位置。）"
+  },
+  {
+    "id": 802,
+    "word": "war",
+    "phonetic": "[wɔr]",
+    "pos": "名詞",
+    "meaning": "戰爭",
+    "example": "The history book describes the cause of the great war.（這本歷史書描述了那場大戰的起因。）"
+  },
+  {
+    "id": 803,
+    "word": "warm",
+    "phonetic": "[wɔrm]",
+    "pos": "形容詞",
+    "meaning": "溫暖的",
+    "example": "A warm bath will help your stiff muscles relax.（洗個熱水澡能幫助你僵硬的肌肉放鬆。）"
+  },
+  {
+    "id": 804,
+    "word": "wash",
+    "phonetic": "[wɑʃ]",
+    "pos": "名詞 / 動詞的動作",
+    "meaning": "洗滌 / 沖洗",
+    "example": "Give a thorough wash to the hygienic stainless steel pipes.（對衛生級不鏽鋼管路進行一次徹底的沖洗。）"
+  },
+  {
+    "id": 805,
+    "word": "waste",
+    "phonetic": "[west]",
+    "pos": "名詞 / 形容詞",
+    "meaning": "廢棄物 / 浪費的",
+    "example": "Do not let chemical waste go down the kitchen drain.（不要讓化學廢棄物從廚房排水管流下去。）"
+  },
+  {
+    "id": 806,
+    "word": "watch",
+    "phonetic": "[wɑtʃ]",
+    "pos": "名詞",
+    "meaning": "手錶 / 看管",
+    "example": "He looked at his automatic watch to check the time.（他看了看他的自動手錶以確認時間。）"
+  },
+  {
+    "id": 807,
+    "word": "water",
+    "phonetic": "[ˈwɔtɚ]",
+    "pos": "名詞",
+    "meaning": "水",
+    "example": "We need clear, fresh water for the clean-in-place process.（我們在原位清洗製程中需要清澈、新鮮的水。）"
+  },
+  {
+    "id": 808,
+    "word": "wave",
+    "phonetic": "[wev]",
+    "pos": "名詞",
+    "meaning": "波浪 / 波動",
+    "example": "The strong wind made large waves on the surface of the lake.（強風在湖面上激起了大波浪。）"
+  },
+  {
+    "id": 809,
+    "word": "wax",
+    "phonetic": "[wæks]",
+    "pos": "名詞",
+    "meaning": "蠟 / 蜂蠟",
+    "example": "The candle is made of clean, white wax.（這支蠟燭是由乾淨的白蠟製成的。）"
+  },
+  {
+    "id": 810,
+    "word": "way",
+    "phonetic": "[we]",
+    "pos": "名詞",
+    "meaning": "方法 / 道路",
+    "example": "Is this the right way to the public library?（這是去公共圖書館正確的路嗎？）"
+  },
+  {
+    "id": 811,
+    "word": "weather",
+    "phonetic": "[ˈwɛðɚ]",
+    "pos": "名詞",
+    "meaning": "天氣",
+    "example": "The autumn weather brings a pleasant drop in temperature.（秋天的天氣帶來了舒適的降溫。）"
+  },
+  {
+    "id": 812,
+    "word": "week",
+    "phonetic": "[wik]",
+    "pos": "名詞",
+    "meaning": "星期 / 週",
+    "example": "He works five days a week at the modern plant.（他每週在現代化高階工廠工作五天。）"
+  },
+  {
+    "id": 813,
+    "word": "weight",
+    "phonetic": "[wet]",
+    "pos": "名詞",
+    "meaning": "重量",
+    "example": "Check the weight of the material on the external balance.（在外部天平上檢查材料的重量。）"
+  },
+  {
+    "id": 814,
+    "word": "well",
+    "phonetic": "[wɛl]",
+    "pos": "副詞 / 名詞",
+    "meaning": "良好地 / 水井",
+    "example": "The automatic pump system is running very well today.（自動泵浦系統今天運行得非常良好。）"
+  },
+  {
+    "id": 815,
+    "word": "west",
+    "phonetic": "[wɛst]",
+    "pos": "名詞 / 形容詞 / 副詞",
+    "meaning": "西方 / 向西的",
+    "example": "The sun sets in the west at the end of the day.（太陽在一天的盡頭從西方落下。）"
+  },
+  {
+    "id": 816,
+    "word": "wet",
+    "phonetic": "[wɛt]",
+    "pos": "形容詞",
+    "meaning": "濕的",
+    "example": "Use a wet cloth to wipe the dust off the shelf.（用一塊濕布擦去架子上的灰塵。）"
+  },
+  {
+    "id": 817,
+    "word": "wheel",
+    "phonetic": "[hwil]",
+    "pos": "名詞",
+    "meaning": "車輪 / 輪子",
+    "example": "The bicycle has a bent front wheel and cannot be used.（這輛腳踏車的前輪彎曲了，無法使用。）"
+  },
+  {
+    "id": 818,
+    "word": "when",
+    "phonetic": "[hwɛn]",
+    "pos": "副詞 / 連接詞",
+    "meaning": "當...時 / 何時",
+    "example": "When the bell rings, the meeting will make a start.（當鐘聲響起時，會議就會開始。）"
+  },
+  {
+    "id": 819,
+    "word": "where",
+    "phonetic": "[hwɛr]",
+    "pos": "副詞 / 連接詞",
+    "meaning": "在哪裡 / ...的地方",
+    "example": "This is the laboratory where we test the liquid.（這是我們測試液體的實驗室。）"
+  },
+  {
+    "id": 820,
+    "word": "while",
+    "phonetic": "[hwaɪl]",
+    "pos": "連接詞 / 名詞",
+    "meaning": "當...的時候 / 一會兒",
+    "example": "She sang a happy song while walking down the street.（她在沿著街道行走時唱著一首快樂的歌。）"
+  },
+  {
+    "id": 821,
+    "word": "whip",
+    "phonetic": "[hwɪp]",
+    "pos": "名詞",
+    "meaning": "馬鞭 / 鞭子",
+    "example": "The farmer used a leather whip to guide the horse carriage.（農夫使用皮鞭來引導馬車。）"
+  },
+  {
+    "id": 822,
+    "word": "whistle",
+    "phonetic": "[ˈhwɪsl]",
+    "pos": "名詞",
+    "meaning": "口哨 / 哨子 / 汽笛聲",
+    "example": "We heard the sharp sound of a whistle from the station.（我們聽到車站傳來一聲尖銳的哨子聲。）"
+  },
+  {
+    "id": 823,
+    "word": "white",
+    "phonetic": "[hwaɪt]",
+    "pos": "形容詞 / 名詞",
+    "meaning": "白色的 / 白色",
+    "example": "The office building is painted in a clean white color.（這棟辦公大樓外牆漆成了乾淨的白色。）"
+  },
+  {
+    "id": 824,
+    "word": "who",
+    "phonetic": "[hu]",
+    "pos": "代名詞",
+    "meaning": "誰 / ...的人",
+    "example": "He is the engineer who reviewed the qualification checklist.（他就是審查資格驗證檢核表的那位工程師。）"
+  },
+  {
+    "id": 825,
+    "word": "why",
+    "phonetic": "[waɪ]",
+    "pos": "副詞 / 連接詞",
+    "meaning": "為什麼",
+    "example": "Please tell the manager why the engine came to a stop.（請告訴經理為什麼引擎會停了下來。）"
+  },
+  {
+    "id": 826,
+    "word": "wide",
+    "phonetic": "[waɪd]",
+    "pos": "形容詞",
+    "meaning": "寬的 / 廣泛的",
+    "example": "The new instrument has a wide measurement range.（這台新儀器有很寬的測量範圍。）"
+  },
+  {
+    "id": 827,
+    "word": "will",
+    "phonetic": "[wɪl]",
+    "pos": "動詞 / 名詞",
+    "meaning": "將會 / 意志 / 遺囑",
+    "example": "The supervisor will check the safety rules tomorrow.（主管明天將會檢查安全規定。基本英語核心助動詞之一。）"
+  },
+  {
+    "id": 828,
+    "word": "wind",
+    "phonetic": "[wɪnd]",
+    "pos": "名詞",
+    "meaning": "風",
+    "example": "The strong wind caused severe damage to the wooden roof.（強風對木製屋頂造成了嚴重的損害。）"
+  },
+  {
+    "id": 829,
+    "word": "window",
+    "phonetic": "[ˈwɪndo]",
+    "pos": "名詞",
+    "meaning": "窗戶",
+    "example": "Close the glass window to block the cold air from the north.（關上玻璃窗以阻擋來自北方的冷空氣。）"
+  },
+  {
+    "id": 830,
+    "word": "wine",
+    "phonetic": "[waɪn]",
+    "pos": "名詞",
+    "meaning": "葡萄酒 / 酒",
+    "example": "He pulled the cork out of the wine bottle for dinner.（他拔出酒瓶的軟木塞準備晚餐。）"
+  },
+  {
+    "id": 831,
+    "word": "wing",
+    "phonetic": "[wɪŋ]",
+    "pos": "名詞",
+    "meaning": "翅膀 / 機翼",
+    "example": "The little bird hurt its left wing and cannot fly.（小鳥弄傷了左邊翅膀，沒辦法飛了。）"
+  },
+  {
+    "id": 832,
+    "word": "winter",
+    "phonetic": "[ˈwɪntɚ]",
+    "pos": "名詞",
+    "meaning": "冬天",
+    "example": "The cold wind blows from the north during the winter.（冬天冷風從北方吹來。）"
+  },
+  {
+    "id": 833,
+    "word": "wire",
+    "phonetic": "[waɪr]",
+    "pos": "名詞",
+    "meaning": "金屬線 / 電線",
+    "example": "Use strong steel wire to secure the pipe position.（使用堅固的鋼絲來固定管路位置。）"
+  },
+  {
+    "id": 834,
+    "word": "wise",
+    "phonetic": "[waɪz]",
+    "pos": "形容詞",
+    "meaning": "明智的 / 聰明的",
+    "example": "It was a wise decision to run a regular check on the pump.（對泵浦進行常規檢查是個明智的決定。）"
+  },
+  {
+    "id": 835,
+    "word": "with",
+    "phonetic": "[wɪð]",
+    "pos": "介系詞",
+    "meaning": "具有 / 帶有 / 和...一起",
+    "example": "Mix the white chemical powder with warm water.（將白色化學粉末與溫水混合。）"
+  },
+  {
+    "id": 836,
+    "word": "woman",
+    "phonetic": "[ˈwʊmən]",
+    "pos": "名詞",
+    "meaning": "女人 / 女性",
+    "example": "The woman working at the library is a great expert on history.（在圖書館工作的那位女性是一位了不起的歷史專家。）"
+  },
+  {
+    "id": 837,
+    "word": "wood",
+    "phonetic": "[wʊd]",
+    "pos": "名詞",
+    "meaning": "木頭 / 木材 / 樹林",
+    "example": "He can make a beautiful, straight table out of wood.（他能用木頭做一張漂亮、筆直的桌子。）"
+  },
+  {
+    "id": 838,
+    "word": "wool",
+    "phonetic": "[wʊl]",
+    "pos": "名詞 / 形容詞",
+    "meaning": "羊毛 / 毛製的",
+    "example": "He wore a warm wool coat during his train journey.（他在火車旅程中穿著一件溫暖的羊毛大衣。）"
+  },
+  {
+    "id": 839,
+    "word": "word",
+    "phonetic": "[wɝd]",
+    "pos": "名詞",
+    "meaning": "字 / 詞 / 話語",
+    "example": "This document explains the proper use of every Basic English word.（這份文件解釋了每個基本英語單字的正確用法。）"
+  },
+  {
+    "id": 840,
+    "word": "work",
+    "phonetic": "[wɝk]",
+    "pos": "名詞",
+    "meaning": "工作 / 勞動",
+    "example": "Proper process training is necessary for safety at work.（適當的製程培訓對於工作安全是必要的。）"
+  },
+  {
+    "id": 841,
+    "word": "worm",
+    "phonetic": "[wɝm]",
+    "pos": "名詞",
+    "meaning": "蠕蟲",
+    "example": "A little bird on the grass was looking for a worm.（草地上的小鳥正在尋找一隻蠕蟲。）"
+  },
+  {
+    "id": 842,
+    "word": "wound",
+    "phonetic": "[wund]",
+    "pos": "名詞",
+    "meaning": "傷口 / 創傷",
+    "example": "The doctor put a clean cloth cover over his arm wound.（醫生在他手臂的傷口上蓋了一塊乾淨的布。）"
+  },
+  {
+    "id": 843,
+    "word": "writing",
+    "phonetic": "[ˈraɪtɪŋ]",
+    "pos": "名詞",
+    "meaning": "書寫 / 寫作 / 文字",
+    "example": "The small writing in the manual is quite hard to read.（手冊裡的小字相當難讀。）"
+  },
+  {
+    "id": 844,
+    "word": "wrong",
+    "phonetic": "[rɔŋ]",
+    "pos": "形容詞",
+    "meaning": "錯誤的",
+    "example": "He made a quick adjustment after checking the wrong reading.（在檢查到錯誤的讀數後，他迅速做出了調整。）"
+  },
+  {
+    "id": 845,
+    "word": "year",
+    "phonetic": "[jɪr]",
+    "pos": "名詞",
+    "meaning": "年 / 年份",
+    "example": "They have been married for five happy years.（他們已經過了五年的幸福婚姻生活。）"
+  },
+  {
+    "id": 846,
+    "word": "yellow",
+    "phonetic": "[ˈjɛlo]",
+    "pos": "形容詞 / 名詞",
+    "meaning": "黃色的 / 黃色",
+    "example": "The flame of the candle was bright and yellow in the dark.（在黑暗中，蠟燭的火焰又亮又黃。）"
+  },
+  {
+    "id": 847,
+    "word": "yes",
+    "phonetic": "[jɛs]",
+    "pos": "副詞",
+    "meaning": "是的",
+    "example": "Yes, it is possible to complete the technical review today.（是的，今天完成技術審查是有可能的。）"
+  },
+  {
+    "id": 848,
+    "word": "yesterday",
+    "phonetic": "[ˈjɛstɚde]",
+    "pos": "名詞 / 副詞",
+    "meaning": "昨天",
+    "example": "The trade representative signed the final agreement yesterday.（貿易代表昨天簽署了最終協議。）"
+  },
+  {
+    "id": 849,
+    "word": "you",
+    "phonetic": "[ju]",
+    "pos": "代名詞",
+    "meaning": "你 / 你們",
+    "example": "If you have any questions, please ask the supervisor.（如果您有任何問題，請詢問主管。）"
+  },
+  {
+    "id": 850,
+    "word": "young",
+    "phonetic": "[jʌŋ]",
+    "pos": "形容詞",
+    "meaning": "年輕的 / 幼小的",
+    "example": "Teaching young children requires a large amount of care.（教導幼兒需要高度的細心與照顧。）"
+  }
+]
