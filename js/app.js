@@ -402,6 +402,10 @@
 
   function nextWord() {
     currentWordIndex++;
+    // Auto-upload every 5 answered words so mid-session progress isn't lost
+    if (currentWordIndex > 0 && currentWordIndex % 5 === 0) {
+      uploadToSheet(true);
+    }
     showPracticeWord();
   }
 
