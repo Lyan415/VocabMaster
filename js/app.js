@@ -119,6 +119,8 @@
     errorEl.classList.add('hidden');
     sessionStorage.setItem(CONFIG.SESSION_KEY, 'active');
     showApp();
+    // After login: silently pull progress from Google Sheet and merge
+    syncFromSheet(true);
   }
 
   function handleLogout() {
@@ -621,6 +623,8 @@
       ? Math.round((sessionResults.correct / sessionResults.total) * 100)
       : 0;
     document.getElementById('complete-accuracy').textContent = accuracy + '%';
+    // Auto-upload progress to Google Sheet after every session
+    uploadToSheet(true);
   }
 
   // ===== TEXT-TO-SPEECH =====
@@ -722,23 +726,70 @@
   }
 
   // ===== GOOGLE SHEET SYNC =====
-  async function syncWithSheet() {
-    if (!settings.gasUrl) {
-      showToast('Set the Apps Script URL in Settings first');
-      return;
+
+  // Merge two progress objects — for each word, keep the more advanced record
+  function mergeProgressData(local, remote) {
+    const merged = Object.assign({}, local);
+    for (const [wordId, remoteData] of Object.entries(remote)) {
+      if (!merged[wordId]) {
+        merged[wordId] = remoteData;
+      } else {
+        const localData = merged[wordId];
+        // Higher level wins; tie-break by more recent lastReview date
+        if (remoteData.level > localData.level) {
+          merged[wordId] = remoteData;
+        } else if (remoteData.level === localData.level &&
+                   remoteData.lastReview && localData.lastReview &&
+                   remoteData.lastReview > localData.lastReview) {
+          merged[wordId] = remoteData;
+        }
+      }
     }
+    return merged;
+  }
 
-    const syncBtn = document.getElementById('sync-btn');
-    syncBtn.disabled = true;
-    syncBtn.style.animation = 'spin 1s linear infinite';
+  // Download progress from Google Sheet and merge with localStorage
+  async function syncFromSheet(silent) {
+    if (!settings.gasUrl) return;
+    try {
+      const resp = await fetch(settings.gasUrl + '?action=getProgress');
+      if (!resp.ok) return;
+      const data = await resp.json();
+      if (!data || !data.progress) return;
 
+      // Separate _studyDays from word progress
+      const localStudyDays = progress._studyDays || [];
+      const localWordProgress = Object.assign({}, progress);
+      delete localWordProgress._studyDays;
+
+      const merged = mergeProgressData(localWordProgress, data.progress);
+
+      // Merge study days (union, deduplicated)
+      const allDays = Array.from(new Set([
+        ...localStudyDays,
+        ...(data.studyDays || [])
+      ])).sort();
+
+      progress = Object.assign(merged, { _studyDays: allDays });
+      saveProgress();
+
+      if (!silent) showToast('✅ Progress loaded from Google Sheet!');
+    } catch (e) {
+      console.error('Load from sheet error:', e);
+      if (!silent) showToast('Could not load from Google Sheet');
+    }
+  }
+
+  // Upload progress to Google Sheet
+  async function uploadToSheet(silent) {
+    if (!settings.gasUrl) return false;
     try {
       const progressData = {};
       Object.entries(progress).forEach(([key, val]) => {
         if (key !== '_studyDays') progressData[key] = val;
       });
 
-      const resp = await fetch(settings.gasUrl, {
+      await fetch(settings.gasUrl, {
         method: 'POST',
         mode: 'no-cors',
         headers: { 'Content-Type': 'text/plain' },
@@ -750,7 +801,32 @@
         })
       });
 
-      showToast('Progress synced to Google Sheet!');
+      if (!silent) showToast('✅ Progress synced to Google Sheet!');
+      return true;
+    } catch (e) {
+      console.error('Upload to sheet error:', e);
+      if (!silent) showToast('Sync failed. Check the URL in Settings.');
+      return false;
+    }
+  }
+
+  // Manual sync button: full two-way sync (upload then download)
+  async function syncWithSheet() {
+    if (!settings.gasUrl) {
+      showToast('Set the Apps Script URL in Settings first');
+      return;
+    }
+
+    const syncBtn = document.getElementById('sync-btn');
+    syncBtn.disabled = true;
+    syncBtn.style.animation = 'spin 1s linear infinite';
+
+    try {
+      await uploadToSheet(true);
+      // Give Apps Script a moment to finish writing before reading back
+      await new Promise(r => setTimeout(r, 1500));
+      await syncFromSheet(true);
+      showToast('✅ Two-way sync complete!');
     } catch (e) {
       console.error('Sync error:', e);
       showToast('Sync failed. Check the URL in Settings.');
