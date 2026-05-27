@@ -120,8 +120,10 @@
     errorEl.classList.add('hidden');
     sessionStorage.setItem(CONFIG.SESSION_KEY, 'active');
     showApp();
-    // After login: silently pull progress from Google Sheet and merge
-    syncFromSheet(true);
+    // After login: pull progress from Google Sheet, refresh dashboard if data arrived
+    syncFromSheet(true).then(hasData => {
+      if (hasData) showToast('☁️ Progress synced from cloud');
+    });
   }
 
   function handleLogout() {
@@ -774,12 +776,18 @@
 
   // Download progress from Google Sheet and merge with localStorage
   async function syncFromSheet(silent) {
-    if (!settings.gasUrl) return;
+    if (!settings.gasUrl) return false;
     try {
       const resp = await fetch(settings.gasUrl + '?action=getProgress');
-      if (!resp.ok) return;
+      if (!resp.ok) {
+        console.error('syncFromSheet: HTTP', resp.status);
+        return false;
+      }
       const data = await resp.json();
-      if (!data || !data.progress) return;
+      if (!data || !data.progress || Object.keys(data.progress).length === 0) {
+        console.log('syncFromSheet: no data in sheet yet');
+        return false;
+      }
 
       // Separate _studyDays from word progress
       const localStudyDays = progress._studyDays || [];
@@ -797,10 +805,15 @@
       progress = Object.assign(merged, { _studyDays: allDays });
       saveProgress();
 
+      // Re-render dashboard so updated progress is visible immediately
+      renderDashboard();
+
       if (!silent) showToast('✅ Progress loaded from Google Sheet!');
+      return true;
     } catch (e) {
       console.error('Load from sheet error:', e);
       if (!silent) showToast('Could not load from Google Sheet');
+      return false;
     }
   }
 
