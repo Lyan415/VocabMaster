@@ -300,6 +300,9 @@
     document.querySelectorAll('.bottom-nav-item').forEach(btn => {
       btn.classList.toggle('active', btn.dataset.page === page);
     });
+    document.querySelectorAll('.nav-tab').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.page === page);
+    });
 
     if (page === 'dashboard') renderDashboard();
     if (page === 'wordlist') renderWordList();
@@ -849,6 +852,20 @@
     return merged;
   }
 
+  // Google Sheets auto-converts date strings to Date objects, which come back
+  // as ISO strings via JSON. Normalize them to YYYY-MM-DD (Taipei timezone).
+  function normalizeDateField(val) {
+    if (!val) return null;
+    if (typeof val === 'string') {
+      if (/^\d{4}-\d{2}-\d{2}$/.test(val)) return val;
+      if (val.includes('T') || val.includes('Z')) {
+        const d = new Date(val);
+        if (!isNaN(d)) return formatDate(d);
+      }
+    }
+    return val;
+  }
+
   // Download progress from Google Sheet and merge with localStorage
   async function syncFromSheet(silent) {
     if (!settings.gasUrl) return false;
@@ -864,6 +881,12 @@
         return false;
       }
 
+      // Normalize dates that Google Sheets auto-converted to ISO strings
+      Object.values(data.progress).forEach(p => {
+        p.lastReview = normalizeDateField(p.lastReview);
+        p.nextReview = normalizeDateField(p.nextReview);
+      });
+
       // Separate _studyDays from word progress
       const localStudyDays = progress._studyDays || [];
       const localWordProgress = Object.assign({}, progress);
@@ -872,9 +895,10 @@
       const merged = mergeProgressData(localWordProgress, data.progress);
 
       // Merge study days (union, deduplicated)
+      const normalizedRemoteDays = (data.studyDays || []).map(normalizeDateField).filter(Boolean);
       const allDays = Array.from(new Set([
         ...localStudyDays,
-        ...(data.studyDays || [])
+        ...normalizedRemoteDays
       ])).sort();
 
       progress = Object.assign(merged, { _studyDays: allDays });
@@ -1043,6 +1067,9 @@
     });
 
     document.querySelectorAll('.bottom-nav-item[data-page]').forEach(btn => {
+      btn.addEventListener('click', () => navigateTo(btn.dataset.page));
+    });
+    document.querySelectorAll('.nav-tab[data-page]').forEach(btn => {
       btn.addEventListener('click', () => navigateTo(btn.dataset.page));
     });
 

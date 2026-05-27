@@ -65,8 +65,8 @@ function getProgress() {
     if (!row[0]) continue;
     progress[row[0]] = {
       level: row[1] || 0,
-      lastReview: row[2] || null,
-      nextReview: row[3] || null,
+      lastReview: dateToStr(row[2]),
+      nextReview: dateToStr(row[3]),
       correct: row[4] || 0,
       incorrect: row[5] || 0,
       easeFactor: row[6] || 2.5
@@ -79,11 +79,21 @@ function getProgress() {
   if (logSheet) {
     const logData = logSheet.getDataRange().getValues();
     for (let i = 1; i < logData.length; i++) {
-      if (logData[i][0]) studyDays.push(logData[i][0]);
+      const s = dateToStr(logData[i][0]);
+      if (s) studyDays.push(s);
     }
   }
 
   return { progress, studyDays };
+}
+
+// Convert anything (Date / string / empty) to "YYYY-MM-DD" Taiwan-timezone string
+function dateToStr(val) {
+  if (!val) return null;
+  if (val instanceof Date) {
+    return Utilities.formatDate(val, 'Asia/Taipei', 'yyyy-MM-dd');
+  }
+  return String(val);
 }
 
 function saveProgress(user, progressData, studyDays) {
@@ -107,6 +117,10 @@ function saveProgress(user, progressData, studyDays) {
   headerRange.setFontWeight('bold');
   headerRange.setBackground('#4f46e5');
   headerRange.setFontColor('#ffffff');
+
+  // Force LastReview (col 3) and NextReview (col 4) to plain text so
+  // Google Sheets won't auto-convert "2024-05-27" into a Date object.
+  sheet.getRange(2, 3, sheet.getMaxRows() - 1, 2).setNumberFormat('@');
 
   // Write progress data
   const rows = [];
@@ -141,6 +155,9 @@ function saveProgress(user, progressData, studyDays) {
   logHeaderRange.setFontWeight('bold');
   logHeaderRange.setBackground('#4f46e5');
   logHeaderRange.setFontColor('#ffffff');
+
+  // Force Date column to plain text (prevents Date object auto-conversion)
+  logSheet.getRange(2, 1, logSheet.getMaxRows() - 1, 1).setNumberFormat('@');
 
   if (studyDays && studyDays.length > 0) {
     const logRows = studyDays.map(day => {

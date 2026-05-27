@@ -246,6 +246,22 @@ body {
 
 .nav-actions { display: flex; gap: 4px; }
 
+/* Desktop top-nav tabs — hidden on mobile (bottom-nav is used instead) */
+.nav-tabs { display: none; gap: 4px; flex: 1; justify-content: center; }
+.nav-tab {
+  background: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.nav-tab:hover { background: var(--bg); color: var(--text); }
+.nav-tab.active { background: var(--primary); color: #fff; }
+
 /* ===== BOTTOM NAV ===== */
 #bottom-nav {
   position: fixed;
@@ -1061,6 +1077,7 @@ body {
   .stats-grid { grid-template-columns: repeat(4, 1fr); }
   .mode-grid { grid-template-columns: repeat(4, 1fr); }
   #bottom-nav { display: none; }
+  .nav-tabs { display: flex; }
   #content { padding-bottom: 40px; }
   .modal { align-items: center; }
   .modal-content { border-radius: var(--radius); max-width: 400px; }
