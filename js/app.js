@@ -868,16 +868,39 @@
 
   // Download progress from Google Sheet and merge with localStorage
   async function syncFromSheet(silent) {
-    if (!settings.gasUrl) return false;
+    if (!settings.gasUrl) {
+      showToast('⚠️ No Apps Script URL configured');
+      return false;
+    }
     try {
-      const resp = await fetch(settings.gasUrl + '?action=getProgress');
+      console.log('syncFromSheet: fetching from', settings.gasUrl);
+      const resp = await fetch(settings.gasUrl + '?action=getProgress', {
+        method: 'GET',
+        redirect: 'follow'
+      });
+      console.log('syncFromSheet: HTTP', resp.status, resp.type);
       if (!resp.ok) {
-        console.error('syncFromSheet: HTTP', resp.status);
+        showToast(`⚠️ Sync HTTP error: ${resp.status}`);
         return false;
       }
-      const data = await resp.json();
-      if (!data || !data.progress || Object.keys(data.progress).length === 0) {
-        console.log('syncFromSheet: no data in sheet yet');
+      const text = await resp.text();
+      console.log('syncFromSheet: raw response (first 200 chars):', text.slice(0, 200));
+      let data;
+      try {
+        data = JSON.parse(text);
+      } catch (parseErr) {
+        showToast('⚠️ Sync response not JSON — check Apps Script deploy');
+        console.error('Parse error:', parseErr, 'Body:', text.slice(0, 500));
+        return false;
+      }
+      if (!data || !data.progress) {
+        showToast('⚠️ Sync response missing progress data');
+        console.error('Bad data:', data);
+        return false;
+      }
+      const wordCount = Object.keys(data.progress).length;
+      if (wordCount === 0) {
+        if (!silent) showToast('Cloud is empty — nothing to download');
         return false;
       }
 
@@ -887,14 +910,12 @@
         p.nextReview = normalizeDateField(p.nextReview);
       });
 
-      // Separate _studyDays from word progress
       const localStudyDays = progress._studyDays || [];
       const localWordProgress = Object.assign({}, progress);
       delete localWordProgress._studyDays;
 
       const merged = mergeProgressData(localWordProgress, data.progress);
 
-      // Merge study days (union, deduplicated)
       const normalizedRemoteDays = (data.studyDays || []).map(normalizeDateField).filter(Boolean);
       const allDays = Array.from(new Set([
         ...localStudyDays,
@@ -903,15 +924,13 @@
 
       progress = Object.assign(merged, { _studyDays: allDays });
       saveProgress();
-
-      // Re-render dashboard so updated progress is visible immediately
       renderDashboard();
 
-      if (!silent) showToast('✅ Progress loaded from Google Sheet!');
+      showToast(`☁️ Loaded ${wordCount} words from cloud`);
       return true;
     } catch (e) {
-      console.error('Load from sheet error:', e);
-      if (!silent) showToast('Could not load from Google Sheet');
+      console.error('syncFromSheet error:', e);
+      showToast(`⚠️ Sync failed: ${e.message || e.name}`);
       return false;
     }
   }
