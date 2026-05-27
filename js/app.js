@@ -264,23 +264,60 @@
     return p && p.level > 0 && p.level < CONFIG.MAX_LEVEL && p.lastReview;
   }
 
-  // Get today's plan — a FIXED set of words for the day, generated once.
-  // Stored in progress._todayPlan = { date, dueIds, newIds }
+  // Seeded PRNG (mulberry32) — same seed always produces same sequence.
+  // Used to make the daily plan deterministic across devices.
+  function mulberry32(seed) {
+    return function () {
+      seed |= 0; seed = seed + 0x6D2B79F5 | 0;
+      let t = seed;
+      t = Math.imul(t ^ t >>> 15, t | 1);
+      t ^= t + Math.imul(t ^ t >>> 7, t | 61);
+      return ((t ^ t >>> 14) >>> 0) / 4294967296;
+    };
+  }
+
+  // Shuffle using a seeded RNG, so all devices get the same order for the same seed.
+  function seededShuffle(arr, seed) {
+    const rng = mulberry32(seed);
+    const out = arr.slice();
+    for (let i = out.length - 1; i > 0; i--) {
+      const j = Math.floor(rng() * (i + 1));
+      [out[i], out[j]] = [out[j], out[i]];
+    }
+    return out;
+  }
+
+  // Bump this when plan generation algorithm changes — forces all
+  // devices to regenerate using the new algorithm, even if they
+  // already cached today's plan from the old one.
+  const PLAN_VERSION = 2;
+
+  // Get today's plan — DETERMINISTIC for a given date.
+  // Same date + same word list + same settings.dailyNew → same plan on every device.
+  // Stored in progress._todayPlan = { version, date, dueIds, newIds }
   function getOrCreateTodayPlan() {
     const today = getTodayStr();
     const existing = progress._todayPlan;
-    if (existing && existing.date === today) {
-      // Filter out any words that no longer exist (shouldn't happen, but safe)
+    if (existing && existing.date === today && existing.version === PLAN_VERSION) {
       return existing;
     }
-    // New day → generate a fresh plan
+    // Build deterministically: shuffle all word IDs using date as seed,
+    // then take the first N that are still "new" (not yet studied).
+    const seed = parseInt(today.replace(/-/g, ''), 10); // e.g. 20260528
     const dueWords = words.filter(w => isDueForReview(w.id));
-    const newWordsAvailable = words.filter(w => isNewWord(w.id));
-    shuffleArray(newWordsAvailable);
+    const dueIdSet = new Set(dueWords.map(w => w.id));
+    const allIds = words.map(w => w.id).sort((a, b) => a - b);
+    const shuffledIds = seededShuffle(allIds, seed);
+    const newIds = [];
+    for (const id of shuffledIds) {
+      if (newIds.length >= settings.dailyNew) break;
+      if (isNewWord(id) && !dueIdSet.has(id)) newIds.push(id);
+    }
     const plan = {
+      version: PLAN_VERSION,
       date: today,
-      dueIds: dueWords.map(w => w.id),
-      newIds: newWordsAvailable.slice(0, settings.dailyNew).map(w => w.id)
+      dueIds: dueWords.map(w => w.id).sort((a, b) => a - b),
+      newIds: newIds
     };
     progress._todayPlan = plan;
     saveProgress();
@@ -1027,14 +1064,14 @@
       ])).sort();
 
       // Decide which today plan to keep:
-      //   - If remote plan is for today → use it (authoritative across devices)
-      //   - Else if local plan is for today → keep local (we'll upload it back)
-      //   - Else → no plan; getOrCreateTodayPlan() will build a fresh one
+      //   - Only accept plans for today AND of the current PLAN_VERSION
+      //   - Remote (matching) wins; else local (matching); else regenerate
       const today = getTodayStr();
+      const planIsValid = (p) => p && p.date === today && p.version === PLAN_VERSION;
       let chosenPlan = null;
-      if (data.todayPlan && data.todayPlan.date === today) {
+      if (planIsValid(data.todayPlan)) {
         chosenPlan = data.todayPlan;
-      } else if (localTodayPlan && localTodayPlan.date === today) {
+      } else if (planIsValid(localTodayPlan)) {
         chosenPlan = localTodayPlan;
       }
 
