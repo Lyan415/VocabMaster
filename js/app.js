@@ -65,6 +65,34 @@
     } catch {
       progress = {};
     }
+    normalizeStoredDates();
+  }
+
+  // One-time migration: legacy ISO strings (from before normalization existed)
+  // break date comparisons. Convert every date field to YYYY-MM-DD Taipei.
+  function normalizeStoredDates() {
+    let changed = false;
+    Object.entries(progress).forEach(([key, val]) => {
+      if (key === '_studyDays' || key === '_todayPlan') return;
+      if (!val || typeof val !== 'object') return;
+      ['lastReview', 'nextReview'].forEach(field => {
+        if (val[field]) {
+          const norm = normalizeDateField(val[field]);
+          if (norm !== val[field]) { val[field] = norm; changed = true; }
+        }
+      });
+    });
+    if (Array.isArray(progress._studyDays)) {
+      const normed = progress._studyDays.map(normalizeDateField).filter(Boolean);
+      if (JSON.stringify(normed) !== JSON.stringify(progress._studyDays)) {
+        progress._studyDays = normed;
+        changed = true;
+      }
+    }
+    if (changed) {
+      console.log('normalizeStoredDates: cleaned up legacy ISO date strings');
+      saveProgress();
+    }
   }
 
   function saveProgress() {
