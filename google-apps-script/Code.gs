@@ -18,12 +18,13 @@
 const PROGRESS_SHEET_NAME = 'Progress';
 const STUDY_LOG_SHEET_NAME = 'StudyLog';
 const META_SHEET_NAME = 'Meta';
+const SCRIPT_VERSION = 'v3-meta-sheet-2026-05-27';
 
 function doGet(e) {
   const action = e.parameter.action || 'ping';
 
   if (action === 'ping') {
-    return jsonResponse({ status: 'ok', message: 'VocabMaster API is running' });
+    return jsonResponse({ status: 'ok', message: 'VocabMaster API is running', version: SCRIPT_VERSION });
   }
 
   if (action === 'getProgress') {
