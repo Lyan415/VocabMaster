@@ -176,6 +176,9 @@
     const today = getTodayStr();
 
     p.lastReview = today;
+    // Track today's outcome so we can build a reinforcement session later.
+    // 'incorrect' for forgot/hard; 'correct' for good/easy.
+    p.lastResult = (quality <= 1) ? 'incorrect' : 'correct';
 
     if (quality === 0) {
       p.level = 0;
@@ -233,33 +236,48 @@
     return p && p.level > 0 && p.level < CONFIG.MAX_LEVEL && p.lastReview;
   }
 
-  function getTodayWords() {
+  // Get today's plan — a FIXED set of words for the day, generated once.
+  // Stored in progress._todayPlan = { date, dueIds, newIds }
+  function getOrCreateTodayPlan() {
     const today = getTodayStr();
+    const existing = progress._todayPlan;
+    if (existing && existing.date === today) {
+      // Filter out any words that no longer exist (shouldn't happen, but safe)
+      return existing;
+    }
+    // New day → generate a fresh plan
     const dueWords = words.filter(w => isDueForReview(w.id));
-    const newWordsToday = words.filter(w => isNewWord(w.id));
-
-    const todayStudied = Object.values(progress).filter(
-      p => p.lastReview === today && !p.nextReview
-    ).length;
-
-    const newCount = Math.min(
-      settings.dailyNew - getNewWordsStudiedToday(),
-      newWordsToday.length
-    );
-
-    shuffleArray(newWordsToday);
-    return {
-      due: dueWords,
-      new: newWordsToday.slice(0, Math.max(0, newCount)),
-      newTotal: newWordsToday.length
+    const newWordsAvailable = words.filter(w => isNewWord(w.id));
+    shuffleArray(newWordsAvailable);
+    const plan = {
+      date: today,
+      dueIds: dueWords.map(w => w.id),
+      newIds: newWordsAvailable.slice(0, settings.dailyNew).map(w => w.id)
     };
+    progress._todayPlan = plan;
+    saveProgress();
+    return plan;
   }
 
-  function getNewWordsStudiedToday() {
+  // Used by the dashboard for display counts. Returns the fixed today plan
+  // as word objects, plus how many have been touched today.
+  function getTodayWords() {
+    const plan = getOrCreateTodayPlan();
     const today = getTodayStr();
-    return Object.entries(progress).filter(([, p]) => {
-      return p.lastReview === today && p.correct + p.incorrect === 1;
+    const dueWords = plan.dueIds.map(id => words.find(w => w.id === id)).filter(Boolean);
+    const newWords = plan.newIds.map(id => words.find(w => w.id === id)).filter(Boolean);
+    const allTodayIds = new Set([...plan.dueIds, ...plan.newIds]);
+    const completedToday = Array.from(allTodayIds).filter(id => {
+      const p = progress[id];
+      return p && p.lastReview === today;
     }).length;
+    return {
+      due: dueWords,
+      new: newWords,
+      newTotal: words.filter(w => isNewWord(w.id)).length,
+      completedToday,
+      totalToday: allTodayIds.size
+    };
   }
 
   // ===== STUDY STREAK =====
@@ -340,8 +358,14 @@
     document.getElementById('overall-progress-bar').style.width = pct + '%';
     document.getElementById('overall-progress-text').textContent = pct + '%';
 
-    document.getElementById('today-new-count').textContent = todayData.new.length;
-    document.getElementById('today-due-count').textContent = dueCount;
+    // Today's plan progress — show "done/total" so user knows what's left
+    const today2 = getTodayStr();
+    const newDone = todayData.new.filter(w => progress[w.id]?.lastReview === today2).length;
+    const dueDone = todayData.due.filter(w => progress[w.id]?.lastReview === today2).length;
+    document.getElementById('today-new-count').textContent =
+      todayData.new.length > 0 ? `${newDone}/${todayData.new.length}` : '0';
+    document.getElementById('today-due-count').textContent =
+      dueCount > 0 ? `${dueDone}/${dueCount}` : '0';
 
     document.getElementById('dashboard-date').textContent =
       new Date().toLocaleDateString('en-US', { timeZone: 'Asia/Taipei', weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
@@ -473,13 +497,51 @@
   }
 
   // ===== PRACTICE =====
+  // Three-phase session selection from the fixed daily plan:
+  //   1. Primary    — words in today's plan not yet practiced today
+  //   2. Reinforce  — words from today's plan answered incorrectly today
+  //   3. Bonus      — full plan again, lowest level first (extra practice)
+  function buildSessionFromPlan() {
+    const plan = getOrCreateTodayPlan();
+    const today = getTodayStr();
+    const planIds = [...plan.dueIds, ...plan.newIds];
+
+    const notDone = [];
+    const wrongToday = [];
+
+    planIds.forEach(id => {
+      const p = progress[id];
+      if (!p || p.lastReview !== today) {
+        notDone.push(id);
+      } else if (p.lastResult === 'incorrect') {
+        wrongToday.push(id);
+      }
+    });
+
+    if (notDone.length > 0) {
+      return { ids: notDone, phase: 'primary' };
+    }
+    if (wrongToday.length > 0) {
+      return { ids: wrongToday, phase: 'reinforce' };
+    }
+    // Everything's correct — bonus round, ordered by lowest level first
+    const sorted = [...planIds].sort((a, b) => (progress[a]?.level || 0) - (progress[b]?.level || 0));
+    return { ids: sorted, phase: 'bonus' };
+  }
+
   function startPractice(mode) {
-    const todayData = getTodayWords();
-    sessionWords = [...todayData.due, ...todayData.new];
+    const { ids, phase } = buildSessionFromPlan();
+    sessionWords = ids.map(id => words.find(w => w.id === id)).filter(Boolean);
 
     if (sessionWords.length === 0) {
       showToast('No words to practice today! All caught up! 🎉');
       return;
+    }
+
+    if (phase === 'reinforce') {
+      showToast(`🔁 Reinforcement: ${sessionWords.length} words you missed today`);
+    } else if (phase === 'bonus') {
+      showToast(`✨ Bonus practice: all ${sessionWords.length} words again`);
     }
 
     shuffleArray(sessionWords);
