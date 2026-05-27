@@ -81,16 +81,18 @@
     if (!settings.dailyNew) settings.dailyNew = CONFIG.DAILY_NEW_WORDS;
     if (!settings.speechSpeed) settings.speechSpeed = 0.9;
     if (!settings.passwordHash) settings.passwordHash = null;
-    if (!settings.gasUrl) settings.gasUrl = 'https://script.google.com/macros/s/AKfycbyJ6GNAMzNc71OHAx7qymFq6iR6PGFSmXgFV9SU-8gMPKBg4mp7SY0NXY6rndBFV2-0/exec';
-    // Repair: stored URL must start with https:// — otherwise fetch treats it
-    // as relative to GitHub Pages and gets 404. Auto-prepend if missing.
-    if (settings.gasUrl && !/^https?:\/\//i.test(settings.gasUrl)) {
-      settings.gasUrl = 'https://' + settings.gasUrl.replace(/^\/+/, '');
+    const DEFAULT_GAS_URL = 'https://script.google.com/macros/s/AKfycbyJ6GNAMzNc71OHAx7qymFq6iR6PGFSmXgFV9SU-8gMPKBg4mp7SY0NXY6rndBFV2-0/exec';
+    // Any stored value that doesn't look like an Apps Script URL is treated
+    // as corrupt and replaced with the default. This catches cases where the
+    // field was accidentally filled with an email address, a relative path,
+    // or any non-https value.
+    if (!settings.gasUrl ||
+        !/^https:\/\/script\.google\.com\/.*\/exec/.test(settings.gasUrl)) {
+      if (settings.gasUrl) {
+        console.warn('Replacing invalid gasUrl with default:', settings.gasUrl);
+      }
+      settings.gasUrl = DEFAULT_GAS_URL;
       saveSettings();
-    }
-    // Reject URLs that aren't pointing at script.google.com
-    if (settings.gasUrl && !/script\.google\.com/.test(settings.gasUrl)) {
-      console.warn('gasUrl does not point to script.google.com:', settings.gasUrl);
     }
   }
 
