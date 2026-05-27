@@ -927,6 +927,35 @@ body {
   line-height: 1.6;
 }
 
+/* ===== DASHBOARD SYNC BAR ===== */
+.sync-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+.sync-bar-icon { font-size: 16px; }
+.sync-bar #sync-bar-text { flex: 1; }
+.btn-sync-now {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.btn-sync-now:disabled { opacity: 0.6; cursor: not-allowed; }
+.btn-sync-now.syncing { animation: spin 1s linear infinite; }
+
 /* ===== TOAST ===== */
 .toast {
   position: fixed;

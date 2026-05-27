@@ -13,6 +13,7 @@
     STORAGE_KEY: 'vocabmaster_data',
     SESSION_KEY: 'vocabmaster_session',
     SETTINGS_KEY: 'vocabmaster_settings',
+    SYNC_TIME_KEY: 'vocabmaster_last_sync',
     // Spaced repetition intervals (in days) based on Ebbinghaus forgetting curve
     INTERVALS: [0, 1, 2, 4, 7, 15, 30],
     MAX_LEVEL: 6
@@ -332,6 +333,24 @@
     document.getElementById('streak-icon').textContent = streak > 0 ? '🔥' : '❄️';
 
     renderHeatmap();
+    updateSyncBar();
+  }
+
+  function updateSyncBar() {
+    const textEl = document.getElementById('sync-bar-text');
+    const iconEl = document.getElementById('sync-bar-icon');
+    if (!textEl) return;
+
+    const lastSync = localStorage.getItem(CONFIG.SYNC_TIME_KEY);
+    if (!lastSync) {
+      iconEl.textContent = '⚠️';
+      textEl.textContent = 'Never synced — tap Sync Now to enable cross-device progress';
+    } else {
+      const d = new Date(lastSync);
+      const fmt = d.toLocaleString('zh-TW', { timeZone: 'Asia/Taipei', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+      iconEl.textContent = '☁️';
+      textEl.textContent = `Last synced: ${fmt}`;
+    }
   }
 
   function renderHeatmap() {
@@ -806,6 +825,8 @@
         })
       });
 
+      localStorage.setItem(CONFIG.SYNC_TIME_KEY, new Date().toISOString());
+      updateSyncBar();
       if (!silent) showToast('✅ Progress synced to Google Sheet!');
       return true;
     } catch (e) {
@@ -924,6 +945,14 @@
     document.getElementById('logout-btn').addEventListener('click', handleLogout);
     document.getElementById('settings-btn').addEventListener('click', () => navigateTo('settings'));
     document.getElementById('sync-btn').addEventListener('click', syncWithSheet);
+    document.getElementById('dashboard-sync-btn').addEventListener('click', async () => {
+      const btn = document.getElementById('dashboard-sync-btn');
+      btn.disabled = true;
+      btn.textContent = '⏳';
+      await syncWithSheet();
+      btn.disabled = false;
+      btn.textContent = 'Sync Now';
+    });
 
     document.querySelectorAll('.bottom-nav-item[data-page]').forEach(btn => {
       btn.addEventListener('click', () => navigateTo(btn.dataset.page));
