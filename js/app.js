@@ -924,7 +924,7 @@
     }
   }
 
-  // Manual sync button: full two-way sync (upload then download)
+  // Manual sync button: safe two-way sync (download+merge first, then upload)
   async function syncWithSheet() {
     if (!settings.gasUrl) {
       showToast('Set the Apps Script URL in Settings first');
@@ -936,10 +936,10 @@
     syncBtn.style.animation = 'spin 1s linear infinite';
 
     try {
-      await uploadToSheet(true);
-      // Give Apps Script a moment to finish writing before reading back
-      await new Promise(r => setTimeout(r, 1500));
+      // Step 1: download sheet → merge with local (keeps the more advanced record per word)
       await syncFromSheet(true);
+      // Step 2: upload the merged result back to sheet
+      await uploadToSheet(true);
       showToast('✅ Two-way sync complete!');
     } catch (e) {
       console.error('Sync error:', e);
