@@ -985,8 +985,10 @@
       });
 
       const localStudyDays = progress._studyDays || [];
+      const localTodayPlan = progress._todayPlan;
       const localWordProgress = Object.assign({}, progress);
       delete localWordProgress._studyDays;
+      delete localWordProgress._todayPlan;
 
       const merged = mergeProgressData(localWordProgress, data.progress);
 
@@ -996,7 +998,20 @@
         ...normalizedRemoteDays
       ])).sort();
 
+      // Decide which today plan to keep:
+      //   - If remote plan is for today → use it (authoritative across devices)
+      //   - Else if local plan is for today → keep local (we'll upload it back)
+      //   - Else → no plan; getOrCreateTodayPlan() will build a fresh one
+      const today = getTodayStr();
+      let chosenPlan = null;
+      if (data.todayPlan && data.todayPlan.date === today) {
+        chosenPlan = data.todayPlan;
+      } else if (localTodayPlan && localTodayPlan.date === today) {
+        chosenPlan = localTodayPlan;
+      }
+
       progress = Object.assign(merged, { _studyDays: allDays });
+      if (chosenPlan) progress._todayPlan = chosenPlan;
       saveProgress();
       renderDashboard();
 
@@ -1015,7 +1030,8 @@
     try {
       const progressData = {};
       Object.entries(progress).forEach(([key, val]) => {
-        if (key !== '_studyDays') progressData[key] = val;
+        // Skip internal fields — they're sent separately or not at all
+        if (key !== '_studyDays' && key !== '_todayPlan') progressData[key] = val;
       });
 
       await fetch(settings.gasUrl, {
@@ -1026,7 +1042,8 @@
           action: 'saveProgress',
           user: CONFIG.VALID_USER,
           progress: progressData,
-          studyDays: progress._studyDays || []
+          studyDays: progress._studyDays || [],
+          todayPlan: progress._todayPlan || null
         })
       });
 

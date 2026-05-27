@@ -17,6 +17,7 @@
 
 const PROGRESS_SHEET_NAME = 'Progress';
 const STUDY_LOG_SHEET_NAME = 'StudyLog';
+const META_SHEET_NAME = 'Meta';
 
 function doGet(e) {
   const action = e.parameter.action || 'ping';
@@ -38,7 +39,7 @@ function doPost(e) {
     const action = data.action;
 
     if (action === 'saveProgress') {
-      return jsonResponse(saveProgress(data.user, data.progress, data.studyDays));
+      return jsonResponse(saveProgress(data.user, data.progress, data.studyDays, data.todayPlan));
     }
 
     return jsonResponse({ error: 'Unknown action' });
@@ -84,7 +85,17 @@ function getProgress() {
     }
   }
 
-  return { progress, studyDays };
+  // Read today's plan from Meta sheet (B1 cell contains JSON)
+  let todayPlan = null;
+  const metaSheet = ss.getSheetByName(META_SHEET_NAME);
+  if (metaSheet) {
+    const planJson = metaSheet.getRange('B1').getValue();
+    if (planJson) {
+      try { todayPlan = JSON.parse(planJson); } catch (e) {}
+    }
+  }
+
+  return { progress, studyDays, todayPlan };
 }
 
 // Convert anything (Date / string / empty) to "YYYY-MM-DD" Taiwan-timezone string
@@ -96,7 +107,7 @@ function dateToStr(val) {
   return String(val);
 }
 
-function saveProgress(user, progressData, studyDays) {
+function saveProgress(user, progressData, studyDays, todayPlan) {
   const ss = SpreadsheetApp.getActiveSpreadsheet();
 
   // Create or clear Progress sheet
@@ -166,6 +177,14 @@ function saveProgress(user, progressData, studyDays) {
     });
     logRows.sort((a, b) => a[0].localeCompare(b[0]));
     logSheet.getRange(2, 1, logRows.length, 3).setValues(logRows);
+  }
+
+  // Persist today's plan to Meta sheet so it's shared across devices
+  if (todayPlan && todayPlan.date) {
+    let metaSheet = ss.getSheetByName(META_SHEET_NAME);
+    if (!metaSheet) metaSheet = ss.insertSheet(META_SHEET_NAME);
+    metaSheet.getRange('A1').setValue('todayPlan');
+    metaSheet.getRange('B1').setNumberFormat('@').setValue(JSON.stringify(todayPlan));
   }
 
   return {
