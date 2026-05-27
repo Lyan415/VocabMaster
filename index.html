@@ -390,6 +390,60 @@
             </div>
           </div>
         </div>
+        <div id="page-stats" class="page hidden">
+          <div class="stats-page-container">
+            <h2>Statistics</h2>
+
+            <div class="stats-summary-grid">
+              <div class="stat-card">
+                <div class="stat-number" id="stats-total-studied">0</div>
+                <div class="stat-label">Words Started</div>
+              </div>
+              <div class="stat-card stat-mastered">
+                <div class="stat-number" id="stats-mastered">0</div>
+                <div class="stat-label">Mastered</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number" id="stats-accuracy">—</div>
+                <div class="stat-label">Accuracy</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number" id="stats-streak">0</div>
+                <div class="stat-label">Day Streak</div>
+              </div>
+            </div>
+
+            <div class="stats-section">
+              <h3>Answer Record</h3>
+              <div class="answer-record">
+                <div class="answer-bar-wrap">
+                  <span class="answer-label correct-label">Correct</span>
+                  <div class="answer-bar-bg">
+                    <div class="answer-bar correct-bar" id="stats-correct-bar"></div>
+                  </div>
+                  <span class="answer-count" id="stats-correct-count">0</span>
+                </div>
+                <div class="answer-bar-wrap">
+                  <span class="answer-label incorrect-label">Incorrect</span>
+                  <div class="answer-bar-bg">
+                    <div class="answer-bar incorrect-bar" id="stats-incorrect-bar"></div>
+                  </div>
+                  <span class="answer-count" id="stats-incorrect-count">0</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="stats-section">
+              <h3>Level Distribution</h3>
+              <div class="level-distribution" id="level-distribution"></div>
+            </div>
+
+            <div class="stats-section">
+              <h3>Study History (28 days)</h3>
+              <div class="heatmap" id="stats-heatmap"></div>
+            </div>
+          </div>
+        </div>
       </main>
 
       <!-- Bottom Navigation (Mobile) -->

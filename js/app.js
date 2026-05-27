@@ -304,6 +304,7 @@
     if (page === 'dashboard') renderDashboard();
     if (page === 'wordlist') renderWordList();
     if (page === 'settings') renderSettings();
+    if (page === 'stats') renderStats();
   }
 
   // ===== DASHBOARD =====
@@ -320,7 +321,7 @@
     document.getElementById('stat-review').textContent = dueCount;
     document.getElementById('stat-mastered').textContent = mastered;
 
-    const pct = totalWords > 0 ? Math.round((mastered / totalWords) * 100) : 0;
+    const pct = totalWords > 0 ? Math.round((learned / totalWords) * 100) : 0;
     document.getElementById('overall-progress-bar').style.width = pct + '%';
     document.getElementById('overall-progress-text').textContent = pct + '%';
 
@@ -378,6 +379,80 @@
         else el.className += ' level-1';
       }
       el.title = `${dateStr}: ${dayProgress} words`;
+      heatmap.appendChild(el);
+    }
+  }
+
+  // ===== STATS PAGE =====
+  function renderStats() {
+    const totalWords = words.length;
+    const studiedWords = words.filter(w => progress[w.id] && progress[w.id].level > 0);
+    const mastered = studiedWords.filter(w => isMastered(w.id));
+
+    let totalCorrect = 0, totalIncorrect = 0;
+    Object.entries(progress).forEach(([k, p]) => {
+      if (k !== '_studyDays') {
+        totalCorrect += p.correct || 0;
+        totalIncorrect += p.incorrect || 0;
+      }
+    });
+    const totalAnswers = totalCorrect + totalIncorrect;
+    const accuracy = totalAnswers > 0 ? Math.round((totalCorrect / totalAnswers) * 100) + '%' : '—';
+
+    document.getElementById('stats-total-studied').textContent = studiedWords.length;
+    document.getElementById('stats-mastered').textContent = mastered.length;
+    document.getElementById('stats-accuracy').textContent = accuracy;
+    document.getElementById('stats-streak').textContent = getStreak();
+    document.getElementById('stats-correct-count').textContent = totalCorrect;
+    document.getElementById('stats-incorrect-count').textContent = totalIncorrect;
+
+    const maxBar = Math.max(totalCorrect, totalIncorrect, 1);
+    document.getElementById('stats-correct-bar').style.width = (totalCorrect / maxBar * 100) + '%';
+    document.getElementById('stats-incorrect-bar').style.width = (totalIncorrect / maxBar * 100) + '%';
+
+    // Level distribution (0–6)
+    const dist = document.getElementById('level-distribution');
+    dist.innerHTML = '';
+    const levelLabels = ['New', 'Lv 1', 'Lv 2', 'Lv 3', 'Lv 4', 'Lv 5', 'Mastered'];
+    const counts = Array(7).fill(0);
+    words.forEach(w => {
+      const lvl = (progress[w.id] && progress[w.id].level) || 0;
+      counts[Math.min(lvl, 6)]++;
+    });
+    const maxCount = Math.max(...counts, 1);
+    counts.forEach((count, lvl) => {
+      const row = document.createElement('div');
+      row.className = 'level-row';
+      row.innerHTML = `
+        <span class="level-label">${levelLabels[lvl]}</span>
+        <div class="level-bar-bg">
+          <div class="level-bar" style="width:${count / maxCount * 100}%;opacity:${0.3 + lvl * 0.1}"></div>
+        </div>
+        <span class="level-count">${count}</span>`;
+      dist.appendChild(row);
+    });
+
+    // Heatmap for stats page
+    const heatmap = document.getElementById('stats-heatmap');
+    heatmap.innerHTML = '';
+    const today = new Date();
+    const studyDays = progress._studyDays || [];
+    for (let i = 27; i >= 0; i--) {
+      const d = new Date(today);
+      d.setDate(d.getDate() - i);
+      const dateStr = formatDate(d);
+      const dayCount = Object.entries(progress).filter(
+        ([k, p]) => k !== '_studyDays' && p.lastReview === dateStr
+      ).length;
+      const el = document.createElement('div');
+      el.className = 'heatmap-day';
+      if (studyDays.includes(dateStr)) {
+        if (dayCount >= 40) el.className += ' level-4';
+        else if (dayCount >= 25) el.className += ' level-3';
+        else if (dayCount >= 10) el.className += ' level-2';
+        else el.className += ' level-1';
+      }
+      el.title = `${dateStr}: ${dayCount} words`;
       heatmap.appendChild(el);
     }
   }
