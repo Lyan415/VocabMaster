@@ -202,9 +202,16 @@ function jsonResponse(data) {
 }
 
 // Test function - run this in Apps Script editor to verify setup
+// After running, the Sheet should have: Progress / StudyLog / Meta tabs
 function testSetup() {
+  const todayPlan = {
+    date: '2026-05-27',
+    dueIds: [],
+    newIds: [1, 5, 10, 20, 50]
+  };
   const result = saveProgress('test_user', {
-    '1': { level: 2, lastReview: '2024-01-01', nextReview: '2024-01-03', correct: 3, incorrect: 1, easeFactor: 2.5 }
-  }, ['2024-01-01']);
+    '1': { level: 2, lastReview: '2026-05-27', nextReview: '2026-05-29', correct: 3, incorrect: 1, easeFactor: 2.5 }
+  }, ['2026-05-27'], todayPlan);
   Logger.log(result);
+  Logger.log('Check the Google Sheet — you should now see a Meta tab.');
 }
