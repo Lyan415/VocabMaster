@@ -109,19 +109,30 @@
     if (!settings.dailyNew) settings.dailyNew = CONFIG.DAILY_NEW_WORDS;
     if (!settings.speechSpeed) settings.speechSpeed = 0.9;
     if (!settings.passwordHash) settings.passwordHash = null;
-    const DEFAULT_GAS_URL = 'https://script.google.com/macros/s/AKfycbyJ6GNAMzNc71OHAx7qymFq6iR6PGFSmXgFV9SU-8gMPKBg4mp7SY0NXY6rndBFV2-0/exec';
-    // Any stored value that doesn't look like an Apps Script URL is treated
-    // as corrupt and replaced with the default. This catches cases where the
-    // field was accidentally filled with an email address, a relative path,
-    // or any non-https value.
-    if (!settings.gasUrl ||
-        !/^https:\/\/script\.google\.com\/.*\/exec/.test(settings.gasUrl)) {
+    if (!isValidGasUrl(settings.gasUrl)) {
       if (settings.gasUrl) {
         console.warn('Replacing invalid gasUrl with default:', settings.gasUrl);
       }
       settings.gasUrl = DEFAULT_GAS_URL;
       saveSettings();
     }
+  }
+
+  const DEFAULT_GAS_URL = 'https://script.google.com/macros/s/AKfycbyJ6GNAMzNc71OHAx7qymFq6iR6PGFSmXgFV9SU-8gMPKBg4mp7SY0NXY6rndBFV2-0/exec';
+
+  function isValidGasUrl(url) {
+    return !!url && /^https:\/\/script\.google\.com\/.*\/exec/.test(url);
+  }
+
+  // CRITICAL: every fetch must go through this — so even if settings.gasUrl
+  // gets clobbered (browser autofill, accidental input, etc.), the network
+  // call still uses a sane URL. Repairs in-place when corrupted.
+  function getValidGasUrl() {
+    if (isValidGasUrl(settings.gasUrl)) return settings.gasUrl;
+    console.warn('gasUrl invalid at fetch time, falling back to default:', settings.gasUrl);
+    settings.gasUrl = DEFAULT_GAS_URL;
+    saveSettings();
+    return DEFAULT_GAS_URL;
   }
 
   function saveSettings() {
@@ -1007,13 +1018,10 @@
 
   // Download progress from Google Sheet and merge with localStorage
   async function syncFromSheet(silent) {
-    if (!settings.gasUrl) {
-      showToast('⚠️ No Apps Script URL configured');
-      return false;
-    }
+    const gasUrl = getValidGasUrl();
     try {
-      console.log('syncFromSheet: fetching from', settings.gasUrl);
-      const resp = await fetch(settings.gasUrl + '?action=getProgress', {
+      console.log('syncFromSheet: fetching from', gasUrl);
+      const resp = await fetch(gasUrl + '?action=getProgress', {
         method: 'GET',
         redirect: 'follow'
       });
@@ -1091,7 +1099,7 @@
 
   // Upload progress to Google Sheet
   async function uploadToSheet(silent) {
-    if (!settings.gasUrl) return false;
+    const gasUrl = getValidGasUrl();
     try {
       const progressData = {};
       Object.entries(progress).forEach(([key, val]) => {
@@ -1099,7 +1107,7 @@
         if (key !== '_studyDays' && key !== '_todayPlan') progressData[key] = val;
       });
 
-      await fetch(settings.gasUrl, {
+      await fetch(gasUrl, {
         method: 'POST',
         mode: 'no-cors',
         headers: { 'Content-Type': 'text/plain' },
@@ -1162,6 +1170,11 @@
     statusEl.textContent = 'Testing...';
     statusEl.style.color = 'var(--text-secondary)';
 
+    if (!isValidGasUrl(url)) {
+      statusEl.textContent = 'Invalid URL (must be https://script.google.com/.../exec)';
+      statusEl.style.color = 'var(--danger)';
+      return;
+    }
     try {
       await fetch(url + '?action=ping', { mode: 'no-cors' });
       statusEl.textContent = 'Request sent (no-cors)';
@@ -1360,7 +1373,15 @@
     });
 
     document.getElementById('setting-gas-url').addEventListener('change', (e) => {
-      settings.gasUrl = e.target.value.trim();
+      const val = e.target.value.trim();
+      // Reject anything that isn't an Apps Script URL — this also blocks
+      // browser autofill from clobbering the URL with an email address.
+      if (val && !isValidGasUrl(val)) {
+        showToast('⚠️ URL must be https://script.google.com/.../exec');
+        e.target.value = settings.gasUrl;  // revert visible input
+        return;
+      }
+      settings.gasUrl = val || DEFAULT_GAS_URL;
       saveSettings();
     });
 
