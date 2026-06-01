@@ -563,6 +563,20 @@ body {
   max-width: 400px;
 }
 
+.spelling-example {
+  margin-top: 12px;
+  padding: 12px 16px;
+  background: var(--bg);
+  border-left: 3px solid var(--primary);
+  border-radius: 4px;
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-style: italic;
+  text-align: left;
+  max-width: 100%;
+}
+
 .flashcard-hint {
   font-size: 14px;
   color: var(--text-muted);

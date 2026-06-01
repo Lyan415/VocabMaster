@@ -751,6 +751,7 @@
     document.getElementById('sp-pos').textContent = word.pos;
     document.getElementById('sp-hint').textContent = '';
     document.getElementById('sp-feedback').classList.add('hidden');
+    document.getElementById('sp-example').classList.add('hidden');
     document.getElementById('sp-next').classList.add('hidden');
     document.getElementById('sp-check').classList.remove('hidden');
     document.getElementById('sp-hint-btn').classList.remove('hidden');
@@ -798,6 +799,14 @@
     }
 
     feedbackEl.classList.remove('hidden');
+
+    // Reveal the example sentence so the user sees the word in context
+    if (word.example) {
+      const exampleEl = document.getElementById('sp-example');
+      exampleEl.textContent = word.example;
+      exampleEl.classList.remove('hidden');
+    }
+
     document.querySelector('.spelling-actions').classList.add('hidden');
     document.getElementById('sp-next').classList.remove('hidden');
   }
