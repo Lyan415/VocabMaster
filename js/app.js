@@ -751,6 +751,7 @@
     document.getElementById('sp-pos').textContent = word.pos;
     document.getElementById('sp-hint').textContent = '';
     document.getElementById('sp-feedback').classList.add('hidden');
+    document.getElementById('sp-phonetic').classList.add('hidden');
     document.getElementById('sp-example').classList.add('hidden');
     document.getElementById('sp-next').classList.add('hidden');
     document.getElementById('sp-check').classList.remove('hidden');
@@ -799,6 +800,13 @@
     }
 
     feedbackEl.classList.remove('hidden');
+
+    // Reveal the KK phonetic so the user can also study pronunciation
+    if (word.phonetic) {
+      const phoneticEl = document.getElementById('sp-phonetic');
+      phoneticEl.textContent = word.phonetic;
+      phoneticEl.classList.remove('hidden');
+    }
 
     // Reveal the example sentence so the user sees the word in context
     if (word.example) {
